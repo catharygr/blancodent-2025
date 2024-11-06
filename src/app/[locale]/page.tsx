@@ -5,7 +5,7 @@ import { setRequestLocale } from "next-intl/server";
 export default async function HomePage({
   params,
 }: Readonly<{
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
   // Activa el renderizado estático de la página en el idioma solicitado
