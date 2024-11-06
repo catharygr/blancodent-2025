@@ -2,10 +2,10 @@ import { getRequestConfig } from "next-intl/server";
 import { routing } from "./routing";
 
 export default getRequestConfig(async ({ requestLocale }) => {
-  // This typically corresponds to the `[locale]` segment
+  // Esto típicamente corresponde al segmento `[locale]`
   let locale = await requestLocale;
 
-  // Ensure that a valid locale is used
+  // Asegúrate de que se use un locale válido
   if (!locale || !routing.locales.includes(locale as "en" | "es")) {
     locale = routing.defaultLocale;
   }

@@ -25,13 +25,13 @@ export default async function RootLayout({
   // Activa el renderizado estático de la página en el idioma solicitado
   setRequestLocale(locale);
 
-  // Ensure that the incoming `locale` is valid
+  // Asegúrate de que el `locale` entrante sea válido
   if (!routing.locales.includes(locale as "es" | "en")) {
     notFound();
   }
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
+  // Proporcionar todos los mensajes al lado del cliente
+  // es la forma más fácil de empezar
   const messages = await getMessages();
 
   return (
