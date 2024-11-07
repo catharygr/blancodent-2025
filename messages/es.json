@@ -4,6 +4,7 @@
     "about": "ir a la página de acerca de"
   },
   "NotFoundPage": {
-    "title": "¡Página no encontrada!"
+    "title": "¡Página no encontrada!",
+    "homeLink": "Volver a la página de inicio"
   }
 }

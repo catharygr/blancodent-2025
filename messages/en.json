@@ -4,6 +4,7 @@
     "about": "Go to the about page"
   },
   "NotFoundPage": {
-    "title": "Page not found"
+    "title": "Page not found",
+    "homeLink": "Go back to the home page"
   }
 }
