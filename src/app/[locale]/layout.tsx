@@ -49,6 +49,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <title>Next.js i18n Example</title>
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
