@@ -7,11 +7,13 @@ import {
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
+import "../assets/global-styles/globals.css";
 
 // Los archivos de fuentes pueden estar ubicados dentro de `app`
 const monaSansFont = localFont({
-  src: "../assets/Mona-Sans.woff2",
+  src: "../assets/fonts/Mona-Sans.woff2",
   display: "fallback",
+  fallback: ["system-ui", "arial", "sans-serif"],
 });
 
 // Generar las rutas estáticas para cada idioma - i18n
