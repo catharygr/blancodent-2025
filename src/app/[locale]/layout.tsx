@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
 import "../assets/global-styles/globals.css";
+import Header from "@/app/componentes/header/Header";
 
 // Los archivos de fuentes pueden estar ubicados dentro de `app`
 const monaSansFont = localFont({
@@ -64,6 +65,7 @@ export default async function RootLayout({
       <title>Next.js i18n Example</title>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <Header />
           {children}
         </NextIntlClientProvider>
       </body>
