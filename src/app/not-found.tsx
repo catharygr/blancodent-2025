@@ -7,7 +7,7 @@ const styles = {
   a: {
     display: "inline-block",
     padding: "1rem 0 0 1rem",
-    color: "white",
+    color: "red",
     textDecoration: "underline",
     textUnderlineOffset: "0.4em",
   },
