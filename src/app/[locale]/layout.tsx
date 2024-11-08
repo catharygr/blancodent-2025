@@ -6,6 +6,13 @@ import {
 } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import localFont from "next/font/local";
+
+// Los archivos de fuentes pueden estar ubicados dentro de `app`
+const monaSansFont = localFont({
+  src: "../assets/Mona-Sans.woff2",
+  display: "fallback",
+});
 
 // Generar las rutas estáticas para cada idioma - i18n
 export function generateStaticParams() {
@@ -48,7 +55,10 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html
+      lang={locale}
+      className={monaSansFont.className}
+    >
       <title>Next.js i18n Example</title>
       <body>
         <NextIntlClientProvider messages={messages}>
