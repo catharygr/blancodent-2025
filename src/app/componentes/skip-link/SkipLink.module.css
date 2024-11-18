@@ -13,9 +13,10 @@
   top: 5px;
   left: 5px;
   z-index: 1000;
-  background-color: var(--tertiary-accent);
-  color: var(--gray-15);
-  padding: 0.5rem 1rem;
+  background-color: var(--tertiary-12);
+  color: var(--gray-1);
+  padding: 1rem 1.4rem;
   font-size: var(--fs-500);
   font-weight: var(--f-wei-600);
+  border-radius: 2em;
 }
