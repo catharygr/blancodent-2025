@@ -12,9 +12,12 @@ export default async function HomePage({
   setRequestLocale(locale);
   const t = await getTranslations("HomePage");
   return (
-    <div>
+    <main
+      id="main"
+      tabIndex={-1}
+    >
       <h1>{t("title")}</h1>
       <Link href="/about">{t("about")}</Link>
-    </div>
+    </main>
   );
 }

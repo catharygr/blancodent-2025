@@ -12,7 +12,7 @@
     "description": "Clínica dental en Las Palmas, BLANCODENT. Dentistas en Las Palmas. Dentistas en Mesa y López. Expertos en ortodoncia, endodoncia, tratamiento del bruxismo, periodoncia e implantología dental. Puedes encontrar todas las especialidades odontológicas en BLANCODENT."
   },
   "SkipLinkMain": {
-    "content": "Ir al contenido principal",
-    "href": "#main"
+    "content": "Saltar al contenido principal",
+    "href": "main"
   }
 }
