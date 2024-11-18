@@ -3,7 +3,11 @@
 @import url("fonts.css");
 
 body {
+  background-color: var(--gray-1);
   color: var(--gray-15);
+  font-size: var(--fs-400);
+  font-weight: var(--f-wei-400);
+  font-stretch: var(--f-str-100);
 }
 
 .visually-hidden {

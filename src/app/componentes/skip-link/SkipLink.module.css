@@ -15,5 +15,7 @@
   z-index: 1000;
   background-color: var(--tertiary-accent);
   color: var(--gray-15);
-  padding: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: var(--fs-500);
+  font-weight: var(--f-wei-600);
 }
