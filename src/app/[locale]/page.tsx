@@ -12,9 +12,18 @@ export default async function HomePage({
   setRequestLocale(locale);
   const t = await getTranslations("HomePage");
   return (
-    <div>
-      <h1>{t("title")}</h1>
-      <Link href="/about">{t("about")}</Link>
-    </div>
+    <main
+      id="main"
+      tabIndex={-1}
+      className="layout-grid"
+    >
+      <h1 className="narrow-grid">{t("title")}</h1>
+      <Link
+        className="narrow-grid"
+        href="/about"
+      >
+        {t("about")}
+      </Link>
+    </main>
   );
 }
