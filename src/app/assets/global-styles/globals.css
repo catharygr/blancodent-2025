@@ -3,6 +3,15 @@
 @import url("fonts.css");
 @import url("layout-grid.css");
 
+:root {
+  --space-100: 0.25rem;
+  --space-200: 0.5rem;
+  --space-300: 0.75rem;
+  --space-400: 1rem;
+
+  --shadow-400: 2px 2px 4px var(--gray-10);
+}
+
 body {
   background-color: var(--gray-1);
   color: var(--gray-15);
