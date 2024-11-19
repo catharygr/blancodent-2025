@@ -1,0 +1,40 @@
+.layout-grid {
+  --padding-inline: 1rem;
+  --main-max-width: 75rem;
+  --narrow-max-width: 58rem;
+  --main-size: calc((var(--main-max-width) - var(--narrow-max-width)) / 2);
+
+  display: grid;
+  grid-template-columns:
+    [wide-start] minmax(var(--padding-inline), 1fr) [main-start] minmax(
+      0,
+      var(--main-size)
+    )
+    [narrow-start] min(
+      100% - (var(--padding-inline) * 2),
+      var(--narrow-max-width)
+    )
+    [narrow-end] minmax(0, var(--main-size)) [main-end] minmax(
+      var(--padding-inline),
+      1fr
+    )
+    [wide-end];
+}
+
+.layout-grid > :not(.narrow-grid, .wide-grid),
+.wide-grid > :not(.narrow-grid, .wide-grid) {
+  grid-column: main;
+}
+
+.layout-grid > .narrow-grid,
+.wide-grid > .narrow-grid {
+  grid-column: narrow;
+}
+
+.layout-grid > .wide-grid,
+.wide-grid > .wide-grid {
+  grid-column: wide;
+
+  display: grid;
+  grid-template-columns: inherit;
+}

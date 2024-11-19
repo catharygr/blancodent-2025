@@ -1,6 +1,7 @@
 @import url("css-reset.css");
 @import url("colors.css");
 @import url("fonts.css");
+@import url("layout-grid.css");
 
 body {
   background-color: var(--gray-1);
