@@ -1,4 +1,7 @@
 {
+  "Header": {
+    "logoLabel": "Go to the home page"
+  },
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"

@@ -64,7 +64,6 @@ export default async function RootLayout({
       lang={locale}
       className={monaSansFont.className}
     >
-      <title>Next.js i18n Example</title>
       <body className="layout-grid">
         <NextIntlClientProvider messages={messages}>
           <SkipLink
