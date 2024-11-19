@@ -6,6 +6,7 @@
 .container {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .logo {
@@ -25,4 +26,9 @@
   font-weight: var(--f-wei-600);
   margin-left: var(--space-200);
   text-shadow: var(--shadow-400);
+}
+
+.quickLinks > ul {
+  display: flex;
+  gap: var(--space-200);
 }

@@ -1,6 +1,10 @@
 {
   "Header": {
-    "logoLabel": "Go to the home page"
+    "logoLabel": "Go to the home page",
+    "quickLinksLabel": "Quick links to location, contact, and phone",
+    "quicklocation": "Location",
+    "quickcontact": "Appointment",
+    "quicktelephone": "Call us"
   },
   "HomePage": {
     "title": "Hello world!",
