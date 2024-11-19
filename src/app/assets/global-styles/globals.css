@@ -20,6 +20,10 @@ body {
   font-stretch: var(--f-str-100);
 }
 
+a {
+  text-underline-offset: 0.125rem;
+}
+
 .visually-hidden {
   width: 1px;
   height: 1px;

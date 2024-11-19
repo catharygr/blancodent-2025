@@ -30,5 +30,6 @@
 
 .quickLinks > ul {
   display: flex;
-  gap: var(--space-200);
+  gap: var(--space-100);
+  font-weight: var(--f-wei-600);
 }
