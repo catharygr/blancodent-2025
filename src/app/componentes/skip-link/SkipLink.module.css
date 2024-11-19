@@ -10,8 +10,8 @@
 
 #skipLink {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 10px;
+  left: 10px;
   z-index: 1000;
   background-color: var(--tertiary-12);
   color: var(--gray-1);

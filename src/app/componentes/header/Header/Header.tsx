@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header>
+    <header className="wide-grid">
       <h1>Header</h1>
     </header>
   );
