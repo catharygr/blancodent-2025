@@ -23,7 +23,7 @@
 
 .logo p {
   font-size: var(--fs-600);
-  font-weight: var(--f-wei-600);
+  font-weight: var(--f-wei-500);
   margin-left: var(--space-200);
   text-shadow: var(--shadow-400);
 }
@@ -31,5 +31,5 @@
 .quickLinks > ul {
   display: flex;
   gap: var(--space-100);
-  font-weight: var(--f-wei-600);
+  font-weight: var(--f-wei-500);
 }

@@ -1,7 +1,6 @@
 import { Link } from "@/i18n/routing";
 import styles from "./Header.module.css";
 import { useTranslations } from "next-intl";
-
 export default function Header() {
   const t = useTranslations("Header");
   return (
