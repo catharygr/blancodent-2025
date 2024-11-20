@@ -7,12 +7,14 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
   margin-right: auto;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo svg {
