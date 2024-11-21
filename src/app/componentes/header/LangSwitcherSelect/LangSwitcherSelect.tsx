@@ -7,6 +7,8 @@ export default function LangSwitcherSelect({
   children,
 }: {
   children: ReactNode;
+  defaultLocale: string;
+  label: string;
 }) {
   return (
     <div>
