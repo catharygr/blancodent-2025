@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: var(--space-100); */
+}
+
+.select {
+  appearance: none;
+  background: none;
+  border: none;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: var(--f-wei-500);
+  cursor: pointer;
+}
+
+.pending {
+  opacity: 30%;
+}
