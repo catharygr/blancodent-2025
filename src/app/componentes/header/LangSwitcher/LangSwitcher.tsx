@@ -1,4 +1,4 @@
-// import styles from "./LangSwitcher.module.scss";
+import styles from "./LangSwitcher.module.css";
 import LangSwitcherSelect from "@/app/componentes/header/LangSwitcherSelect";
 import { routing } from "@/i18n/routing";
 import { useTranslations, useLocale } from "next-intl";
@@ -16,6 +16,7 @@ export default function LangSwitcher() {
           <option
             key={lang}
             value={lang}
+            className={styles.option}
           >
             {t("locale", { locale: lang })}
           </option>

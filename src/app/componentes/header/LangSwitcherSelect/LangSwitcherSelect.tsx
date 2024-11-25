@@ -3,7 +3,7 @@ import React, { ReactNode, ChangeEvent } from "react";
 import { usePathname, useRouter } from "@/i18n/routing";
 import { useParams } from "next/navigation";
 
-// import styles from "./LangSwitcherSelect.module.scss";
+import styles from "./LangSwitcherSelect.module.css";
 
 export default function LangSwitcherSelect({
   children,
@@ -35,6 +35,7 @@ export default function LangSwitcherSelect({
       </label>
       <select
         id="lang-switcher"
+        className={styles.select}
         defaultValue={defaultValue}
         onChange={handleLanhChange}
       >
