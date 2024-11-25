@@ -9,15 +9,15 @@ export default function LangSwitcher() {
   return (
     <div>
       <LangSwitcherSelect
-        defaultLocale={locale}
+        defaultValue={locale}
         label={t("label")}
       >
-        {routing.locales.map((cur) => (
+        {routing.locales.map((lang) => (
           <option
-            key={cur}
-            value={cur}
+            key={lang}
+            value={lang}
           >
-            {t("locale", { locale: cur })}
+            {t("locale", { locale: lang })}
           </option>
         ))}
       </LangSwitcherSelect>
