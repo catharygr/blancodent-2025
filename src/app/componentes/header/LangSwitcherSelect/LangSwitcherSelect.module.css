@@ -9,3 +9,7 @@
   font-weight: var(--f-wei-500);
   cursor: pointer;
 }
+
+.pending {
+  opacity: 30%;
+}
