@@ -1,3 +1,10 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: var(--space-100); */
+}
+
 .select {
   appearance: none;
   background: none;
