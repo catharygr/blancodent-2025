@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  background: none;
+  border: none;
+  padding: none;
+}
+
+.btn > svg {
+  width: 30px;
+  height: 30px;
+}

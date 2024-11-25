@@ -31,8 +31,19 @@
   text-shadow: var(--shadow-400);
 }
 
+.quickLinks {
+  display: none;
+}
+
 .quickLinks > ul {
   display: flex;
   gap: var(--space-100);
   font-weight: var(--f-wei-500);
+  padding-inline: var(--space-900);
+}
+
+@media (min-width: 44rem) {
+  .quickLinks {
+    display: block;
+  }
 }
