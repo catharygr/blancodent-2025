@@ -8,6 +8,11 @@
   --space-200: 0.5rem;
   --space-300: 0.75rem;
   --space-400: 1rem;
+  --space-500: 1.25rem;
+  --space-600: 1.5rem;
+  --space-700: 1.75rem;
+  --space-800: 2rem;
+  --space-900: 3rem;
 
   --shadow-400: 2px 2px 4px var(--gray-10);
 }
@@ -22,6 +27,10 @@ body {
 
 a {
   text-underline-offset: 0.125rem;
+}
+
+button {
+  cursor: pointer;
 }
 
 .visually-hidden {

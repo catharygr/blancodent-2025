@@ -8,7 +8,7 @@
   },
   "LangSwitcher": {
     "label": "Change language",
-    "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 English} other {Unknown}}"
+    "locale": "{locale, select, es {🇪🇸 Español} en {🇬🇧 English} other {Unknown}}"
   },
   "HomePage": {
     "title": "Hello world!",

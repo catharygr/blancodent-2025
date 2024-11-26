@@ -72,13 +72,13 @@ export default function Header() {
               <Link href="/contact">{t("quickcontact")}</Link> •
             </li>
             <li>
-              <Link href="tel:+34928292455">{t("quicktelephone")}</Link> •
+              <Link href="tel:+34928292455">{t("quicktelephone")}</Link>
             </li>
           </ul>
         </nav>
         <LangSwitcher />
+        <Menu />
       </div>
-      <Menu />
     </header>
   );
 }

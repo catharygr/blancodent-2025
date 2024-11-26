@@ -1,6 +1,6 @@
 .header {
   background-color: var(--primary-6);
-  padding-block: var(--space-400);
+  padding-block: min(2vw, var(--space-400));
 }
 
 .container {
@@ -19,20 +19,38 @@
 }
 
 .logo svg {
-  width: 3rem;
-  height: 3rem;
+  width: auto;
+  height: min(9vw, 48px);
   filter: drop-shadow(var(--shadow-400));
 }
 
 .logo p {
-  font-size: var(--fs-600);
+  display: none;
+  font-size: min(4vw, var(--fs-600));
   font-weight: var(--f-wei-500);
   margin-left: var(--space-200);
   text-shadow: var(--shadow-400);
+}
+
+.quickLinks {
+  display: none;
 }
 
 .quickLinks > ul {
   display: flex;
   gap: var(--space-100);
   font-weight: var(--f-wei-500);
+  padding-inline: var(--space-700);
+}
+
+@media (min-width: 43rem) {
+  .logo p {
+    display: block;
+  }
+}
+
+@media (min-width: 33rem) {
+  .quickLinks {
+    display: block;
+  }
 }
