@@ -7,10 +7,12 @@
 .btn {
   background: none;
   border: none;
-  padding: none;
+  padding: 0;
+  color: var(--gray-15);
 }
 
 .btn > svg {
   width: 30px;
   height: 30px;
+  color: var(--gray-15);
 }
