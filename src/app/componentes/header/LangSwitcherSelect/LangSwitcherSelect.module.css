@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap: var(--space-100); */
 }
 
 .select {
   appearance: none;
   background: none;
   border: none;
+  color: var(--gray-15);
   margin: 0;
   font-family: inherit;
   font-size: inherit;
