@@ -19,7 +19,7 @@ export default function Menu() {
       >
         <List weight="bold" />
       </button>
-      {isOpen && <MenuDrawer />}
+      {isOpen && <MenuDrawer handleCloseDrawer={handleOpenDrawer} />}
     </nav>
   );
 }

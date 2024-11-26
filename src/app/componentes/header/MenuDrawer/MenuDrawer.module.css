@@ -1,0 +1,23 @@
+.navContainer {
+  position: fixed;
+  inset: 0;
+  padding: 1rem;
+  z-index: 10000;
+}
+
+.navBackground {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(3px);
+}
+
+.navDrawer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(100%, 500px);
+  background-color: var(--secondary-11);
+  color: var(--gray-12);
+  display: flex;
+}
