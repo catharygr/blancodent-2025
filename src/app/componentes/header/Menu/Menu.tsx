@@ -22,6 +22,7 @@ export default function Menu() {
         className={styles.btn}
         onClick={handleOpenDrawer}
         aria-labelledby="btn-name"
+        aria-expanded={isOpen}
       >
         <span
           hidden

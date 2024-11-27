@@ -12,6 +12,18 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
       (elementoEnfocadoAntesDeAbrirlo as HTMLElement)?.focus();
     };
   }, []);
+
+  useEffect(() => {
+    function handleEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        handleCloseDrawer();
+      }
+    }
+    window.addEventListener("keyup", handleEscape);
+    return () => {
+      window.removeEventListener("keyup", handleEscape);
+    };
+  }, [handleCloseDrawer]);
   return (
     <div className={styles.navContainer}>
       <div className={styles.navBackground} />
