@@ -36,7 +36,7 @@
   margin-top: auto;
   padding: 1rem 2rem;
   border: none;
-  background-color: var(--primary-5);
+  background-color: var(--primary-3);
   border-radius: 1em;
   box-shadow: var(--shadow-400);
   transition: scale 0.2s;
