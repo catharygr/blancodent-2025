@@ -11,7 +11,8 @@
     "locale": "{locale, select, es {🇪🇸 Español} en {🇬🇧 English} other {Unknown}}"
   },
   "MainMenu": {
-    "navLabel": "Main"
+    "navLabel": "Main",
+    "openMenuBtn": "Open menu"
   },
   "HomePage": {
     "title": "Hello world!",

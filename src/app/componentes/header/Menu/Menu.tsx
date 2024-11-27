@@ -21,8 +21,18 @@ export default function Menu() {
       <button
         className={styles.btn}
         onClick={handleOpenDrawer}
+        aria-labelledby="btn-name"
       >
-        <List weight="bold" />
+        <span
+          hidden
+          id="btn-name"
+        >
+          {t("openMenuBtn")}
+        </span>
+        <List
+          aria-hidden="true"
+          weight="bold"
+        />
       </button>
       {isOpen && <MenuDrawer handleCloseDrawer={handleOpenDrawer} />}
     </nav>
