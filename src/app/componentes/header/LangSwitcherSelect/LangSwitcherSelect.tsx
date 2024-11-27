@@ -27,7 +27,16 @@ export default function LangSwitcherSelect({
     });
   };
   return (
-    <div className={styles.container}>
+    <section
+      className={styles.container}
+      aria-labelledby="lang-switcher-label"
+    >
+      <span
+        className="visually-hidden"
+        id="lang-switcher-label"
+      >
+        {label}
+      </span>
       <label
         htmlFor="lang-switcher"
         className="visually-hidden"
@@ -44,6 +53,6 @@ export default function LangSwitcherSelect({
         {children}
       </select>
       <CaretDown weight="fill" />
-    </div>
+    </section>
   );
 }
