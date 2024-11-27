@@ -12,7 +12,8 @@
   },
   "MainMenu": {
     "navLabel": "Main",
-    "openMenuBtn": "Open menu"
+    "openMenuBtn": "Open menu",
+    "closeMenuBtn": "Close menu"
   },
   "HomePage": {
     "title": "Hello world!",

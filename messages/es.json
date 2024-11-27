@@ -12,7 +12,8 @@
   },
   "MainMenu": {
     "navLabel": "Principal",
-    "openMenuBtn": "Abrir menú"
+    "openMenuBtn": "Abrir menú",
+    "closeMenuBtn": "Cerrar menú"
   },
   "HomePage": {
     "title": "Hola mundo!",
