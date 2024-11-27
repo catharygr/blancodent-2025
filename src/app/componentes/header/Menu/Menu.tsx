@@ -16,8 +16,14 @@ export default function Menu() {
   return (
     <nav
       className={styles.container}
-      aria-label="navLabel"
+      aria-labelledby="nav-label"
     >
+      <span
+        hidden
+        id="nav-label"
+      >
+        {t("navLabel")}
+      </span>
       <button
         className={styles.btn}
         onClick={handleOpenDrawer}
