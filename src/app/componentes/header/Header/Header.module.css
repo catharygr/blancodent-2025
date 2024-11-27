@@ -20,7 +20,7 @@
 
 .logo svg {
   width: auto;
-  height: min(9vw, 48px);
+  height: min(12vw, 48px);
   filter: drop-shadow(var(--shadow-400));
 }
 

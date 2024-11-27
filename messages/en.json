@@ -10,6 +10,9 @@
     "label": "Change language",
     "locale": "{locale, select, es {🇪🇸 Español} en {🇬🇧 English} other {Unknown}}"
   },
+  "MainMenu": {
+    "navLabel": "Main"
+  },
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"
