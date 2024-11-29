@@ -33,6 +33,12 @@
   font-size: var(--fs-800);
   list-style-position: outside;
   cursor: pointer;
+  user-select: none;
+}
+
+.summary::marker,
+.summary::-webkit-details-marker {
+  color: var(--gray-8);
 }
 
 .closeBtn {
