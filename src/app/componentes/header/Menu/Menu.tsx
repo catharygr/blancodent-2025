@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 
 export default function Menu() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const t = useTranslations("MainMenu");
 
   const handleOpenDrawer = () => {

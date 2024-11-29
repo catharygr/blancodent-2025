@@ -32,8 +32,41 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
       <FocusLock returnFocus={true}>
         <RemoveScroll>
           <div className={styles.navDrawer}>
-            <div className={styles.navLinks}>
-              <a href="#">Home</a>
+            <div
+              className={styles.accordionGroup}
+              role="group"
+              aria-labelledby="nav-links-group-label"
+            >
+              <span
+                id="nav-links-group-label"
+                className="visually-hidden"
+              >
+                {t("disclosureGroupLabel")}
+              </span>
+              <details className={styles.details}>
+                <summary className={styles.summary}>Nuestro servicio</summary>
+                <ul role="list">
+                  <li>Implantologia</li>
+                  <li>Ortodoncia</li>
+                  <li>Estética dental</li>
+                </ul>
+              </details>
+              <details className={styles.details}>
+                <summary className={styles.summary}>Sobre nosotros</summary>
+                <ul role="list">
+                  <li>Implantologia</li>
+                  <li>Ortodoncia</li>
+                  <li>Estética dental</li>
+                </ul>
+              </details>
+              <details className={styles.details}>
+                <summary className={styles.summary}>Articulos</summary>
+                <ul role="list">
+                  <li>Implantologia</li>
+                  <li>Ortodoncia</li>
+                  <li>Estética dental</li>
+                </ul>
+              </details>
             </div>
             <button
               onClick={handleCloseDrawer}
