@@ -16,12 +16,36 @@
   inset: var(--space-400);
   background-color: var(--secondary-11);
   color: var(--gray-2);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: var(--space-200);
   padding: var(--space-400);
   overflow-y: auto;
+  border-radius: 2em;
+}
+
+.innerContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-inline: 5rem;
+}
+
+@media (min-width: 48rem) {
+  .innerContainer {
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+}
+
+.closeBtn > svg {
+  width: 4em;
+  height: 4em;
+  color: var(--gray-2);
 }
 
 .details {
@@ -30,7 +54,7 @@
 }
 
 .summary {
-  font-size: var(--fs-800);
+  font-size: var(--fs-600);
   list-style-position: outside;
   cursor: pointer;
   user-select: none;
@@ -39,29 +63,4 @@
 .summary::marker,
 .summary::-webkit-details-marker {
   color: var(--gray-8);
-}
-
-.closeBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--space-200);
-  font-weight: var(--f-wei-500);
-  font-size: var(--fs-500);
-  margin-top: auto;
-  padding: 1rem 2rem;
-  border: none;
-  background-color: var(--primary-3);
-  border-radius: 1em;
-  box-shadow: var(--shadow-400);
-  transition: scale 0.2s;
-}
-
-.closeBtn:hover {
-  scale: 1.02;
-}
-
-.closeBtn > svg {
-  width: 2em;
-  height: 2em;
 }
