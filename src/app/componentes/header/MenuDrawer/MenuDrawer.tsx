@@ -4,6 +4,7 @@ import { X } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";
+import { Link } from "@/i18n/routing";
 
 interface MenuDrawerProps {
   handleCloseDrawer: () => void;
@@ -50,9 +51,12 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
             </button>
             <div className={styles.innerContainer}>
               <ul role="list">
-                <li>Implantologia</li>
-                <li>Ortodoncia</li>
-                <li>Estética dental</li>
+                <li>
+                  <Link href="/contact">Cita previa</Link>
+                </li>
+                <li>
+                  <Link href="tel:+34928292455">Llámanos</Link>
+                </li>
               </ul>
               <div
                 className={styles.accordionGroup}
@@ -65,7 +69,10 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                 >
                   {t("disclosureGroupLabel")}
                 </span>
-                <details className={styles.details}>
+                <details
+                  open
+                  className={styles.details}
+                >
                   <summary className={styles.summary}>Nuestro servicio</summary>
                   <ul role="list">
                     <li>Implantologia</li>
