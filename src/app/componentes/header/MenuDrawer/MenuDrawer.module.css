@@ -53,6 +53,11 @@
   margin-block: var(--space-200);
 }
 
+.details li {
+  margin-inline-start: var(--space-300);
+  margin-block: var(--space-200);
+}
+
 .summary {
   font-size: var(--fs-500);
   cursor: pointer;
