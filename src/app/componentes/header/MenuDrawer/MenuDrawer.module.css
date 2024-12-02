@@ -25,6 +25,7 @@
   display: grid;
   grid-template-columns: 1fr;
   margin-inline: calc(var(--space-800) + 0.5rem);
+  gap: var(--space-200);
 }
 
 @media (min-width: 48rem) {
@@ -35,10 +36,16 @@
   }
 }
 
+.quickLinks {
+  justify-self: center;
+  display: flex;
+  gap: var(--space-100);
+}
+
 .closeBtn {
-  position: absolute;
-  top: var(--space-200);
-  right: var(--space-100);
+  position: fixed;
+  top: var(--space-300);
+  right: var(--space-200);
   background: none;
   border: none;
 }

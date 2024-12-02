@@ -1,5 +1,5 @@
 import styles from "./MenuDrawer.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { X } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 import FocusLock from "react-focus-lock";
@@ -11,7 +11,14 @@ interface MenuDrawerProps {
 }
 
 export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
+  const [openedDetails, setOpenedDetails] = useState<number | null>(null);
   const t = useTranslations("MainMenu");
+
+  const handleOpenDetails = (e: React.MouseEvent<HTMLElement>, id: number) => {
+    e.preventDefault();
+
+    setOpenedDetails((prev) => (prev === id ? null : id));
+  };
 
   useEffect(() => {
     function handleEscape(event: KeyboardEvent) {
@@ -24,6 +31,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
       window.removeEventListener("keyup", handleEscape);
     };
   }, [handleCloseDrawer]);
+
   return (
     <div className={styles.navContainer}>
       <div
@@ -50,9 +58,12 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               />
             </button>
             <div className={styles.innerContainer}>
-              <ul role="list">
+              <ul
+                className={styles.quickLinks}
+                role="list"
+              >
                 <li>
-                  <Link href="/contact">Cita previa</Link>
+                  <Link href="/contact">Cita previa</Link> •
                 </li>
                 <li>
                   <Link href="tel:+34928292455">Llámanos</Link>
@@ -70,26 +81,53 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   {t("disclosureGroupLabel")}
                 </span>
                 <details
-                  open
+                  open={openedDetails === 0}
                   className={styles.details}
                 >
-                  <summary className={styles.summary}>Nuestro servicio</summary>
+                  <summary
+                    onClick={(e) => {
+                      handleOpenDetails(e, 0);
+                    }}
+                    className={styles.summary}
+                  >
+                    Nuestro servicio
+                  </summary>
                   <ul role="list">
                     <li>Implantologia</li>
                     <li>Ortodoncia</li>
                     <li>Estética dental</li>
                   </ul>
                 </details>
-                <details className={styles.details}>
-                  <summary className={styles.summary}>Sobre nosotros</summary>
+                <details
+                  className={styles.details}
+                  open={openedDetails === 1}
+                >
+                  <summary
+                    onClick={(e) => {
+                      handleOpenDetails(e, 1);
+                    }}
+                    className={styles.summary}
+                  >
+                    Sobre nosotros
+                  </summary>
                   <ul role="list">
                     <li>Implantologia</li>
                     <li>Ortodoncia</li>
                     <li>Estética dental</li>
                   </ul>
                 </details>
-                <details className={styles.details}>
-                  <summary className={styles.summary}>Articulos</summary>
+                <details
+                  className={styles.details}
+                  open={openedDetails === 2}
+                >
+                  <summary
+                    onClick={(e) => {
+                      handleOpenDetails(e, 2);
+                    }}
+                    className={styles.summary}
+                  >
+                    Articulos
+                  </summary>
                   <ul role="list">
                     <li>Implantologia</li>
                     <li>Ortodoncia</li>
