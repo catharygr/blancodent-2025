@@ -44,21 +44,22 @@
 }
 
 .closeBtn > svg {
-  width: 2em;
-  height: 2em;
+  height: var(--space-700);
+  width: var(--space-700);
   color: var(--gray-2);
 }
 
 .details {
-  /* padding: var(--space-200);
-  margin-left: var(--space-800); */
+  margin-block: var(--space-200);
 }
 
 .summary {
-  font-size: var(--fs-600);
-  list-style-position: outside;
+  font-size: var(--fs-500);
   cursor: pointer;
   user-select: none;
+  padding: var(--space-100) var(--space-300);
+  background-color: var(--secondary-12);
+  border-radius: var(--space-100);
 }
 
 .summary::marker,
