@@ -22,19 +22,26 @@
 }
 
 .innerContainer {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-inline: calc(var(--space-800) + 0.5rem);
-  gap: var(--space-200);
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: calc(var(--space-800) + 0.5rem);
+  gap: var(--space-600);
+  max-width: 1200px;
+  margin: auto;
 }
 
-@media (min-width: 48rem) {
+.innerContainer > div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+}
+
+/* @media (min-width: 48rem) {
   .innerContainer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    /* gap: 1rem; */
   }
-}
+} */
 
 .quickLinks {
   justify-self: center;
