@@ -135,6 +135,21 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   </ul>
                 </details>
               </div>
+              <div className={styles.location}>
+                <h2>Dónde encontrarnos</h2>
+                <address>
+                  <p>
+                    Address:
+                    <br />
+                    Av. Mesa y López, 1 - 1ª
+                    <br />
+                    35006 Las Palmas de G.C.
+                    <br />
+                    Islas Canarias, España.
+                    <br />
+                  </p>
+                </address>
+              </div>
             </div>
           </div>
         </RemoveScroll>

@@ -32,7 +32,7 @@
   .innerContainer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    gap: 1rem;
+    /* gap: 1rem; */
   }
 }
 
@@ -44,8 +44,8 @@
 
 .closeBtn {
   position: fixed;
-  top: var(--space-300);
-  right: var(--space-200);
+  top: calc(var(--space-200) + 1.2vw);
+  right: calc(var(--space-100) + 1.2vw);
   background: none;
   border: none;
 }
