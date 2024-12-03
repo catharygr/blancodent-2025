@@ -169,34 +169,36 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   Abrir en el mapa de Apple
                 </Link>
               </div>
-              <div className={styles.info}>
-                <div className={styles.contact}>
-                  <h2>¿Cómo contactar con nosotros?</h2>
+              <div className={styles.containerQuery}>
+                <div className={styles.info}>
+                  <div className={styles.contact}>
+                    <h2>¿Cómo contactar con nosotros?</h2>
 
-                  <p>
-                    Puedes solicitar cualquier pregunta y hacer cita en nuestro
-                    formulario de contacto.
-                  </p>
+                    <p>
+                      Puedes solicitar cualquier pregunta y hacer cita en
+                      nuestro formulario de contacto.
+                    </p>
 
-                  <p>
-                    Puedes llamarnos en nuestro horario de apertura o puedes
-                    dejarnos un mensaje aquí: LLámanos
-                  </p>
-                </div>
+                    <p>
+                      Puedes llamarnos en nuestro horario de apertura o puedes
+                      dejarnos un mensaje aquí: LLámanos
+                    </p>
+                  </div>
 
-                <div className={styles.timetable}>
-                  <h2>Horarios</h2>
-                  <p>
-                    Lunes: 09:30h - 16:00h
-                    <br />
-                    Martes: 14:00 - 20:00h
-                    <br />
-                    Miércoles: 09:30h - 16:00h
-                    <br />
-                    Jueves: 14:00 - 20:00h
-                    <br />
-                    Viernes: 09:30h - 16:00h
-                  </p>
+                  <div className={styles.timetable}>
+                    <h2>Horarios</h2>
+                    <p>
+                      Lunes: 09:30h - 16:00h
+                      <br />
+                      Martes: 14:00 - 20:00h
+                      <br />
+                      Miércoles: 09:30h - 16:00h
+                      <br />
+                      Jueves: 14:00 - 20:00h
+                      <br />
+                      Viernes: 09:30h - 16:00h
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
