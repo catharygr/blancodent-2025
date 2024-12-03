@@ -5,6 +5,8 @@ import { useTranslations } from "next-intl";
 import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";
 import { Link } from "@/i18n/routing";
+import Image from "next/image";
+import smallMap from "./assets/small-map.jpg";
 
 interface MenuDrawerProps {
   handleCloseDrawer: () => void;
@@ -138,6 +140,10 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               <div className={styles.location}>
                 <h2>Dónde encontrarnos</h2>
                 <address>
+                  <Image
+                    src={smallMap}
+                    alt="Mapa de la ubicación de la clínica"
+                  />
                   <p>
                     Address:
                     <br />
