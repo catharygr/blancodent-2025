@@ -172,18 +172,18 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               <div className={styles.info}>
                 <div className={styles.contact}>
                   <h2>¿Cómo contactar con nosotros?</h2>
-                  <br />
+
                   <p>
                     Puedes solicitar cualquier pregunta y hacer cita en nuestro
                     formulario de contacto.
                   </p>
-                  <br />
+
                   <p>
-                    Puedes llamarnos en nuesyro horario de apertura o puedes
+                    Puedes llamarnos en nuestro horario de apertura o puedes
                     dejarnos un mensaje aquí: LLámanos
                   </p>
                 </div>
-                <br />
+
                 <div className={styles.timetable}>
                   <h2>Horarios</h2>
                   <p>

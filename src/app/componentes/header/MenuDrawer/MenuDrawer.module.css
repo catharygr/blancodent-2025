@@ -34,19 +34,15 @@
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 250px;
+  border-top: var(--space-100) solid var(--primary-6);
+  padding-block: var(--space-300);
 }
 
-/* @media (min-width: 48rem) {
-  .innerContainer {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
-} */
-
 .quickLinks {
-  justify-self: center;
   display: flex;
+  justify-content: center;
   gap: var(--space-100);
+  margin-block-end: var(--space-400);
 }
 
 .closeBtn {
