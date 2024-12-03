@@ -92,7 +92,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     }}
                     className={styles.summary}
                   >
-                    Nuestro servicio
+                    Así somos
                   </summary>
                   <ul role="list">
                     <li>Implantologia</li>

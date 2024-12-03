@@ -25,7 +25,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-inline: calc(var(--space-800) + 0.5rem);
-  gap: var(--space-600);
+  gap: var(--space-500);
   max-width: 1200px;
   margin: auto;
 }
@@ -33,9 +33,9 @@
 .innerContainer > div {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 250px;
+  flex-basis: 330px;
   border-top: var(--space-100) solid var(--primary-6);
-  padding-block: var(--space-300);
+  padding-block-start: var(--space-500);
 }
 
 .quickLinks {
@@ -47,8 +47,8 @@
 
 .closeBtn {
   position: fixed;
-  top: calc(var(--space-200) + 1.2vw);
-  right: calc(var(--space-100) + 1.2vw);
+  top: calc(var(--space-200) + 1.3vw);
+  right: calc(var(--space-100) + 1.3vw);
   background: none;
   border: none;
 }
@@ -69,7 +69,9 @@
 }
 
 .summary {
-  font-size: var(--fs-500);
+  font-size: var(--fs-600);
+  font-weight: var(--f-wei-800);
+  font-stretch: var(--f-str-90);
   cursor: pointer;
   user-select: none;
   padding: var(--space-100) var(--space-300);
