@@ -78,6 +78,7 @@
   font-stretch: var(--f-str-90);
   cursor: pointer;
   user-select: none;
+  --webkit-user-select: none;
   padding: var(--space-100) var(--space-300);
   background-color: var(--secondary-12);
   border-radius: var(--space-100);

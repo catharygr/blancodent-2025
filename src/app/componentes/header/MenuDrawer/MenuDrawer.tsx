@@ -64,7 +64,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               role="list"
             >
               <li>
-                <Link href="/contact">Cita previa</Link> •
+                <Link href="/contacto">Cita previa</Link> •
               </li>
               <li>
                 <Link href="tel:+34928292455">Llámanos</Link>
@@ -92,12 +92,82 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     }}
                     className={styles.summary}
                   >
-                    Así somos:
+                    Servicios:
                   </summary>
                   <ul role="list">
-                    <li>Implantologia</li>
-                    <li>Ortodoncia</li>
-                    <li>Estética dental</li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/implantologia"
+                      >
+                        Implantología
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/ortodoncia"
+                      >
+                        Ortodoncia
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/periodoncia"
+                      >
+                        Periodoncia
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/blanqueamiento-dental"
+                      >
+                        Blanqueamiento Dental
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/bruxismo-o-rechinchar-de-dientes"
+                      >
+                        Bruxismo o rechinchar de dientes
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/odontologia-conservadora"
+                      >
+                        Odontologia Conservadora
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/endodoncia"
+                      >
+                        Endodoncia
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/protesis-dentales"
+                      >
+                        Prótesis dentales
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/higiene-dental"
+                      >
+                        Higiene dental
+                      </Link>
+                    </li>
                   </ul>
                 </details>
                 <details
@@ -110,12 +180,57 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     }}
                     className={styles.summary}
                   >
-                    Sobre nosotros:
+                    Así somos:
                   </summary>
                   <ul role="list">
-                    <li>Implantologia</li>
-                    <li>Ortodoncia</li>
-                    <li>Estética dental</li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/asi-somos/ubicacion"
+                      >
+                        Ubicación
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/asi-somos/transporte"
+                      >
+                        Transporte
+                      </Link>
+                    </li>{" "}
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/asi-somos/los-horarios"
+                      >
+                        Los horarios
+                      </Link>
+                    </li>{" "}
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/asi-somos/las-imagenes"
+                      >
+                        Las imágenes
+                      </Link>
+                    </li>{" "}
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/asi-somos/el-personal"
+                      >
+                        El personal
+                      </Link>
+                    </li>{" "}
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/asi-somos/financiación"
+                      >
+                        Financiación
+                      </Link>
+                    </li>
                   </ul>
                 </details>
                 <details
@@ -131,9 +246,117 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     Artículos y noticias:
                   </summary>
                   <ul role="list">
-                    <li>Implantologia</li>
-                    <li>Ortodoncia</li>
-                    <li>Estética dental</li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/articulos/tu-propio-diente-como-biomaterial"
+                      >
+                        Tu propio diente como biomaterial
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/articulos/laser-dental"
+                      >
+                        Láser dental
+                      </Link>
+                    </li>{" "}
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/articulos/anestesia"
+                      >
+                        Anestesia
+                      </Link>
+                    </li>{" "}
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/articulos/para-los-peques"
+                      >
+                        Para los peques
+                      </Link>
+                    </li>{" "}
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/articulos/para-los-fumadores"
+                      >
+                        Para los fumadores
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/articulos/mal-aliento"
+                      >
+                        Mal aliento
+                      </Link>
+                    </li>{" "}
+                  </ul>
+                </details>
+                <details
+                  className={styles.details}
+                  open={openedDetails === 3}
+                >
+                  <summary
+                    onClick={(e) => {
+                      handleOpenDetails(e, 3);
+                    }}
+                    className={styles.summary}
+                  >
+                    Artículos y noticias:
+                  </summary>
+                  <ul role="list">
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/varios/la-salud-esta-navidad"
+                      >
+                        La salud esta navidad
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/varios/preguntas-frecuentes"
+                      >
+                        Preguntas frecuentes
+                      </Link>
+                    </li>{" "}
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/varios/ofertas-continuas"
+                      >
+                        Ofertas continuas
+                      </Link>
+                    </li>{" "}
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/contacto"
+                      >
+                        Cita Previa
+                      </Link>
+                    </li>{" "}
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/nota-legal"
+                      >
+                        Nota legal
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/varios/covid-19"
+                      >
+                        Covid-19
+                      </Link>
+                    </li>{" "}
                   </ul>
                 </details>
               </div>
@@ -177,7 +400,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <p>
                       Puedes solicitar cualquier pregunta y hacer cita en
                       nuestro:{" "}
-                      <Link href="/contact">Formulario de contacto</Link>
+                      <Link href="/contacto">Formulario de contacto</Link>
                     </p>
 
                     <p>
