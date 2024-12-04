@@ -26,7 +26,11 @@ body {
 }
 
 a {
-  text-underline-offset: 0.125rem;
+  text-underline-offset: 0.14em;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 p:not(:last-child) {

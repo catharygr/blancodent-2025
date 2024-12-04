@@ -141,7 +141,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                 <h2>Dónde encontrarnos</h2>
                 <address>
                   <p>
-                    Address:
+                    <strong>Address:</strong>
                     <br />
                     Av. Mesa y López, 1 - 1ª
                     <br />
@@ -176,12 +176,14 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
 
                     <p>
                       Puedes solicitar cualquier pregunta y hacer cita en
-                      nuestro formulario de contacto.
+                      nuestro:{" "}
+                      <Link href="/contact">Formulario de contacto</Link>
                     </p>
 
                     <p>
                       Puedes llamarnos en nuestro horario de apertura o puedes
-                      dejarnos un mensaje aquí: LLámanos
+                      dejarnos un mensaje aquí:{" "}
+                      <Link href="tel:+34928292455">Llámanos</Link>
                     </p>
                   </div>
 
