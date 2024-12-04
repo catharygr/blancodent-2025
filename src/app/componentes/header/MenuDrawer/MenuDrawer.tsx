@@ -92,7 +92,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     }}
                     className={styles.summary}
                   >
-                    Así somos
+                    Así somos:
                   </summary>
                   <ul role="list">
                     <li>Implantologia</li>
@@ -110,7 +110,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     }}
                     className={styles.summary}
                   >
-                    Sobre nosotros
+                    Sobre nosotros:
                   </summary>
                   <ul role="list">
                     <li>Implantologia</li>
@@ -128,7 +128,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     }}
                     className={styles.summary}
                   >
-                    Articulos
+                    Artículos y noticias:
                   </summary>
                   <ul role="list">
                     <li>Implantologia</li>
@@ -138,7 +138,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                 </details>
               </div>
               <div className={`${styles.location} flow`}>
-                <h2>Dónde encontrarnos</h2>
+                <h2>Dónde encontrarnos:</h2>
                 <address>
                   <p>
                     <strong>Address:</strong>
@@ -172,7 +172,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               <div className={styles.containerQuery}>
                 <div className={styles.info}>
                   <div className={styles.contact}>
-                    <h2>¿Cómo contactar con nosotros?</h2>
+                    <h2>Cómo contactarnos:</h2>
 
                     <p>
                       Puedes solicitar cualquier pregunta y hacer cita en
@@ -199,6 +199,8 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                       <strong>Jueves:</strong> 14:00 - 20:00h
                       <br />
                       <strong>Viernes:</strong> 09:30h - 16:00h
+                      <br />
+                      <strong>Sábados y Domingos:</strong> Cerrado
                     </p>
                   </div>
                 </div>
