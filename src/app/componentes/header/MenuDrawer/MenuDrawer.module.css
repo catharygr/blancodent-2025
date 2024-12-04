@@ -38,6 +38,10 @@
   padding-block-start: var(--space-500);
 }
 
+.innerContainer h2 {
+  margin-block-end: var(--space-200);
+}
+
 .quickLinks {
   display: flex;
   justify-content: center;

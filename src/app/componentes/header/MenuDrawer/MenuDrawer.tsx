@@ -137,7 +137,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   </ul>
                 </details>
               </div>
-              <div className={styles.location}>
+              <div className={`${styles.location} flow`}>
                 <h2>Dónde encontrarnos</h2>
                 <address>
                   <p>
@@ -188,15 +188,15 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   <div className={styles.timetable}>
                     <h2>Horarios</h2>
                     <p>
-                      Lunes: 09:30h - 16:00h
+                      <strong>Lunes:</strong> 09:30h - 16:00h
                       <br />
-                      Martes: 14:00 - 20:00h
+                      <strong>Martes: </strong>14:00 - 20:00h
                       <br />
-                      Miércoles: 09:30h - 16:00h
+                      <strong>Miércoles: </strong>09:30h - 16:00h
                       <br />
-                      Jueves: 14:00 - 20:00h
+                      <strong>Jueves:</strong> 14:00 - 20:00h
                       <br />
-                      Viernes: 09:30h - 16:00h
+                      <strong>Viernes:</strong> 09:30h - 16:00h
                     </p>
                   </div>
                 </div>

@@ -49,3 +49,11 @@ h4 {
   font-weight: var(--f-wei-600);
   font-stretch: var(--f-str-100);
 }
+
+strong {
+  font-weight: var(--f-wei-700);
+}
+
+address {
+  font: inherit;
+}

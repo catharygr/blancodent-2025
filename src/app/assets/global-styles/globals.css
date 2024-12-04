@@ -33,6 +33,10 @@ p:not(:last-child) {
   margin-bottom: var(--space-200);
 }
 
+.flow > *:not(:last-child) {
+  margin-bottom: var(--space-200);
+}
+
 button {
   cursor: pointer;
 }
