@@ -58,7 +58,7 @@ export default function Header() {
               />
             </svg>
           </Link>
-          <p>Blancodent</p>
+          <p aria-hidden={true}>Blancodent</p>
         </div>
         <nav
           aria-label={t("quickLinksLabel")}
