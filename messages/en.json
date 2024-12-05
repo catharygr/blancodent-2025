@@ -57,6 +57,15 @@
       "link4": "Appointment",
       "link5": "Legal notice",
       "link6": "Covid-19"
+    },
+    "location": {
+      "title": "Where to find us:",
+      "address": {
+        "title": "Address",
+        "street": "Av. Mesa y López, 1 - 1ª",
+        "city": "35006 Las Palmas de G.C.",
+        "country": "Canary Islands, Spain."
+      }
     }
   },
   "HomePage": {

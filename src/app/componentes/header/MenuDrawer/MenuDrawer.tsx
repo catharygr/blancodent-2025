@@ -363,16 +363,16 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                 </details>
               </div>
               <div className={`${styles.location} flow`}>
-                <h2>Dónde encontrarnos:</h2>
+                <h2>{t("location.title")}</h2>
                 <address>
                   <p>
-                    <strong>Address:</strong>
+                    <strong>{t("location.address.title")}</strong>
                     <br />
-                    Av. Mesa y López, 1 - 1ª
+                    {t("location.address.street")}
                     <br />
-                    35006 Las Palmas de G.C.
+                    {t("location.address.city")}
                     <br />
-                    Islas Canarias, España.
+                    {t("location.address.country")}
                     <br />
                   </p>
                 </address>

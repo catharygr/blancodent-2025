@@ -55,8 +55,17 @@
       "link2": "Preguntas frecuentes",
       "link3": "Ofertas continuas",
       "link4": "Cita Previa",
-      "link5": " Nota legal",
-      "link6": " Covid-19"
+      "link5": "Nota legal",
+      "link6": "Covid-19"
+    },
+    "location": {
+      "title": "Dónde encontrarnos:",
+      "address": {
+        "title": "Dirección",
+        "street": "Av. Mesa y López, 1 - 1ª",
+        "city": "35006 Las Palmas de G.C.",
+        "country": "Islas Canarias, España."
+      }
     }
   },
   "HomePage": {
