@@ -67,6 +67,14 @@
   margin-block: var(--space-200);
 }
 
+.details a {
+  text-decoration: none;
+}
+
+.details a:hover {
+  text-decoration: underline;
+}
+
 .details li {
   margin-inline-start: var(--space-300);
   margin-block: var(--space-200);

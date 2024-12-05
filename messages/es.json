@@ -14,7 +14,50 @@
     "navLabel": "Principal",
     "openMenuBtn": "Abrir menú",
     "closeMenuBtn": "Cerrar menú",
-    "disclosureGroupLabel": "Colección de categorías de navegación expandibles que contienen enlaces de navegación"
+    "disclosureGroupLabel": "Colección de categorías de navegación expandibles que contienen enlaces de navegación",
+    "quickLinks": {
+      "quickcontact": "Cita previa",
+      "quicktelephone": "Llámanos"
+    },
+    "services": {
+      "summary": "Servicios:",
+      "link1": "Implantología",
+      "link2": "Ortodoncia",
+      "link3": "Periodoncia",
+      "link4": "Blanqueamiento dental",
+      "link5": " Bruxismo o rechinchar de dientes",
+      "link6": "Odontologia Conservadora",
+      "link7": "Endodoncia",
+      "link8": "Prótesis dentales",
+      "link9": "Higiene dental"
+    },
+    "aboutClinic": {
+      "summary": "Así somos:",
+      "link1": " Ubicación",
+      "link2": "Transporte",
+      "link3": "Los horarios",
+      "link4": "Las imágenes",
+      "link5": "El personal",
+      "link6": "Financiación"
+    },
+    "articles": {
+      "summary": "Artículos y noticias:",
+      "link1": "Tu propio diente como biomaterial",
+      "link2": "Láser dental",
+      "link3": "Anestesia",
+      "link4": "Para los peques",
+      "link5": "Para los fumadores",
+      "link6": "Mal aliento"
+    },
+    "others": {
+      "summary": "Varios:",
+      "link1": "La salud esta navidad",
+      "link2": "Preguntas frecuentes",
+      "link3": "Ofertas continuas",
+      "link4": "Cita Previa",
+      "link5": " Nota legal",
+      "link6": " Covid-19"
+    }
   },
   "HomePage": {
     "title": "Hola mundo!",

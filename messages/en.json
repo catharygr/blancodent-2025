@@ -14,7 +14,50 @@
     "navLabel": "Main",
     "openMenuBtn": "Open menu",
     "closeMenuBtn": "Close menu",
-    "disclosureGroupLabel": "Collection of expandable navigation category containing navigation links"
+    "disclosureGroupLabel": "Collection of expandable navigation category containing navigation links",
+    "quickLinks": {
+      "quickcontact": "Appointment",
+      "quicktelephone": "Call us"
+    },
+    "services": {
+      "summary": "Services:",
+      "link1": "Implantology",
+      "link2": "Orthodontics",
+      "link3": "Periodontics",
+      "link4": "Dental whitening",
+      "link5": "Bruxism or teeth grinding",
+      "link6": "Conservative Dentistry",
+      "link7": "Endodontics",
+      "link8": "Dental prostheses",
+      "link9": "Dental hygiene"
+    },
+    "aboutClinic": {
+      "summary": "About us:",
+      "link1": "Location",
+      "link2": "Transport",
+      "link3": "Opening hours",
+      "link4": "Images",
+      "link5": "Staff",
+      "link6": "Financing"
+    },
+    "articles": {
+      "summary": "Articles and news:",
+      "link1": "Your own tooth as biomaterial",
+      "link2": "Dental laser",
+      "link3": "Anesthesia",
+      "link4": "For the children",
+      "link5": "For smokers",
+      "link6": "Bad breath"
+    },
+    "others": {
+      "summary": "Others:",
+      "link1": "Your health this Christmas",
+      "link2": "Frequently asked questions",
+      "link3": "Continuous offers",
+      "link4": "Appointment",
+      "link5": "Legal notice",
+      "link6": "Covid-19"
+    }
   },
   "HomePage": {
     "title": "Hello world!",
