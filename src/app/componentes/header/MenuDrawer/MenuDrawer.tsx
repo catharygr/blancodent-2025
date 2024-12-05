@@ -384,36 +384,36 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   target="_blank"
                   href="https://www.google.com/maps/place/Cl%C3%ADnica+Dental+Blancodent/@28.134669,-15.429525,17z/data=!4m2!3m1!1s0x0:0x9293d54eccbd51c?hl=en"
                 >
-                  Abrir en el mapa de Google
+                  {t("location.map.link1")}
                 </Link>
                 <br />
                 <Link
                   target="_blank"
                   href="https://maps.apple.com/maps?address=Av%20Mesa%20y%20L%C3%B3pez,%201%20-%201%C2%AA%20izquierda,%2035006%20Las%20Palmas%20de%20Gran%20Canaria,%20Las%20Palmas,%20Las%20Palmas,%20Spain&auid=4569860911891010439&ll=28.134679,-15.429491&lsp=9902&q=Cl%C3%ADnica%20Dental%20Blancodent&t=m"
                 >
-                  Abrir en el mapa de Apple
+                  {t("location.map.link2")}
                 </Link>
               </div>
               <div className={styles.containerQuery}>
                 <div className={styles.info}>
                   <div className={styles.contact}>
-                    <h2>Cómo contactarnos:</h2>
+                    <h2>{t("contact.title")}</h2>
 
                     <p>
-                      Puedes solicitar cualquier pregunta y hacer cita en
-                      nuestro:{" "}
-                      <Link href="/contacto">Formulario de contacto</Link>
+                      {t("contact.text1.text")}{" "}
+                      <Link href="/contacto">{t("contact.text1.link")}</Link>
                     </p>
 
                     <p>
-                      Puedes llamarnos en nuestro horario de apertura o puedes
-                      dejarnos un mensaje aquí:{" "}
-                      <Link href="tel:+34928292455">Llámanos</Link>
+                      {t("contact.text2.text")}{" "}
+                      <Link href="tel:+34928292455">
+                        {t("contact.text2.link")}
+                      </Link>
                     </p>
                   </div>
 
                   <div className={styles.timetable}>
-                    <h2>Horarios</h2>
+                    <h2>{}</h2>
                     <p>
                       <strong>Lunes:</strong> 09:30h - 16:00h
                       <br />

@@ -65,9 +65,36 @@
         "street": "Av. Mesa y López, 1 - 1ª",
         "city": "35006 Las Palmas de G.C.",
         "country": "Canary Islands, Spain."
+      },
+      "map": {
+        "link1": "Open in Google Maps",
+        "link2": "Open in Apple Maps"
+      }
+    },
+    "contact": {
+      "title": "How to contact us:",
+      "text1": {
+        "text": "You can make an appointment or ask any question using our:",
+        "link": "Contact form"
+      },
+      "text2": {
+        "text": "Or, if you prefer, you can call us directly during our working hours or leave a voice message here:",
+        "link": "Call us"
+      }
+    },
+    "timetable": {
+      "title": "Opening hours",
+      "days": {
+        "monday": "Mondays:",
+        "tuesday": "Tuesdays:",
+        "wednesday": "Wednesdays:",
+        "thursday": "Thursdays:",
+        "friday": "Fridays:",
+        "weekend": "Saturdays & Sundays:"
       }
     }
   },
+
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"

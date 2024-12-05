@@ -65,6 +65,32 @@
         "street": "Av. Mesa y López, 1 - 1ª",
         "city": "35006 Las Palmas de G.C.",
         "country": "Islas Canarias, España."
+      },
+      "map": {
+        "link1": " Abrir en el mapa de Google",
+        "link2": "  Abrir en el mapa de Apple"
+      }
+    },
+    "contact": {
+      "title": "Cómo contactarnos:",
+      "text1": {
+        "text": "Puedes solicitar cualquier pregunta y hacer cita en nuestro:",
+        "link": "formulario de contacto"
+      },
+      "text2": {
+        "text": "O si lo prefieres, puedes llamarnos al:",
+        "link": "928 37 37 37"
+      }
+    },
+    "timetable": {
+      "title": "Horario de apertura",
+      "days": {
+        "monday": "Lunes:",
+        "tuesday": "Martes:",
+        "wednesday": "Miércoles:",
+        "thursday": "Jueves:",
+        "friday": "Viernes:",
+        "weekend": "Sábados y Domingos:"
       }
     }
   },
