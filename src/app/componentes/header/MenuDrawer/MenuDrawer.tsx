@@ -413,19 +413,24 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   </div>
 
                   <div className={styles.timetable}>
-                    <h2>{}</h2>
+                    <h2>{t("timetable.title")}</h2>
                     <p>
-                      <strong>Lunes:</strong> 09:30h - 16:00h
+                      <strong>{t("timetable.days.monday")}</strong> 09:30h -
+                      16:00h
                       <br />
-                      <strong>Martes: </strong>14:00 - 20:00h
+                      <strong>{t("timetable.days.tuesday")}</strong> 14:00 -
+                      20:00h
                       <br />
-                      <strong>Miércoles: </strong>09:30h - 16:00h
+                      <strong>{t("timetable.days.wednesday")}</strong> 09:30h -
+                      16:00h
                       <br />
-                      <strong>Jueves:</strong> 14:00 - 20:00h
+                      <strong>{t("timetable.days.thursday")}</strong> 14:00 -
+                      20:00h
                       <br />
-                      <strong>Viernes:</strong> 09:30h - 16:00h
+                      <strong>{t("timetable.days.friday")}</strong> 09:30h -
+                      16:00h
                       <br />
-                      <strong>Sábados y Domingos:</strong> Cerrado
+                      <strong>{t("timetable.days.weekend")}</strong> Cerrado
                     </p>
                   </div>
                 </div>
