@@ -18,6 +18,7 @@
   padding-block: min(3vw, var(--space-400));
   overflow-y: auto;
   border-radius: min(2vw, var(--space-400));
+  translate: 0% -110%;
 }
 
 .innerContainer {

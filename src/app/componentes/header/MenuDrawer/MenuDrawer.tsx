@@ -7,6 +7,7 @@ import { RemoveScroll } from "react-remove-scroll";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import smallMap from "./assets/small-map.jpg";
+import { motion } from "motion/react";
 
 interface MenuDrawerProps {
   handleCloseDrawer: () => void;
@@ -35,7 +36,17 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
       />
       <FocusLock returnFocus={true}>
         <RemoveScroll>
-          <div className={styles.navDrawer}>
+          <motion.div
+            className={styles.navDrawer}
+            animate={{ y: "110%" }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 25,
+              duration: 0.5,
+            }}
+            exit={{ y: "0%" }}
+          >
             <button
               onClick={handleCloseDrawer}
               className={styles.closeBtn}
@@ -420,7 +431,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </RemoveScroll>
       </FocusLock>
     </div>

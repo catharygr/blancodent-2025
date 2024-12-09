@@ -4,6 +4,7 @@ import { List } from "@phosphor-icons/react/dist/ssr";
 import MenuDrawer from "../MenuDrawer/MenuDrawer";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { AnimatePresence } from "motion/react";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +42,9 @@ export default function Menu() {
           weight="bold"
         />
       </button>
-      {isOpen && <MenuDrawer handleCloseDrawer={handleOpenDrawer} />}
+      <AnimatePresence>
+        {isOpen && <MenuDrawer handleCloseDrawer={handleOpenDrawer} />}
+      </AnimatePresence>
     </nav>
   );
 }
