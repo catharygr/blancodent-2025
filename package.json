@@ -10,19 +10,19 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
-    "next": "15.0.2",
-    "next-intl": "^3.25.1",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "next": "^15.0.4",
+    "next-intl": "^3.26.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-focus-lock": "^2.13.2",
     "react-remove-scroll": "^2.6.0"
   },
   "devDependencies": {
-    "@types/node": "^20.17.6",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@types/node": "^20.17.9",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^18.3.2",
     "eslint": "^8.57.1",
-    "eslint-config-next": "15.0.2",
-    "typescript": "^5.6.3"
+    "eslint-config-next": "^15.0.4",
+    "typescript": "^5.7.2"
   }
 }
