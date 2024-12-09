@@ -57,7 +57,13 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               role="list"
             >
               <li>
-                <Link href="/contacto">{t("quickLinks.quickcontact")}</Link> •
+                <Link
+                  onClick={handleCloseDrawer}
+                  href="/contacto"
+                >
+                  {t("quickLinks.quickcontact")}
+                </Link>{" "}
+                •
               </li>
               <li>
                 <Link href="tel:+34928292455">
@@ -374,7 +380,12 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
 
                     <p>
                       {t("contact.text1.text")}{" "}
-                      <Link href="/contacto">{t("contact.text1.link")}</Link>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/contacto"
+                      >
+                        {t("contact.text1.link")}
+                      </Link>
                     </p>
 
                     <p>

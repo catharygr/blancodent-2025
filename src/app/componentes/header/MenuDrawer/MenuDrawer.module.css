@@ -1,7 +1,6 @@
 .navContainer {
   position: fixed;
   inset: 0;
-  padding: 1rem;
   z-index: 10000;
 }
 
@@ -13,7 +12,7 @@
 
 .navDrawer {
   position: absolute;
-  inset: min(2vw, var(--space-400));
+  inset: min(1.5vw, var(--space-400));
   background-color: var(--secondary-11);
   color: var(--gray-2);
   padding-block: min(3vw, var(--space-400));
@@ -24,16 +23,16 @@
 .innerContainer {
   display: flex;
   flex-wrap: wrap;
+  max-width: 75rem;
+  gap: var(--space-600);
   padding-inline: calc(var(--space-800) + 0.5rem);
-  gap: var(--space-500);
-  max-width: 1200px;
   margin: auto;
 }
 
 .innerContainer > div {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 330px;
+  flex-basis: 21rem;
   border-top: var(--space-100) solid var(--primary-6);
   padding-block-start: var(--space-500);
 }
@@ -55,6 +54,7 @@
   right: calc(var(--space-100) + 1.3vw);
   background: none;
   border: none;
+  padding: 0.5rem;
 }
 
 .closeBtn > svg {
@@ -67,17 +67,17 @@
   margin-block: var(--space-200);
 }
 
+.details li {
+  margin-inline-start: var(--space-300);
+  margin-block: var(--space-200);
+}
+
 .details a {
   text-decoration: none;
 }
 
 .details a:hover {
   text-decoration: underline;
-}
-
-.details li {
-  margin-inline-start: var(--space-300);
-  margin-block: var(--space-200);
 }
 
 .summary {
@@ -107,7 +107,7 @@
   gap: var(--space-500);
 }
 
-@container (min-width: 680px) {
+@container (min-width: 43rem) {
   .info {
     flex-direction: row;
   }
