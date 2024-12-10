@@ -30,9 +30,15 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
 
   return (
     <div className={styles.navContainer}>
-      <div
+      <motion.div
         onClick={handleCloseDrawer}
         className={styles.navBackground}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 1,
+        }}
+        exit={{ opacity: 0 }}
       />
       <FocusLock returnFocus={true}>
         <RemoveScroll>

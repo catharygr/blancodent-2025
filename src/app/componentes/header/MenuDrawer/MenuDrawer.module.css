@@ -51,8 +51,8 @@
 
 .closeBtn {
   position: fixed;
-  top: calc(var(--space-200) + 1.3vw);
-  right: calc(var(--space-100) + 1.3vw);
+  top: min(0.4vw, var(--space-400));
+  right: min(0.4vw, var(--space-400));
   background: none;
   border: none;
   padding: 0.5rem;
