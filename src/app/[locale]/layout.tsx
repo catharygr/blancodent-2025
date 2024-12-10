@@ -9,8 +9,9 @@ import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
 import "../assets/global-styles/globals.css";
 import Header from "@/app/componentes/header/Header";
-import SkipLink from "@/app/componentes/skip-link/SkipLink";
+import SkipLink from "@/app/componentes/SkipLink/SkipLink";
 import { MotionConfig } from "motion/react";
+import Footer from "../componentes/Footer/Footer";
 
 // Los archivos de fuentes pueden estar ubicados dentro de `app`
 const monaSansFont = localFont({
@@ -74,6 +75,7 @@ export default async function RootLayout({
             />
             <Header />
             {children}
+            <Footer />
           </NextIntlClientProvider>
         </MotionConfig>
       </body>
