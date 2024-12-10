@@ -28,6 +28,7 @@
   gap: var(--space-600);
   padding-inline: calc(var(--space-800) + 0.5rem);
   margin: auto;
+  padding-block-end: var(--space-600);
 }
 
 .innerContainer > div {
