@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--primary-6);
+  padding-block: var(--space-800);
+  text-align: center;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-800);
+  margin-block-end: var(--space-900);
+}
+
+.navLinks li {
+  padding-block: var(--space-200);
+}
+
+.socialNetworks {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-200);
+}
+
+.socialNetworks svg {
+  width: var(--space-900);
+  height: var(--space-900);
+}
+
+.notaLegalContainer p {
+  font-size: var(--fs-300);
+}
+
+.notaLegalContainer h3 {
+  font-size: var(--fs-400);
+}

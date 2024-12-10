@@ -74,12 +74,12 @@
     "contact": {
       "title": "Cómo contactarnos:",
       "text1": {
-        "text": "Puedes solicitar cualquier pregunta y hacer cita en nuestro:",
-        "link": "formulario de contacto"
+        "text": "Puedes pedir cita o cualquier consulta utilizando nuestro::",
+        "link": "Formulario de contacto."
       },
       "text2": {
-        "text": "O si lo prefieres, puedes llamarnos al:",
-        "link": "928 37 37 37"
+        "text": "O si lo prefieres, también puedes llamarnos en el horario de apertura o dejar un mensaje de audio al:",
+        "link": "+34 928 292 455."
       }
     },
     "timetable": {
