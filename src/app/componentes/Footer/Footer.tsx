@@ -109,14 +109,12 @@ export default function Footer() {
               Suscríbete a nuestro boletín para recibir ofertas y descuentos
               exclusivos no más que tres veces al año.
             </p>
-            <form>
-              <label htmlFor="email">Correo electrónico:</label>
-              <input
-                type="email"
-                id="email"
-              />
-              <button type="submit">Suscribirme</button>
-            </form>
+            <Link
+              className="btnLink"
+              href="/contacto"
+            >
+              Suscribirme
+            </Link>
           </div>
         </div>
       </div>

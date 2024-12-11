@@ -25,6 +25,23 @@ body {
   font-stretch: var(--f-str-100);
 }
 
+.btnLink {
+  background-color: var(--secondary-accent);
+  border: 3px solid var(--secondary-12);
+  color: var(--primary-16);
+  font-weight: var(--f-wei-600);
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-400);
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.btnLink:hover {
+  scale: 1.03;
+}
+
 a {
   text-underline-offset: 0.14em;
 }
