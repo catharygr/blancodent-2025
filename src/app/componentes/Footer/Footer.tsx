@@ -83,7 +83,7 @@ export default function Footer() {
             role="list"
           >
             <li>
-              <Link href="https://www.facebook.com">
+              <Link href="https://www.facebook.com/clinica.dental.blancodent.las.palmas/">
                 <FacebookLogo weight="duotone" />
               </Link>
             </li>
