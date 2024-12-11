@@ -31,14 +31,15 @@ body {
   color: var(--primary-16);
   font-weight: var(--f-wei-600);
   text-decoration: none;
-  padding: 0.5rem 2rem;
-  border-radius: 1rem;
+  padding: var(--space-200) var(--space-800);
+  border-radius: 16px;
   box-shadow: var(--shadow-400);
   transition: all 0.3s ease-in-out;
   display: inline-block;
 }
 
-.btnLink:hover {
+.btnLink:hover,
+:focus {
   scale: 1.03;
 }
 
@@ -46,7 +47,8 @@ a {
   text-underline-offset: 0.14em;
 }
 
-a:hover {
+a:hover,
+:focus {
   text-decoration: none;
 }
 

@@ -16,7 +16,7 @@
 .boxTwo {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 250px;
+  flex-basis: 16rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -27,7 +27,7 @@
 .boxTwo > * {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 250px;
+  flex-basis: 16rem;
 }
 
 .navLinks li {
