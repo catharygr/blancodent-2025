@@ -111,7 +111,7 @@ export default function Footer() {
             </p>
             <Link
               className="btnLink"
-              href="/contacto"
+              href="https://mailchi.mp/blancodent.com/blancodent-web"
             >
               Suscribirme
             </Link>
