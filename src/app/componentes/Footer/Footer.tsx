@@ -83,12 +83,18 @@ export default function Footer() {
             role="list"
           >
             <li>
-              <Link href="https://www.facebook.com/clinica.dental.blancodent.las.palmas/">
+              <Link
+                target="_blank"
+                href="https://www.facebook.com/clinica.dental.blancodent.las.palmas/"
+              >
                 <FacebookLogo weight="duotone" />
               </Link>
             </li>
             <li>
-              <Link href="https://www.instagram.com">
+              <Link
+                target="_blank"
+                href="https://www.instagram.com/blancodentclinicadental_gc/"
+              >
                 <InstagramLogo weight="duotone" />
               </Link>
             </li>
@@ -96,10 +102,10 @@ export default function Footer() {
         </address>
 
         <div>
-          <h2>Boletín:</h2>
+          <h2>Newsletter:</h2>
           <p>
             Suscríbete a nuestro boletín para recibir ofertas y descuentos
-            exclusivos tres veces al año.
+            exclusivos no más que tres veces al año.
           </p>
           <form>
             <label htmlFor="email">Correo electrónico:</label>
