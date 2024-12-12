@@ -1,4 +1,45 @@
 {
+  "Footer": {
+    "links": {
+      "title": "Links:",
+      "link1": "Home page",
+      "link2": "F.A.Q.",
+      "link3": "Latest offers",
+      "link4": "Contact",
+      "link5": "Call us"
+    },
+    "address": {
+      "title": "Address",
+      "street": "Av. Mesa y López, 1 - 1ª",
+      "city": "35006 Las Palmas de G.C.",
+      "country": "Canary Islands, Spain.",
+      "social": {
+        "title": "Social networks",
+        "facebook": "Facebook.com",
+        "instagram": "Instagram.com"
+      }
+    },
+    "timetable": {
+      "title": "Opening hours",
+      "days": {
+        "monday": "Mondays:",
+        "tuesday": "Tuesdays:",
+        "wednesday": "Wednesdays:",
+        "thursday": "Thursdays:",
+        "friday": "Fridays:"
+      }
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "text": "Subscribe to our newsletter to receive exclusive offers and discounts no more than four times a year.",
+      "link": "Subscribe"
+    },
+    "legal": {
+      "title": "Terms of service - Website",
+      "text": "The information on this medium cannot replace a direct medical care service, nor will any recommendations be made about products, techniques, drugs, etc... The use of this service is carried out under the user's own responsibility.",
+      "link": "Legal notice"
+    }
+  },
   "Header": {
     "logoLabel": "Go to the home page",
     "quickLinksLabel": "Quick links to location, contact, and phone",

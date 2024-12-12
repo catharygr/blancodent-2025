@@ -1,4 +1,45 @@
 {
+  "Footer": {
+    "links": {
+      "title": "Enlaces:",
+      "link1": "Página de inicio",
+      "link2": "Preguntas frecuentes",
+      "link3": "Últimas ofertas",
+      "link4": "Contacto",
+      "link5": "Llámanos"
+    },
+    "address": {
+      "title": "Dirección",
+      "street": "Av. Mesa y López, 1 - 1ª",
+      "city": "35006 Las Palmas de G.C.",
+      "country": "Islas Canarias, España.",
+      "social": {
+        "title": "Redes sociales",
+        "facebook": "Facebook.com",
+        "instagram": "Instagram.com"
+      }
+    },
+    "timetable": {
+      "title": "Horario de apertura",
+      "days": {
+        "monday": "Lunes:",
+        "tuesday": "Martes:",
+        "wednesday": "Miércoles:",
+        "thursday": "Jueves:",
+        "friday": "Viernes:"
+      }
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "text": "Suscríbete a nuestro boletín para recibir ofertas y descuentos exclusivos no más que cuatro veces al año.",
+      "link": "Suscribirse"
+    },
+    "legal": {
+      "title": "Condiciones de uso del servicio - Página web",
+      "text": "La información de este medio no puede sustituir un servicio de atención medica directa, así como tampoco se hará ninguna recomendación sobre productos, técnicas, fármacos, etc… La utilización de este servicio se lleva a cabo bajo la propia responsabilidad del usuario.",
+      "link": "Nota legal"
+    }
+  },
   "Header": {
     "logoLabel": "Ir a la página de inicio",
     "quickLinksLabel": "Enlaces rápidos a ubicación, contacto y teléfono",

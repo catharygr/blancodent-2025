@@ -17,11 +17,11 @@ export default function Menu() {
   return (
     <nav
       className={styles.container}
-      aria-labelledby="nav-label"
+      aria-labelledby="nav-label-header"
     >
       <span
         hidden
-        id="nav-label"
+        id="nav-label-header"
       >
         {t("navLabel")}
       </span>
