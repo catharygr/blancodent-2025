@@ -39,7 +39,7 @@ body {
 }
 
 .btnLink:hover,
-:focus {
+.btnLink:focus :focus {
   scale: 1.03;
 }
 
