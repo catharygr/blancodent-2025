@@ -9,7 +9,7 @@
       "link5": "Llámanos"
     },
     "address": {
-      "title": "Dirección",
+      "title": "Dirección:",
       "street": "Av. Mesa y López, 1 - 1ª",
       "city": "35006 Las Palmas de G.C.",
       "country": "Islas Canarias, España.",
@@ -20,7 +20,7 @@
       }
     },
     "timetable": {
-      "title": "Horario de apertura",
+      "title": "Horarios:",
       "days": {
         "monday": "Lunes:",
         "tuesday": "Martes:",
@@ -30,7 +30,7 @@
       }
     },
     "newsletter": {
-      "title": "Newsletter",
+      "title": "Newsletter:",
       "text": "Suscríbete a nuestro boletín para recibir ofertas y descuentos exclusivos no más que cuatro veces al año.",
       "link": "Suscribirse"
     },
@@ -102,7 +102,7 @@
     "location": {
       "title": "Dónde encontrarnos:",
       "address": {
-        "title": "Dirección",
+        "title": "Dirección:",
         "street": "Av. Mesa y López, 1 - 1ª",
         "city": "35006 Las Palmas de G.C.",
         "country": "Islas Canarias, España."
@@ -124,7 +124,7 @@
       }
     },
     "timetable": {
-      "title": "Horario de apertura",
+      "title": "Horario de apertura:",
       "days": {
         "monday": "Lunes:",
         "tuesday": "Martes:",

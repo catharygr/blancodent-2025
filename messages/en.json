@@ -9,7 +9,7 @@
       "link5": "Call us"
     },
     "address": {
-      "title": "Address",
+      "title": "Address:",
       "street": "Av. Mesa y López, 1 - 1ª",
       "city": "35006 Las Palmas de G.C.",
       "country": "Canary Islands, Spain.",
@@ -20,7 +20,7 @@
       }
     },
     "timetable": {
-      "title": "Opening hours",
+      "title": "Opening hours:",
       "days": {
         "monday": "Mondays:",
         "tuesday": "Tuesdays:",
@@ -30,7 +30,7 @@
       }
     },
     "newsletter": {
-      "title": "Newsletter",
+      "title": "Newsletter:",
       "text": "Subscribe to our newsletter to receive exclusive offers and discounts no more than four times a year.",
       "link": "Subscribe"
     },
@@ -102,7 +102,7 @@
     "location": {
       "title": "Where to find us:",
       "address": {
-        "title": "Address",
+        "title": "Address:",
         "street": "Av. Mesa y López, 1 - 1ª",
         "city": "35006 Las Palmas de G.C.",
         "country": "Canary Islands, Spain."
@@ -124,7 +124,7 @@
       }
     },
     "timetable": {
-      "title": "Opening hours",
+      "title": "Opening hours:",
       "days": {
         "monday": "Mondays:",
         "tuesday": "Tuesdays:",
