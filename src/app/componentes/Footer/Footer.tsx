@@ -89,27 +89,27 @@ export default function Footer() {
             <h2>{t("timetable.title")}</h2>
 
             <p>
-              <strong>{t("timetable.days.monday")}:</strong>
+              <strong>{t("timetable.days.monday")}</strong>
               <br />
               09:30 - 16:00.
             </p>
             <p>
-              <strong>{t("timetable.days.tuesday")}:</strong>
+              <strong>{t("timetable.days.tuesday")}</strong>
               <br />
               14:00 - 20:00.
             </p>
             <p>
-              <strong>{t("timetable.days.wednesday")}:</strong>
+              <strong>{t("timetable.days.wednesday")}</strong>
               <br />
               09:30 - 16:00.
             </p>
             <p>
-              <strong>{t("timetable.days.thursday")}:</strong>
+              <strong>{t("timetable.days.thursday")}</strong>
               <br />
               14:00 - 20:00.
             </p>
             <p>
-              <strong>{t("timetable.days.friday")}:</strong>
+              <strong>{t("timetable.days.friday")}</strong>
               <br />
               09:30 - 16:00.
             </p>

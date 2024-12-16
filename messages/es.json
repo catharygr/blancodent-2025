@@ -115,11 +115,11 @@
     "contact": {
       "title": "Cómo contactarnos:",
       "text1": {
-        "text": "Puedes pedir cita o cualquier consulta utilizando nuestro::",
+        "text": "Puedes pedir cita o cualquier consulta utilizando nuestro:",
         "link": "Formulario de contacto."
       },
       "text2": {
-        "text": "O si lo prefieres, también puedes llamarnos en el horario de apertura o dejar un mensaje de audio al:",
+        "text": "O si lo prefieres, también puedes llamarnos en el horario de apertura o dejar un mensaje de audio al",
         "link": "+34 928 292 455."
       }
     },
