@@ -24,7 +24,7 @@
   filter: drop-shadow(var(--shadow-400));
 }
 
-.logo p {
+.logo .p {
   display: none;
   font-size: min(4vw, var(--fs-600));
   font-weight: var(--f-wei-500);
@@ -44,7 +44,7 @@
 }
 
 @media (min-width: 43rem) {
-  .logo p {
+  .logo .p {
     display: block;
   }
 }
