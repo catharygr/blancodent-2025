@@ -2,4 +2,4 @@
 
 Desarrollada con React, Nextjs y next-intl.
 
-https://blancodent-caty-2025.vercel.app/es
+Página web: https://blancodent-caty-2025.vercel.app/es
