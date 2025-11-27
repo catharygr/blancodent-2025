@@ -1,0 +1,197 @@
+.carouselContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primera-100);
+  color: var(--primera-10);
+  padding: var(--space-300);
+  border-radius: var(--space-700);
+  box-shadow: var(--shadow-400);
+
+  &>img {
+    position: absolute;
+    top: -10rem;
+    right: 2rem;
+    height: 14rem;
+    width: auto;
+    opacity: 80%;
+    z-index: -20;
+  }
+}
+
+.slider {
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: none;
+  scroll-snap-stop: normal;
+}
+
+.ulOuter {
+  border-top-left-radius: calc(var(--space-700) - var(--space-300));
+  border-top-right-radius: calc(var(--space-700) - var(--space-300));
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  /* Hide scrollbar Firefox & Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ulOuter::-webkit-scrollbar {
+  display: none;
+}
+
+.ulOuter li {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  background-color: var(--primera-90);
+  height: 100%;
+  will-change: transform;
+}
+
+.slideContainer {
+  padding: var(--space-600);
+  padding-block-end: var(--space-200);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: var(--primera-90);
+  height: 100%;
+}
+
+.slideContainer h2 {
+  font-size: var(--fs-700);
+  margin-block-end: var(--space-200);
+}
+
+.slideContainer p {
+  margin-block-start: var(--space-400);
+  justify-self: end;
+  /* limit number of lines */
+  -webkit-line-clamp: 6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-clamp: 6;
+}
+
+.slideBtnLink {
+  margin-block-start: auto;
+  align-self: flex-end;
+  background-color: var(--primera-80);
+  border-color: var(--primera-40);
+  font-size: var(--fs-300);
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primera-90);
+  border-bottom-left-radius: calc(var(--space-700) - var(--space-300));
+  border-bottom-right-radius: calc(var(--space-700) - var(--space-300));
+}
+
+.buttonsContainer svg {
+  height: 1.8rem;
+  width: auto;
+}
+
+.navButton {
+  color: var(--primera-20);
+  padding-block: var(--space-200);
+  padding-inline: var(--space-300);
+  transition: var(--transition-400);
+}
+
+.navButton:hover,
+.navButton:focus-visible {
+  color: var(--tercera-20);
+  scale: 1.1;
+}
+
+
+.tagLineContainer {
+  position: relative;
+  font-size: var(--fs-200);
+  text-align: center;
+  margin-block-start: var(--space-100);
+
+  &>img {
+    position: absolute;
+    bottom: 22;
+    left: 2rem;
+    height: 8rem;
+    width: auto;
+    opacity: 80%;
+  }
+}
+
+.menuCarouselContainerQuery {
+  container-type: inline-size;
+  container-name: menu-carousel-container;
+}
+
+
+.menuCarousel {
+  container-type: inline-size;
+  container-name: menu-carousel;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+  justify-content: center;
+  padding-inline: var(--space-400);
+  margin-block: var(--space-400);
+}
+
+@container menu-carousel-container (min-width: 40rem) {
+  .menuCarousel {
+    flex-direction: row;
+  }
+}
+
+.leftColumn,
+.rightColumn {
+  display: flex;
+  flex: 1 1 0;
+  gap: var(--space-100);
+}
+
+.menuCarouselBtn {
+  color: var(--primera-10);
+  flex: 1 1 0;
+  font-size: var(--fs-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-200) var(--space-100);
+  border-radius: var(--space-200);
+  border: 1px solid var(--primera-40);
+  transition: var(--transition-400);
+}
+
+.menuCarouselBtn:hover,
+.menuCarouselBtn:focus-visible {
+  background-color: var(--base-white-20);
+  box-shadow: var(--shadow-400);
+  border: 1px solid transparent;
+}
+
+.menuCarouselBtn svg {
+  width: 32px;
+  height: auto;
+}
+
+@container menu-carousel (min-width: 50rem) {
+  .menuCarouselBtn {
+    font-size: var(--fs-300);
+  }
+
+  .slideContainer p {
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
+  }
+}

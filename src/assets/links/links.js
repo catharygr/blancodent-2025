@@ -1,0 +1,36 @@
+export const home = () => "/";
+export const servicios = () => "/servicios";
+export const protesis = () => "/servicios/protesis-dentales";
+export const higiene = () => "/servicios/higiene-dental";
+export const periodoncia = () => "/servicios/periodoncia";
+export const odontologiaConservadora = () =>
+  "/servicios/odontologia-conservadora";
+export const blanqueamiento = () => "/servicios/blanqueamiento-dental";
+export const implantologia = () => "/servicios/implantologia";
+export const ortodoncia = () => "/servicios/ortodoncia";
+export const bruxismo = () => "/servicios/bruxismo-o-rechinchar-de-dientes";
+export const endodoncia = () => "/servicios/endodoncia";
+export const articulos = () => "/articulos";
+export const dienteBiomaterial = () =>
+  "/articulos/tu-propio-diente-como-biomaterial";
+export const anestesia = () => "/articulos/anestesia";
+export const malAliento = () => "/articulos/mal-aliento";
+export const paraFumadores = () => "/articulos/para-los-fumadores";
+export const paraPeques = () => "/articulos/para-los-peques";
+export const laserDental = () => "/articulos/laser-dental";
+export const contacto = () => "/contacto";
+export const asiSomos = () => "/asi-somos";
+export const losHorarios = () => "/asi-somos/los-horarios";
+export const financiacion = () => "/asi-somos/financiacion";
+export const lasImagenes = () => "/asi-somos/las-imagenes";
+export const elPersonal = () => "/asi-somos/el-personal";
+export const transporte = () => "/asi-somos/transporte";
+export const ubicacion = () => "/asi-somos/ubicacion";
+export const varios = () => "/varios";
+export const notaLegal = () => "/varios/nota-legal";
+export const laSaludEstaNavidad = () => "/varios/la-salud-esta-navidad";
+export const ofertasContinuas = () => "/varios/ofertas-continuas";
+export const citaPrevia = () => "/varios/cita-previa";
+export const faq = () => "/varios/preguntas-frecuentes";
+export const covid19 = () => "/varios/covid-19";
+export const localizacion = () => "/localizacion";

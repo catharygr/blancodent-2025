@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.button>svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--base-black-20);
+  transition: var(--transition-400);
+}
+
+.button>svg:hover {
+  color: var(--sexta-30);
+}

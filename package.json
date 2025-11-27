@@ -1,0 +1,30 @@
+{
+  "name": "blancodent-2025",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "motion": "^12.23.24",
+    "next": "^16.0.4",
+    "next-intl": "^4.5.5",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-focus-lock": "^2.13.6",
+    "react-remove-scroll": "^2.7.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.0.4",
+    "typescript": "^5.9.3"
+  }
+}
