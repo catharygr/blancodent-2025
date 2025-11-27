@@ -4,26 +4,27 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build --turbopack",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@phosphor-icons/react": "^2.1.7",
-    "motion": "^12.0.0-alpha.2",
-    "next": "^15.0.4",
-    "next-intl": "^3.26.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-focus-lock": "^2.13.2",
-    "react-remove-scroll": "^2.6.0"
+    "@phosphor-icons/react": "^2.1.10",
+    "motion": "^12.23.24",
+    "next": "^16.0.4",
+    "next-intl": "^4.5.5",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-focus-lock": "^2.13.6",
+    "react-remove-scroll": "^2.7.1"
   },
   "devDependencies": {
-    "@types/node": "^20.17.9",
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^18.3.2",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^15.0.4",
-    "typescript": "^5.7.2"
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.0.4",
+    "typescript": "^5.9.3"
   }
 }

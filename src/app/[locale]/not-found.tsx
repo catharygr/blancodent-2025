@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
-
 import { CSSProperties } from "react";
-import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 
 const styles: { container: CSSProperties } = {
   container: {
@@ -9,7 +8,7 @@ const styles: { container: CSSProperties } = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    height: "100vh",
+    height: "50vh",
   },
 };
 

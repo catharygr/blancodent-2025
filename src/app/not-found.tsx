@@ -6,10 +6,10 @@ import Link from "next/link";
 const styles = {
   a: {
     display: "inline-block",
-    padding: "1rem 0 0 1rem",
     color: "red",
     textDecoration: "underline",
-    textUnderlineOffset: "0.4em",
+    textUnderlineOffset: "0.4rem",
+    padding: "1rem 0 0 1rem",
   },
 };
 
@@ -21,7 +21,7 @@ export default function NotFound() {
           style={styles.a}
           href="/"
         >
-          Home
+          {"<-- HOME"}
         </Link>
         <Error statusCode={404} />
       </body>

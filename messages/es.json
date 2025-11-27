@@ -10,11 +10,11 @@
     },
     "address": {
       "title": "Dirección:",
-      "street": "Av. Mesa y López, 1 - 1ª",
-      "city": "35006 Las Palmas de G.C.",
+      "street": "Av. Mesa y López, 1 - 1ª izq.",
+      "city": "35006, Las Palmas de G.C.",
       "country": "Islas Canarias, España.",
       "social": {
-        "title": "Redes sociales",
+        "title": "Redes sociales:",
         "facebook": "Facebook.com",
         "instagram": "Instagram.com"
       }
@@ -31,21 +31,21 @@
     },
     "newsletter": {
       "title": "Newsletter:",
-      "text": "Suscríbete a nuestro boletín para recibir ofertas y descuentos exclusivos no más que cuatro veces al año.",
+      "text": "Suscríbete a nuestro newsletter para recibir ofertas y descuentos exclusivos no mas que cuatro veces al año.",
       "link": "Suscribirse"
     },
     "legal": {
-      "title": "Condiciones de uso del servicio - Página web",
-      "text": "La información de este medio no puede sustituir un servicio de atención medica directa, así como tampoco se hará ninguna recomendación sobre productos, técnicas, fármacos, etc… La utilización de este servicio se lleva a cabo bajo la propia responsabilidad del usuario.",
+      "title": "Condiciones del uso del servicio - página web",
+      "text": "La información de este medio no puede sustituir un servicio de atención medica directa, así como tampoco se hará ninguna recomendación sobre productos, técnicas, fármacos , etc… La utilización de este servicio se lleva a cabo bajo la propia responsabilidad del usuario.",
       "link": "Nota legal"
     }
   },
   "Header": {
     "logoLabel": "Ir a la página de inicio",
-    "quickLinksLabel": "Enlaces rápidos a ubicación, contacto y teléfono",
-    "quicklocation": "Ubicación",
-    "quickcontact": "Cita previa",
-    "quicktelephone": "Llámanos"
+    "quickLinksLabel": "Enlaces rápidos a la ubicación, formulario de contacto y llamada telefónica",
+    "quickLinksLocation": "Ubicación",
+    "quickLinksContact": "Cita previa",
+    "quickLinksTel": "Llámanos"
   },
   "LangSwitcher": {
     "label": "Cambiar idioma",
@@ -54,27 +54,27 @@
   "MainMenu": {
     "navLabel": "Principal",
     "openMenuBtn": "Abrir menú",
-    "closeMenuBtn": "Cerrar menú",
     "disclosureGroupLabel": "Colección de categorías de navegación expandibles que contienen enlaces de navegación",
+    "closeMenuBtn": "Cerrar menú",
     "quickLinks": {
-      "quickcontact": "Cita previa",
-      "quicktelephone": "Llámanos"
+      "quickLinksContact": "Cita previa",
+      "quickLinksTel": "Llámanos"
     },
     "services": {
       "summary": "Servicios:",
       "link1": "Implantología",
       "link2": "Ortodoncia",
       "link3": "Periodoncia",
-      "link4": "Blanqueamiento dental",
-      "link5": " Bruxismo o rechinchar de dientes",
+      "link4": "Blanqueamiento Dental",
+      "link5": "Bruxismo o rechinchar de dientes",
       "link6": "Odontologia Conservadora",
       "link7": "Endodoncia",
       "link8": "Prótesis dentales",
       "link9": "Higiene dental"
     },
     "aboutClinic": {
-      "summary": "Así somos:",
-      "link1": " Ubicación",
+      "summary": "Así Somos:",
+      "link1": "Ubicación",
       "link2": "Transporte",
       "link3": "Los horarios",
       "link4": "Las imágenes",
@@ -86,7 +86,7 @@
       "link1": "Tu propio diente como biomaterial",
       "link2": "Láser dental",
       "link3": "Anestesia",
-      "link4": "Para los peques",
+      "link4": "Para los Peques",
       "link5": "Para los fumadores",
       "link6": "Mal aliento"
     },
@@ -103,52 +103,118 @@
       "title": "Dónde encontrarnos:",
       "address": {
         "title": "Dirección:",
-        "street": "Av. Mesa y López, 1 - 1ª",
-        "city": "35006 Las Palmas de G.C.",
+        "street": "Av. Mesa y López, 1 - 1ª izq.",
+        "city": "35006, Las Palmas de G.C.",
         "country": "Islas Canarias, España."
       },
       "map": {
-        "link1": " Abrir en el mapa de Google",
-        "link2": "  Abrir en el mapa de Apple"
+        "link1": "Abrir en el mapa de Google",
+        "link2": "Abrir en el mapa de Apple",
+        "imageAlt": "El mapa de ubicación de la clínica en Las Palmas"
       }
     },
     "contact": {
-      "title": "Cómo contactarnos:",
+      "title": "Cómo contactar con nosotros:",
       "text1": {
-        "text": "Puedes pedir cita o cualquier consulta utilizando nuestro:",
+        "text": "Puedes pedir cita o hacer cualquier consulta utilizando nuestro:",
         "link": "Formulario de contacto."
       },
       "text2": {
-        "text": "O si lo prefieres, también puedes llamarnos en el horario de apertura o dejar un mensaje de audio al",
+        "text": "O si lo prefieres, también puedes llamarnos en el horario de apertura o dejar un mensaje de audio al:",
         "link": "+34 928 292 455."
       }
     },
     "timetable": {
       "title": "Horario de apertura:",
+      "dayColumn": "Días",
+      "hoursColumn": "Horas",
       "days": {
         "monday": "Lunes:",
         "tuesday": "Martes:",
         "wednesday": "Miércoles:",
         "thursday": "Jueves:",
         "friday": "Viernes:",
-        "weekend": "Sábados y Domingos:"
+        "weekend": "Sáb. y Festivos:",
+        "closed": "Cerrado."
       }
     }
   },
   "HomePage": {
-    "title": "Hola mundo!",
-    "about": "ir a la página de acerca de"
+    "heroHeader": {
+      "titleSmall": "Clínica Dental",
+      "titleBig": "Blancodent",
+      "tagLine": "Tus dentistas en Las Palmas de G.C.",
+      "address": "Avenida Mesa y López 1, Las Palmas de Gran Canaria",
+      "actionBtn": "Llámenos ahora",
+      "actionLink": "Solicite cita previa"
+    },
+
+    "heroCarousel": {
+      "navButtonLeftAlt": "Diapositiva anterior",
+      "navButtonRightAlt": "Siguiente diapositiva",
+      "tagLine": {
+        "p": "Puedes hacer cualquier pregunta.",
+        "link": "Blancodent le responderá..."
+      },
+      "carouselControls": "Controles de diapositivas del carrusel",
+      "heroMenuBtns": {
+        "1": "Blanqueamiento",
+        "2": "Ortodoncia",
+        "3": "Implantes",
+        "4": "Encías",
+        "5": "Empastes",
+        "6": "Higiene"
+      },
+      "heroSlides": {
+        "skipLink": "Saltar carousel",
+        "slide1": {
+          "h2": "Blanqueamiento dental",
+          "h3": "Dientes blancos, boca sana y sonrisa feliz.",
+          "p": "Este tratamiento dental permite solucionar las alteraciones en el color de los dientes. La boca es una de las partes del cuerpo que más refleja la personalidad y más dice de una persona. Tener una sonrisa sana y unos dientes blancos es un deseo que todos tenemos. Por tanto, para mostrar tu mejor versión, no dudes en realizar el mejor blanqueamiento dental con Blancodent, tu dentista en La Palmas.",
+          "link": "Más información..."
+        },
+        "slide2": {
+          "h2": "Ortodoncia invisible",
+          "h3": "Ya no hay excusas para no sonreír.",
+          "p": "La ortodoncia te permite corregir la mala posición de los dientes. Es mucho más que una solución estética, más que una simple alineación de los dientes. Se consigue la vida saludable de los dientes, encías y la mordida correcta, proporcionando así el bienestar de tu boca.",
+          "link": "Más información..."
+        },
+        "slide3": {
+          "h2": "Implantologia",
+          "h3": "Solución permanente para tu dentadura.",
+          "p": "Utilizamos la última tecnología para proporcionarte la colocación de implantes dentales prácticamente sin cirugía, molestias ni dolor, recuperando el funcionamiento y la estética de tu boca. Además, disponemos de una tecnología novedosa donde podemos utilizar el biomaterial obtenido del diente extraído del propio paciente, con el fin de proporcionar la osteointegración casi perfecta.",
+          "link": "Más información..."
+        },
+        "slide4": {
+          "h2": "Periodoncia",
+          "h3": "Si sientes inflamacíon o te sangra las encias.",
+          "p": "Entre el 85-90% de la población mayor de 35 años padece estas patologías en algún grado, principalmente gingivitis. Además, repercuten en la salud dental y en la general, incrementan el riesgo cardiovascular, complican la diabetes, aumentan el riesgo de un parto prematuro, etc.",
+          "link": "Más información..."
+        },
+        "slide5": {
+          "h2": "Empastes dentales",
+          "h3": "El objetivo es restaurar el diente afectado.",
+          "p": "El tratamiento de la caries dental mediante empastes dentales es un procedimiento muy común y sencillo. Después de eliminar el tejido dental afectado, se limpia y rellena la cavidad dental con materiales estéticos y biodegradables.",
+          "link": "Más información..."
+        },
+        "slide6": {
+          "h2": "Higiene dental",
+          "h3": "Conseguir y mantener una dentadura sana.",
+          "p": "La higiene bucal, sin duda, empieza por el habitual cepillo y pasta dental, aunque no debería terminar aquí. La mayoría de nosotros deberíamos utilizar métodos adicionales: hilo dental, cepillo interdental, irrigador bucal, colutorios... Además de visitar a tu dentista en Las Palmas y hacer una limpieza dental cada 6 meses.",
+          "link": "Más información..."
+        }
+      }
+    }
   },
   "NotFoundPage": {
     "title": "¡Página no encontrada!",
-    "homeLink": "Volver a la página de inicio"
+    "homeLink": "Ir a la página de inicio"
   },
   "Metadata": {
     "title": "Clínica Dental Blancodent - Tus dentistas en Las Palmas de Gran Canaria",
     "description": "Clínica dental en Las Palmas, BLANCODENT. Dentistas en Las Palmas. Dentistas en Mesa y López. Expertos en ortodoncia, endodoncia, tratamiento del bruxismo, periodoncia e implantología dental. Puedes encontrar todas las especialidades odontológicas en BLANCODENT."
   },
   "SkipLinkMain": {
-    "content": "Saltar al contenido principal",
-    "href": "main"
+    "content": "Saltar al contenido principal"
   }
 }

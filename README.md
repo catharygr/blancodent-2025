@@ -1,3 +1,3 @@
-## Nueva versión de la página de la Clínica Blancodent.
+# New version of Dental Clinic Blancodent web site
 
-Desarrollada con React, Nextjs y next-intl.
+Developed with NEXTjs, React, next-intl

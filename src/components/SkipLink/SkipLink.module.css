@@ -1,0 +1,22 @@
+.visuallyHidden:not(:focus):not(:active) {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  position: absolute;
+  white-space: nowrap;
+}
+
+.skipLink {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  color: var(--quinta-100);
+  background-color: var(--quinta-30);
+  padding: 0.8rem 1.6rem 1.1rem;
+  font-size: var(--fs-400);
+  font-weight: var(--f-wei-600);
+  border-radius: var(--space-900);
+}

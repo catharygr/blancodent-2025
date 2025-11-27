@@ -39,5 +39,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Mis cosas: 
+# My shit
 apuntes.md
+/.vscode

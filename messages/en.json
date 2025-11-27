@@ -10,23 +10,25 @@
     },
     "address": {
       "title": "Address:",
-      "street": "Av. Mesa y López, 1 - 1ª",
-      "city": "35006 Las Palmas de G.C.",
-      "country": "Canary Islands, Spain.",
+      "street": "Av. Mesa y López, 1 - 1ª izq.",
+      "city": "35006, Las Palmas de G.C.",
+      "country": "Canary islands, Spain.",
       "social": {
-        "title": "Social networks",
+        "title": "Social networks:",
         "facebook": "Facebook.com",
         "instagram": "Instagram.com"
       }
     },
     "timetable": {
-      "title": "Opening hours:",
+      "title": "Opening Hours:",
+      "dayColumn": "Day",
+      "hoursColumn": "Hours",
       "days": {
-        "monday": "Mondays:",
-        "tuesday": "Tuesdays:",
-        "wednesday": "Wednesdays:",
-        "thursday": "Thursdays:",
-        "friday": "Fridays:"
+        "monday": "Monday:",
+        "tuesday": "Tuesday:",
+        "wednesday": "Wednesday:",
+        "thursday": "Thursday:",
+        "friday": "Friday:"
       }
     },
     "newsletter": {
@@ -35,17 +37,17 @@
       "link": "Subscribe"
     },
     "legal": {
-      "title": "Terms of service - Website",
+      "title": "Terms of service - website",
       "text": "The information on this medium cannot replace a direct medical care service, nor will any recommendations be made about products, techniques, drugs, etc... The use of this service is carried out under the user's own responsibility.",
       "link": "Legal notice"
     }
   },
   "Header": {
     "logoLabel": "Go to the home page",
-    "quickLinksLabel": "Quick links to location, contact, and phone",
-    "quicklocation": "Location",
-    "quickcontact": "Appointment",
-    "quicktelephone": "Call us"
+    "quickLinksLabel": "Quick links to location, contact form, and phone call",
+    "quickLinksLocation": "Location",
+    "quickLinksContact": "Appointment",
+    "quickLinksTel": "Call us"
   },
   "LangSwitcher": {
     "label": "Change language",
@@ -54,23 +56,23 @@
   "MainMenu": {
     "navLabel": "Main",
     "openMenuBtn": "Open menu",
+    "disclosureGroupLabel": "Collection of expandable navigation categories that contain navigation links",
     "closeMenuBtn": "Close menu",
-    "disclosureGroupLabel": "Collection of expandable navigation category containing navigation links",
     "quickLinks": {
-      "quickcontact": "Appointment",
-      "quicktelephone": "Call us"
+      "quickLinksContact": "Appointment",
+      "quickLinksTel": "Call us"
     },
     "services": {
       "summary": "Services:",
       "link1": "Implantology",
       "link2": "Orthodontics",
       "link3": "Periodontics",
-      "link4": "Dental whitening",
+      "link4": "Dental Whitening",
       "link5": "Bruxism or teeth grinding",
       "link6": "Conservative Dentistry",
       "link7": "Endodontics",
-      "link8": "Dental prostheses",
-      "link9": "Dental hygiene"
+      "link8": "Dental Prostheses",
+      "link9": "Dental Hygiene"
     },
     "aboutClinic": {
       "summary": "About us:",
@@ -103,49 +105,115 @@
       "title": "Where to find us:",
       "address": {
         "title": "Address:",
-        "street": "Av. Mesa y López, 1 - 1ª",
-        "city": "35006 Las Palmas de G.C.",
-        "country": "Canary Islands, Spain."
+        "street": "Av. Mesa y López, 1 - 1ª izq.",
+        "city": "35006, Las Palmas de G.C.",
+        "country": "Canary islands, Spain."
       },
       "map": {
         "link1": "Open in Google Maps",
-        "link2": "Open in Apple Maps"
+        "link2": "Open in Apple Maps",
+        "imageAlt": "The location map of the clinic in Las Palmas"
       }
     },
     "contact": {
       "title": "How to contact us:",
       "text1": {
         "text": "You can make an appointment or ask any question using our:",
-        "link": "Contact form"
+        "link": "Contact form."
       },
       "text2": {
         "text": "Or, if you prefer, you can call us directly during our working hours or leave a voice message here:",
-        "link": "Call us"
+        "link": "+34 928 292 455."
       }
     },
     "timetable": {
-      "title": "Opening hours:",
+      "title": "Opening Hours:",
+      "dayColumn": "Days",
+      "hoursColumn": "Hours",
       "days": {
-        "monday": "Mondays:",
-        "tuesday": "Tuesdays:",
-        "wednesday": "Wednesdays:",
-        "thursday": "Thursdays:",
-        "friday": "Fridays:",
-        "weekend": "Saturdays & Sundays:"
+        "monday": "Monday:",
+        "tuesday": "Tuesday:",
+        "wednesday": "Wednesday:",
+        "thursday": "Thursday:",
+        "friday": "Friday:",
+        "weekend": "Sat. & Holidays:",
+        "closed": "Closed."
       }
     }
   },
-
   "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+    "heroHeader": {
+      "titleSmall": "Dental Clinic",
+      "titleBig": "Blancodent",
+      "tagLine": "Your dentists in Las Palmas de G.C.",
+      "address": "Avenida Mesa y López 1, Las Palmas de Gran Canaria",
+      "actionBtn": "Call us now",
+      "actionLink": "Book appointment online"
+    },
+
+    "heroCarousel": {
+      "navButtonLeftAlt": "Previous slide",
+      "navButtonRightAlt": "Next slide",
+      "tagLine": {
+        "p": "You can ask any question.",
+        "link": "Blancodent will answer..."
+      },
+      "carouselControls": "Carousel slide controls",
+      "heroMenuBtns": {
+        "1": "Whitening",
+        "2": "Orthodontics",
+        "3": "Implants",
+        "4": "Gums",
+        "5": "Fillings",
+        "6": "Hygiene"
+      },
+      "heroSlides": {
+        "skipLink": "Skip carousel",
+        "slide1": {
+          "h2": "Teeth whitening",
+          "h3": "White teeth, healthy mouth and happy smile.",
+          "p": "This dental care treatment allows to solve the alterations of the color of the teeth. The mouth is one of the parts of the body that reflects the personality and says the most about a person. Having a correct dental care, a healthy smile and white teeth is a wish that we all have.",
+          "link": "More information..."
+        },
+        "slide2": {
+          "h2": "Orthodontics",
+          "h3": "There ara no excuses for not smiling.",
+          "p": "Orthodontics is a dental care treatment that allows you to correct the bad position of the teeth. It is much more than an aesthetic solution, more than a simple alignment of the teeth. The healthy life of the teeth, gums and the correct bite are achieved, thus providing the well-being of your mouth.",
+          "link": "More information..."
+        },
+        "slide3": {
+          "h2": "Implantology",
+          "h3": "Permanent solution to your denture.",
+          "p": "Dental care’s latest technology to provide you with the placement of dental implants practically without surgery, discomfort or pain, recovering the function and aesthetics of your mouth. In addition, we have innovative dental technology where we can use the dental biomaterial obtained from the patient's own tooth, in order to provide almost perfect osteointegration.",
+          "link": "More information..."
+        },
+        "slide4": {
+          "h2": "Gum desease, gingivitis",
+          "h3": "If you feel inflamation or bleeding.",
+          "p": "Between 85-90% of the population over 35 years of age suffers from these pathologies to some degree, mainly gingivitis. In addition, they affect dental and general health, increase cardiovascular risk, complicate diabetes, increase the risk of premature birth, etc.",
+          "link": "More information..."
+        },
+        "slide5": {
+          "h2": "Dental fillings",
+          "h3": "The objective is to restore the affected tooth.",
+          "p": "The treatment of dental caries with dental fillings is a very common and simple procedure. After removing the affected dental tissue, the dental cavity is cleaned and filled with esthetic and dental biomaterials.",
+          "link": "More information..."
+        },
+        "slide6": {
+          "h2": "Dental hygiene",
+          "h3": "Carrying out a correct dental cleaning you can achive a helthy denture.",
+          "p": "Dental hygiene, without a doubt, begins with the usual dental brush and toothpaste, although it should not end here. Most of us should use additional methods: dental floss, interdental brush, oral irrigator, mouthwashes... As well as visiting a Dentist nearby in Las Palmas and having a dental cleaning every 6 months.",
+          "link": "More information..."
+        }
+      }
+    }
   },
   "NotFoundPage": {
     "title": "Page not found",
-    "homeLink": "Go back to the home page"
+    "homeLink": "Go to the home page"
   },
   "Metadata": {
-    "title": "Blancodent Dental Clinic - Your dentists in Las Palmas of Gran Canaria",
+    "title": "Blancodent Dental Clinic - Your dentists in Las Palmas de Gran Canaria",
     "description": "Dental clinic in Las Palmas, BLANCODENT. Dentists in Las Palmas. Dentists in Mesa y López. Experts in orthodontics, endodontics, bruxism treatment, periodontics, and dental implantology. You can find all dental specialties at BLANCODENT."
   },
   "SkipLinkMain": {

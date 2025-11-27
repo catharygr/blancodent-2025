@@ -1,35 +1,33 @@
-import { NextIntlClientProvider } from "next-intl";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
 import {
   getMessages,
   setRequestLocale,
   getTranslations,
 } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
-import "../assets/global-styles/globals.css";
-import Header from "@/app/componentes/header/Header";
-import SkipLink from "@/app/componentes/SkipLink/SkipLink";
+import "@/assets/global-styles/globals.css";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
+import SkipLink from "@/components/SkipLink/SkipLink";
 import { MotionConfig } from "motion/react";
-import Footer from "../componentes/Footer/Footer";
 
-// Los archivos de fuentes pueden estar ubicados dentro de `app`
+// Load the local font
 const monaSansFont = localFont({
-  src: "../assets/fonts/Mona-Sans.woff2",
+  src: "../../assets/fonts/Mona-Sans.woff2",
   display: "fallback",
   fallback: ["system-ui", "arial", "sans-serif"],
+  // weight: "100 900",
 });
 
-// Generar las rutas estáticas para cada idioma - i18n
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-}
-// Generar los metadatos para cada idioma - i18n
+// Generate localised metadata for the page
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
-}) {
+}): Promise<Metadata> {
   const { locale } = await params;
 
   const t = await getTranslations({ locale, namespace: "Metadata" });
@@ -40,6 +38,11 @@ export async function generateMetadata({
   };
 }
 
+// Generate static paths for all locales - i18n stuff
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export default async function RootLayout({
   children,
   params,
@@ -48,19 +51,19 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
-  // Activa el renderizado estático de la página en el idioma solicitado
+  // Enable static rendering
   setRequestLocale(locale);
-
-  // Asegúrate de que el `locale` entrante sea válido
-  if (!routing.locales.includes(locale as "es" | "en")) {
+  // Ensure that the incoming `locale` is valid
+  // if (!routing.locales.includes(locale as "en" | "es")) {
+  //   notFound();
+  // }
+  if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-
-  // Proporcionar todos los mensajes al lado del cliente
-  // es la forma más fácil de empezar
+  // Providing all messages to the client
+  // side is the easiest way to get started
   const messages = await getMessages();
   const t = await getTranslations("SkipLinkMain");
-
   return (
     <html
       lang={locale}
@@ -70,12 +73,14 @@ export default async function RootLayout({
         <MotionConfig reducedMotion="user">
           <NextIntlClientProvider messages={messages}>
             <SkipLink
-              link={t("href")}
+              link="main"
+              // link={t("href")}
               content={t("content")}
             />
             <Header />
             {children}
             <Footer />
+            <div id="nav-menu-root"></div>
           </NextIntlClientProvider>
         </MotionConfig>
       </body>

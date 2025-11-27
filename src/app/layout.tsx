@@ -1,8 +1,9 @@
-// Dado que tenemos una página raíz `not-found.tsx`, se requiere un archivo de layout,
-// incluso si solo está pasando los hijos.
+// Layout only for 404 page. Iy just passes children to the page.
 
-export default function NotFoundLayout({
+export default async function NotFoundLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return children;
 }
