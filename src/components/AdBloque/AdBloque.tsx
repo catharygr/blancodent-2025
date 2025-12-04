@@ -16,13 +16,22 @@ export default function AdBloque({
   direction,
 }: ChildComponentProps) {
   return (
-    <div className={`${styles.container} ${styles[direction]} narrow-grid`}>
+    <div
+      className={`${styles.container} narrow-grid`}
+      data-direction={direction}
+    >
       <div className={styles.titleContainer}>
         <h2 className={styles.h2}>{title}</h2>
         <div className={styles.decorativeLine}></div>
+        <Image
+          className={styles.titleImg}
+          src={image}
+          alt={imageAlt}
+        />
       </div>
       <p className={styles.content}>{content}</p>
       <Image
+        className={styles.gridImg}
         src={image}
         alt={imageAlt}
       />

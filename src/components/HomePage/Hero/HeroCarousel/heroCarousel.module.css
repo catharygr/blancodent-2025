@@ -8,7 +8,7 @@
   border-radius: var(--space-700);
   box-shadow: var(--shadow-400);
 
-  &>img {
+  & > img {
     position: absolute;
     top: -10rem;
     right: 2rem;
@@ -113,14 +113,13 @@
   scale: 1.1;
 }
 
-
 .tagLineContainer {
   position: relative;
   font-size: var(--fs-200);
   text-align: center;
   margin-block-start: var(--space-100);
 
-  &>img {
+  & > img {
     position: absolute;
     bottom: 22;
     left: 2rem;
@@ -134,7 +133,6 @@
   container-type: inline-size;
   container-name: menu-carousel-container;
 }
-
 
 .menuCarousel {
   container-type: inline-size;

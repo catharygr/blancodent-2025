@@ -9,7 +9,6 @@
   backdrop-filter: blur(3px);
 }
 
-
 .navDrawer {
   position: absolute;
   inset: min(1vw, var(--space-400));
@@ -32,7 +31,7 @@
   margin: auto;
 }
 
-.innerContainer>div {
+.innerContainer > div {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 21rem;
@@ -61,7 +60,7 @@
   background: none;
 }
 
-.closeBtn>svg {
+.closeBtn > svg {
   width: var(--space-800);
   height: var(--space-800);
   color: var(--sexta-30);
@@ -70,7 +69,7 @@
 .details {
   margin-block: var(--space-200);
   background-color: var(--primera-90);
-  border-radius: var(--b-radius-100)
+  border-radius: var(--b-radius-100);
 }
 
 /* This part is for animating details opening but it will work soon, hope so...  */
@@ -87,7 +86,7 @@
 
 .details li {
   padding-block: var(--space-200);
-  margin-inline-start: var(--space-300)
+  margin-inline-start: var(--space-300);
 }
 
 .details a {
@@ -145,12 +144,11 @@
 }
 
 @container (min-width: 43rem) {
-
   .info {
     flex-direction: row;
   }
 
-  .info>div {
+  .info > div {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 50%;
