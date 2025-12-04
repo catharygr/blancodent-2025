@@ -29,7 +29,7 @@ export default async function HomePage({
         content={t("AdBloques.first.content")}
         image={firstAdBloqueImage}
         imageAlt={t("AdBloques.first.imageAlt")}
-        direction="right"
+        direction="left"
       />
     </main>
   );
