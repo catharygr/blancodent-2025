@@ -3,7 +3,7 @@
   display: grid;
   grid-template-rows: repeat(2, auto);
   grid-template-columns: 15%;
-  column-gap: var(--space-100);
+  column-gap: var(--space-600);
   margin-block: var(--space-900);
 }
 .h2 {
