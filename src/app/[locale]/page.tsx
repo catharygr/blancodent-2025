@@ -25,8 +25,10 @@ export default async function HomePage({
         {/* <a href="#">Test skip link</a> */}
       </div>
       <AdBloque
-        t={t}
+        title={t("AdBloques.first.title")}
+        content={t("AdBloques.first.content")}
         image={firstAdBloqueImage}
+        imageAlt={t("AdBloques.first.imageAlt")}
         direction="left"
       />
     </main>

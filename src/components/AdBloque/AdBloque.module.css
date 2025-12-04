@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.left {
+  font-size: 20px;
+}
+
+.right {
+  font-weight: 3px;
+}
