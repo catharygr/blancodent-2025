@@ -1,5 +1,7 @@
 import Hero from "@/components/HomePage/Hero/Hero/Hero";
 import { setRequestLocale, getTranslations } from "next-intl/server";
+import AdBloque from "@/components/AdBloque/AdBloque";
+import firstAdBloqueImage from "@/assets/images/palm-trees.svg";
 export default async function HomePage({
   params,
 }: Readonly<{
@@ -20,8 +22,13 @@ export default async function HomePage({
         id="skip-after-carousel"
         tabIndex={-1}
       >
-        <a href="#">Test skip link</a>
+        {/* <a href="#">Test skip link</a> */}
       </div>
+      <AdBloque
+        t={t}
+        image={firstAdBloqueImage}
+        direction="left"
+      />
     </main>
   );
 }

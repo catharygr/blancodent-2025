@@ -206,6 +206,13 @@
           "link": "More information..."
         }
       }
+    },
+    "AdBloques": {
+      "first": {
+        "title": "This is who we are",
+        "content": "We are a professional partnership founded and managed by registered dentists. Behind the registered trademark 'blancodent' there is no owner or employee outside the dental or medical profession. This guarantees you a professional level in the quality of our services, in the materials used in the clinic and in compliance with health procedures.",
+        "imageAlt": "Future image description"
+      }
     }
   },
   "NotFoundPage": {
