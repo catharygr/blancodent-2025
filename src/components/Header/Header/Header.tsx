@@ -3,7 +3,12 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import LangSwitcher from "@/components/Header/LangSwitcher";
 import Menu from "@/components/Header/Menu";
-import { contacto, home, localizacion } from "@/assets/links";
+import {
+  home,
+  localizacion,
+  losHorarios,
+  ofertasContinuas,
+} from "@/assets/links";
 
 export default function Header() {
   const t = useTranslations("Header");
@@ -76,13 +81,13 @@ export default function Header() {
         >
           <ul role="list">
             <li>
-              <Link href={localizacion()}>{t("quickLinksLocation")}</Link> •{" "}
+              <Link href={localizacion()}>{t("quickLinksOne")}</Link> •{" "}
             </li>
             <li>
-              <Link href={contacto()}>{t("quickLinksContact")}</Link> •{" "}
+              <Link href={ofertasContinuas()}>{t("quickLinksTwo")}</Link> •{" "}
             </li>
             <li>
-              <Link href="tel:+34928292455">{t("quickLinksTel")}</Link>
+              <Link href={losHorarios()}>{t("quickLinksThree")}</Link>
             </li>
           </ul>
         </nav>

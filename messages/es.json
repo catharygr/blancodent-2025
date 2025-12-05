@@ -43,9 +43,9 @@
   "Header": {
     "logoLabel": "Ir a la página de inicio",
     "quickLinksLabel": "Enlaces rápidos a la ubicación, formulario de contacto y llamada telefónica",
-    "quickLinksLocation": "Ubicación",
-    "quickLinksContact": "Cita previa",
-    "quickLinksTel": "Llámanos"
+    "quickLinksOne": "Ubicación",
+    "quickLinksTwo": "Ofertas",
+    "quickLinksThree": "Horarios"
   },
   "LangSwitcher": {
     "label": "Cambiar idioma",
