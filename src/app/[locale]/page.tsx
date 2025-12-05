@@ -2,6 +2,8 @@ import Hero from "@/components/HomePage/Hero/Hero/Hero";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import AdBloque from "@/components/AdBloque/AdBloque";
 import firstAdBloqueImage from "@/assets/images/chica-1.svg";
+import Slider from "@/components/Slider/Slider/Slider";
+import SliderCard from "@/components/Slider/SliderCard/SliderCard";
 export default async function HomePage({
   params,
 }: Readonly<{
@@ -30,6 +32,16 @@ export default async function HomePage({
         image={firstAdBloqueImage}
         imageAlt={t("AdBloques.first.imageAlt")}
         direction="left"
+      />
+      <Slider>
+        <SliderCard />
+      </Slider>
+      <AdBloque
+        title={t("AdBloques.second.title")}
+        content={t("AdBloques.second.content")}
+        image={firstAdBloqueImage}
+        imageAlt={t("AdBloques.second.imageAlt")}
+        direction="right"
       />
     </main>
   );

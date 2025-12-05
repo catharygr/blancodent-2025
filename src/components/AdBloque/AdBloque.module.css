@@ -1,13 +1,21 @@
 .container {
-  position: relative;
   display: grid;
   grid-template-rows: repeat(2, auto);
   grid-template-columns: auto 15%;
   column-gap: var(--space-600);
   margin-block: var(--space-900);
 }
+.titleContainer {
+  position: relative;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+}
 .h2 {
   line-height: 1;
+  max-width: 80%;
 }
 .decorativeLine {
   height: 4px;
@@ -16,15 +24,10 @@
 }
 .titleImg {
   position: absolute;
-  height: 5.5rem;
+  height: 7rem;
   width: auto;
 }
 
-.titleContainer {
-  grid-column: 1/-1;
-  grid-row: 1/2;
-  align-self: end;
-}
 .content {
   grid-column: 1/-1;
   grid-row: 2/3;
@@ -33,10 +36,14 @@
   display: none;
 }
 /* Left */
+.container[data-direction="left"] .h2 {
+  align-self: start;
+}
+
 .container[data-direction="left"] .titleImg {
-  top: 0;
+  bottom: 0;
   right: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-10%, -15%);
 }
 
 /* Right */
@@ -46,10 +53,13 @@
 .container[data-direction="right"] .titleContainer {
   text-align: right;
 }
+.container[data-direction="right"] .h2 {
+  align-self: end;
+}
 .container[data-direction="right"] .titleImg {
-  top: 0;
+  bottom: 0;
   left: 0;
-  transform: translate(50%, -50%);
+  transform: translate(10%, -15%);
 }
 
 .container[data-direction="right"] .content {
