@@ -41,11 +41,12 @@
 
 .p {
   /* limit number of lines */
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 9;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-clamp: 7;
+  line-clamp: 9;
+  color: var(--quinta-10);
 }
 .link {
   align-self: end;

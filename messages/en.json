@@ -218,6 +218,62 @@
         "content": "Is it because we do not mix economic interests with the medical profession, or is it because we do not join with large ondontological franchises that exist in the market? Our patients tell us that these are two reasons why they like us. But there are so many more. Do you want to discover them?",
         "imageAlt": "Future image description"
       }
+    },
+    "Slider": {
+      "card1": {
+        "title": "Implantology",
+        "content": "Permanently recover the function and aesthetics of your teeth, implanting small pieces of metal, and you can live without problems as if it were your own teeth. At Blancodent, your dentist clinic we use the latest German technology to provide you with implant placement with virtually no surgery, discomfort or pain.",
+        "alt": "Cross-section model of the jawbone with a tooth replaced by a dental implant.",
+        "linkContent": "Reed more..."
+      },
+      "card2": {
+        "title": "Orthodontics",
+        "content": "Orthodontics is the dental treatment aimed at correcting incorrectly positioned teeth. When the teeth are not aligned and as a result, they do not bite correctly between them, they cause difficulty in keeping them clean, there is a risk of early loss, paradontosis problems and can cause headaches. Finally, they cause an unwanted aesthetic appearance.",
+        "alt": "Young woman with a broad smile showing her braces.",
+        "linkContent": "Reed more..."
+      },
+      "card3": {
+        "title": "Periodontology",
+        "content": "If you feel inflammation or bleeding gums, this is the rental treatments that interests you. The culprit is always bacteria. There are many solutions, both on our part and yours. For an impeccable dental care of your gums, we recommend you review the way to take care of your dental hygiene. There are additional ways to maintain hygiene, and we will inform you of these if you visit us.",
+        "alt": "Digital drawing of an alleged presentation of some bacteria.",
+        "linkContent": "Reed more..."
+      },
+      "card4": {
+        "title": "Dental Whitening",
+        "content": "Dental whitening is a simple and painless dental treatment designed to correct the colour of your teeth. It is based on the use of natural products that work through oxidation. This whitening will not cause you any discomfort or pain. Only one session at the dental clinic is required. We will then provide you with a dental whitening kit to reinforce the treatment at home; in two weeks you will have white teeth as you imagined.",
+        "alt": "Young man with beard and glasses smiling",
+        "linkContent": "Read more..."
+      },
+      "card5": {
+        "title": "Bruxism",
+        "content": "The medical term for teeth grinding is bruxism. Our teeth are not designed to withstand this constant force and abrasion. Bruxism is classified as a parafunctional activity, which refers to the use of any part of the body in a way that is not usual. The causes of bruxism are very complex and most experts agree that multiple factors can lead to or contribute to bruxism. At Blancodent Dental Clinic we advise you that if you suffer from bruxism or teeth grinding, visit us to try to resolve it.",
+        "alt": "Smiling mouth of a woman, showing a transparent bite guard",
+        "linkContent": "Read more..."
+      },
+      "card6": {
+        "title": "Conservative Dentistry",
+        "content": "Conservative dentistry is a dental treatment that aims to preserve the patient's natural teeth. Thanks to aesthetic materials, such as composites, lost dental tissue can be replaced, whether due to cavities or fractures. The treatment of cavities through fillings is a very common and simple procedure. After removing the affected dental tissue, the dental cavity is cleaned and filled with biocompatible (aesthetic) materials. The objective is to restore the affected tooth to restore perfect chewing.",
+        "alt": "Young woman, smiling",
+        "linkContent": "Read more..."
+      },
+      "card7": {
+        "title": "Endodontics",
+        "content": "Endodontics is a dental treatment that involves the removal of the patient's nerve. If a small cavity is not discovered in time and is not treated (something easily avoidable if you attend a six-monthly check-up), it can deepen enough to reach and infect the living part of the tooth. At that point, pain and inflammation arrive. If it is not too late, we will try to save your tooth by treating the infection, before resorting to tooth extraction and the high costs resulting from prostheses or dental implants.",
+        "alt": "A digital X-ray image of several teeth",
+        "linkContent": "Read more..."
+      },
+      "card8": {
+        "title": "Dental Prostheses",
+        "content": "Dental prostheses remain a reliable solution in cases where either a dental implant is not possible or as an economical alternative. Technological progress also advances in this practical solution because it is still used today just as in the decades following implantology. So there are various options, more or less comfortable or economical depending on your case.",
+        "alt": "Plaster model of a jaw and teeth",
+        "linkContent": "Read more..."
+      },
+      "card9": {
+        "title": "Dental Hygiene",
+        "content": "Your dental hygiene, without doubt, begins with the usual brush and toothpaste, although it should not end here. Each person has a particular shape of denture and although for a few brushing is usually sufficient, most should use additional methods: dental floss, interdental brush, oral irrigator, mouthwashes... At Blancodent Dental Clinic we advise you to maintain adequate dental hygiene to prevent the appearance of tartar and bacterial plaque.",
+        "alt": "Drawing of a boy holding an enormous toothbrush about two metres long with a lot of toothpaste on top",
+        "linkContent": "Read more..."
+      }
     }
   },
   "NotFoundPage": {

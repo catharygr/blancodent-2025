@@ -6,8 +6,6 @@ import Slider from "@/components/Slider/Slider/Slider";
 import SliderCard from "@/components/Slider/SliderCard/SliderCard";
 import { homePageSlider } from "@/assets/data/home-page-slider";
 
-console.log(homePageSlider);
-
 export default async function HomePage({
   params,
 }: Readonly<{
@@ -38,12 +36,17 @@ export default async function HomePage({
         direction="left"
       />
       <Slider>
-        <SliderCard />
-        <SliderCard />
-        <SliderCard />
-        <SliderCard />
-        <SliderCard />
-        <SliderCard />
+        {homePageSlider.map((card, index) => (
+          <SliderCard
+            key={index}
+            img={card.img}
+            link={card.link}
+            title={t(`Slider.card${index + 1}.title`)}
+            content={t(`Slider.card${index + 1}.content`)}
+            alt={t(`Slider.card${index + 1}.alt`)}
+            linkContent={t(`Slider.card${index + 1}.linkContent`)}
+          />
+        ))}
       </Slider>
       <AdBloque
         title={t("AdBloques.second.title")}

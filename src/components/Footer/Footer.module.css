@@ -1,8 +1,8 @@
 .footer {
-  /* background-color: var(--primera-80); */
+  background-color: var(--primera-100);
   padding-block: var(--space-900);
   text-align: center;
-  /* color: var(--primera-10); */
+  color: var(--primera-10);
 }
 
 .cardsContainer {

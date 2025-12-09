@@ -216,6 +216,62 @@
         "content": "¿Es por no mezclar intereses económicos con la profesión médica o es por no unirnos con grandes franquicias odontológicas que existen en el mercado? Nuestros clientes nos cuentan que estas son dos razones por las que les gustamos. Pero hay muchísimas más. ¿Las quieres descubrir?",
         "imageAlt": "Futura descripción de la imagen"
       }
+    },
+    "Slider": {
+      "card1": {
+        "title": "Implantología.",
+        "content": "Los implantes dentales son la mejor solución a la hora de recuperar los dientes perdidos. Recupera de forma permanente el funcionamiento y la estética de tu dentadura, implantándote pequeñas piezas de metal, y podrás vivir sin inconvenientes como si se tratara de tus propios dientes. En Clínica Dental Blancodent, utilizamos la última tecnología alemana para proporcionarte la colocación de implantes dentales prácticamente sin cirugía, molestias y dolor.",
+        "alt": "Modelo de sección transversal del hueso de la mandibula con un diente sustituido por un implante",
+        "linkContent": "Leer más..."
+      },
+      "card2": {
+        "title": "Ortodoncia.",
+        "content": "La ortodoncia es un tratamiento dental que corrige la alineación de la dentadura en niños y adultos, por lo que nunca es tarde para iniciar este tratamiento odontológico. Esta práctica médica basada en la matemática y la física, no sólo tiene un fin estético, sino que también mejorará tu salud en otros muchos aspectos, que la hacen especialmente recomendable para los jóvenes y los adultos.",
+        "alt": "Mujer joven con una amplia sonrisa donde se aprecian los brackets",
+        "linkContent": "Leer más..."
+      },
+      "card3": {
+        "title": "Periodoncia.",
+        "content": "Si sientes inflamación o te sangran las encías, la periodoncia es la especialidad odontológica que te interesa. La culpable siempre es una bacteria. Hay muchas soluciones, tanto por nuestra parte como por la tuya. Para una impecable salud dental y de tus encías, te recomendamos revisar la forma de cuidar de tu higiene dental. Hay formas adicionales de mantener esta higiene dental, y en Clínica Dental Blancodent te informaremos de ellas si nos visitas.",
+        "alt": "Dibujo digital de supuesta presentación de unas bacterias",
+        "linkContent": "Leer más..."
+      },
+      "card4": {
+        "title": "Blanqueamineto dental",
+        "content": "El blanqueamiento dental es un tratamiento dental sencillo y sin dolor, diseñado para corregir el color de tus dientes. Se basa en la utilización de unos productos naturales que actúan por oxidación. Este blanqueamiento no te supondrá molestia alguna ni dolor. Sólo se requiere una sesión en la clínica dental. Luego te entregaremos un kit de blanqueamiento dental para reforzar el tratamiento en casa; en dos semanas tendrás unos dientes blancos como imaginaste.",
+        "alt": "Hombre joven con barba y gafas sonriendo",
+        "linkContent": "Leer más..."
+      },
+      "card5": {
+        "title": "Bruxismo",
+        "content": "El término médico de rechinar los dientes es bruxismo. Nuestros dientes no están diseñados para resistir esta fuerza y abrasión constante. El bruxismo se clasifica como una actividad parafuncional, que se refiere al uso de cualquier parte del cuerpo que no sea la habitual. La causas del bruxismo son muy complejas y la mayoría de los expertos están de acuerdo en que múltiples factores pueden conducir o contribuir al bruxismo. Desde Clínica Dental Blancodent te aconsejamos que si sufres de bruxismo o rechinar de dientes, nos visites para tratar de solucionarlo",
+        "alt": "Boca de una mujer, donde se observa ferula de descarga transparente",
+        "linkContent": "Leer más..."
+      },
+      "card6": {
+        "title": "Odontología conservadora",
+        "content": "La odontología conservadora es un tratamiento dental que tiene como objetivo la conservación de los dientes naturales del paciente. Gracias a materiales estéticos, como composites, se puede sustituir el tejido dental perdido, bien sea por una caries o una fractura. El tratamiento de las caries mediante obturaciones o empastes es un procedimiento muy común y sencillo. Después de eliminar el tejido dental afectado, se limpia y rellena la cavidad dental con los materiales bioagradables (estéticos). El objetivo es restaurar el diente afectado para poder devolverle la masticación perfecta.",
+        "alt": "Mujer joven sonriendo",
+        "linkContent": "Leer más..."
+      },
+      "card7": {
+        "title": "Endodoncia",
+        "content": "La endodoncia es un tratamiento dental que trata de la extirpación del nervio del paciente. Si una pequeña caries no se descubre a tiempo y no se cura (algo fácilmente evitable si se acude a una revisión semi-anual), puede profundizar tanto como para alcanzar e infectar la parte viva del diente. En ese momento llegan el dolor y la inflamación. Si no es tarde, intentaremos salvar tu diente, curando la infección, antes de acudir a la extracción dental y a los gastos elevados derivados de prótesis o de implantes dentales.",
+        "alt": "Una imagen digital de rayo X de varios dientes",
+        "linkContent": "Leer más"
+      },
+      "card8": {
+        "title": "Prótesis dentales",
+        "content": "Las prótesis dentales siguen siendo una solución fiable en los casos donde, o no es posible un implante dental o como una alternativa económica. El progreso tecnológico también avanza en esta solución práctica porque sigue siendo utilizada hoy en día igual cómo en las décadas que prosiguen la implantología. Así que existen varias opciones, más o menos cómodas o económicas dependiendo de tu caso.",
+        "alt": "Modelo de escayola de una mandíbula y dientes",
+        "linkContent": "Leer más..."
+      },
+      "card9": {
+        "title": "Higiene dental",
+        "content": "Tu higiene dental, sin duda, empieza por el habitual cepillo y pasta dental, aunque no debería terminar aquí. Cada persona tiene una particular forma de dentadura y aunque para unos pocos el cepillado suele ser suficiente, la mayoría debería utilizar métodos adicionales: hilo dental, cepillo interdental, irrigador bucal, colutorios... Desde Clínica Dental Blancodent te aconsejamos que lleves una adecuada higiene dental para prevenir la aparición de sarro y la placa bacteriana.",
+        "alt": "Dibujo de un chico sosteniendo un enorme cepillo de dientes con montón pasta dental",
+        "linkContent": "Leer más..."
+      }
     }
   },
   "NotFoundPage": {
