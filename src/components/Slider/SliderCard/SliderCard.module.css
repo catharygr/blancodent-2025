@@ -31,6 +31,7 @@
   box-shadow: var(--shadow-400);
   border-start-end-radius: var(--b-radius-200);
   border-end-end-radius: var(--b-radius-200);
+  font-stretch: var(--f-str-75);
 }
 .contentContainer {
   display: flex;

@@ -4,6 +4,10 @@ import AdBloque from "@/components/AdBloque/AdBloque";
 import firstAdBloqueImage from "@/assets/images/chica-1.svg";
 import Slider from "@/components/Slider/Slider/Slider";
 import SliderCard from "@/components/Slider/SliderCard/SliderCard";
+import { homePageSlider } from "@/assets/data/home-page-slider";
+
+console.log(homePageSlider);
+
 export default async function HomePage({
   params,
 }: Readonly<{
