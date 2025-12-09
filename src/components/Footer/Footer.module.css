@@ -24,8 +24,8 @@
   gap: var(--space-800);
 }
 
-.boxOne>*,
-.boxTwo>* {
+.boxOne > *,
+.boxTwo > * {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 16rem;
@@ -47,7 +47,7 @@
 }
 
 .addressTitle {
-  font-size: var(--fs-600);
+  font-size: var(--fs-700);
   font-weight: var(--f-wei-800);
   font-stretch: var(--f-str-90);
   line-height: var(--lh-400);

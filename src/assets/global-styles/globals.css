@@ -16,14 +16,19 @@
   --space-800: 2rem;
   --space-900: 3rem;
 
-  --shadow-300: 1px 1px 4px var(--base-gray-10);
-  --shadow-400: 2px 2px 6px var(--base-gray-9);
+  --text-shadow: 2px 2px 6px var(--base-gray-9);
+  --shadow-300: rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  --shadow-400: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --shadow-500: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
   --transition-400: all 0.2s ease-in-out;
 
   --b-radius-100: 5px;
   --b-radius-200: 10px;
   --b-radius-300: 15px;
+  --b-radius-400: 20px;
 }
 
 body {
@@ -72,7 +77,7 @@ p:not(:last-child):not([class]) {
   margin-bottom: var(--space-200);
 }
 
-.flow>*:not(:last-child) {
+.flow > *:not(:last-child) {
   margin-bottom: var(--space-200);
 }
 
@@ -87,7 +92,7 @@ p:not(:last-child):not([class]) {
 }
 
 :focus-visible {
-  outline: .375rem double var(--base-gray-6);
+  outline: 0.375rem double var(--base-gray-6);
   box-shadow: 0 0 0 0.15rem var(--base-gray-4);
   border-radius: 0.125rem;
 }
