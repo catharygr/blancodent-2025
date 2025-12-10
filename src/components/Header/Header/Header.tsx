@@ -1,3 +1,4 @@
+"use client";
 import styles from "./Header.module.css";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
@@ -9,12 +10,18 @@ import {
   losHorarios,
   ofertasContinuas,
 } from "@/assets/links";
+import { useHandleHeaderScroll } from "./utilities";
 
 export default function Header() {
+  const scrollDirection = useHandleHeaderScroll();
   const t = useTranslations("Header");
 
   return (
-    <header className={`wide-grid ${styles.header}`}>
+    <header
+      className={`wide-grid ${styles.header} ${
+        scrollDirection ? styles[scrollDirection] : ""
+      }`}
+    >
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link
