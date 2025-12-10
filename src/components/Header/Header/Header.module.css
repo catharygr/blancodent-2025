@@ -66,9 +66,9 @@
 }
 
 @media (min-width: 55rem) {
-  .logo .p {
-    /* display: block; */
-  }
+  /* .logo .p {
+    display: block;
+  } */
 }
 
 @media (min-width: 41rem) {
