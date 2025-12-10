@@ -20,7 +20,7 @@ import endodonciaImg from "@/assets/images/home-page/endodoncia.jpg";
 import protesisImg from "@/assets/images/home-page/protesis.jpg";
 import higieneImg from "@/assets/images/home-page/higiene.png";
 
-export const homePageSlider = [
+export const sliderServices = [
   {
     img: implantologiaImg,
     link: implantologia(),

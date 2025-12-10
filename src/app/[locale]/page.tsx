@@ -4,7 +4,8 @@ import AdBloque from "@/components/AdBloque/AdBloque";
 import firstAdBloqueImage from "@/assets/images/chica-1.svg";
 import Slider from "@/components/Slider/Slider/Slider";
 import SliderCard from "@/components/Slider/SliderCard/SliderCard";
-import { homePageSlider } from "@/assets/data/home-page-slider";
+import { sliderServices } from "@/assets/data/home-page-slider-services";
+import { sliderClinica } from "@/assets/data/home-page-slider-clinica";
 
 export default async function HomePage({
   params,
@@ -36,15 +37,17 @@ export default async function HomePage({
         direction="left"
       />
       <Slider>
-        {homePageSlider.map((card, index) => (
+        {sliderClinica.map((card, index) => (
           <SliderCard
             key={index}
             img={card.img}
             link={card.link}
-            title={t(`Slider.card${index + 1}.title`)}
-            content={t(`Slider.card${index + 1}.content`)}
-            alt={t(`Slider.card${index + 1}.alt`)}
-            linkContent={t(`Slider.card${index + 1}.linkContent`)}
+            title={t(`Sliders.sliderClinica.card${index + 1}.title`)}
+            content={t(`Sliders.sliderClinica.card${index + 1}.content`)}
+            alt={t(`Sliders.sliderClinica.card${index + 1}.alt`)}
+            linkContent={t(
+              `Sliders.sliderClinica.card${index + 1}.linkContent`
+            )}
           />
         ))}
       </Slider>
@@ -55,6 +58,21 @@ export default async function HomePage({
         imageAlt={t("AdBloques.second.imageAlt")}
         direction="right"
       />
+      <Slider>
+        {sliderServices.map((card, index) => (
+          <SliderCard
+            key={index}
+            img={card.img}
+            link={card.link}
+            title={t(`Sliders.sliderServices.card${index + 1}.title`)}
+            content={t(`Sliders.sliderServices.card${index + 1}.content`)}
+            alt={t(`Sliders.sliderServices.card${index + 1}.alt`)}
+            linkContent={t(
+              `Sliders.sliderServices.card${index + 1}.linkContent`
+            )}
+          />
+        ))}
+      </Slider>
     </main>
   );
 }
