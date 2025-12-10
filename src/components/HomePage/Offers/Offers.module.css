@@ -1,0 +1,47 @@
+.container {
+  margin-block: var(--space-900);
+}
+
+.h2 {
+  line-height: 1;
+  max-width: 80%;
+}
+.decorativeLine {
+  height: 4px;
+  background-color: var(--base-black-20);
+  margin-block: 1rem;
+  border-radius: var(--b-radius-100);
+}
+
+.imageContainer {
+  position: relative;
+  border-radius: var(--b-radius-400);
+  padding-block: var(--space-900);
+  padding-inline: clamp(2rem, 8vw, 10rem);
+  overflow: hidden;
+}
+
+.containerImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(4) saturate(0.4);
+}
+
+.content {
+  margin-block: var(--space-900);
+  background-color: var(--base-white-20);
+  border-radius: var(--b-radius-300);
+  padding: var(--space-400);
+  opacity: 0.8;
+  text-align: center;
+  box-shadow: var(--shadow-500);
+  color: var(--segunda-10);
+}
+
+.content h3 {
+  margin-block-end: var(--space-200);
+}

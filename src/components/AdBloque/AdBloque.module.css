@@ -21,6 +21,7 @@
   height: 4px;
   background-color: var(--base-black-20);
   margin-block: 1rem;
+  border-radius: var(--b-radius-100);
 }
 .titleImg {
   position: absolute;

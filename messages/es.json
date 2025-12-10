@@ -205,7 +205,7 @@
         }
       }
     },
-    "AdBloques": {
+    "adBloques": {
       "first": {
         "title": "Así somos",
         "content": "Somos una sociedad profesional fundada y administrada por odontólogos colegiados. Detrás de la marca registrada “blancodent” no se oculta ningún propietario o empleado ajeno a la profesión odontológica o médica. Eso le garantiza un nivel profesional en la calidad de nuestros servicios, en los materiales usados en la clínica y en el cumplimiento de los procedimientos sanitarios.",
@@ -217,7 +217,7 @@
         "imageAlt": "Futura descripción de la imagen"
       }
     },
-    "Sliders": {
+    "sliders": {
       "sliderClinica": {
         "card1": {
           "title": "El personal",
@@ -312,6 +312,11 @@
           "linkContent": "Leer más..."
         }
       }
+    },
+    "offers": {
+      "title": "Oferta férula de descarga",
+      "p1": " 50% de descuento en férula de descarga semirrígida + revisión + radiografía gratuita",
+      "p2": "¿Llevas tiempo queriendo tener una sonrisa más sana?"
     }
   },
   "NotFoundPage": {

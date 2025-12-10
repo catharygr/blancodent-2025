@@ -20,7 +20,7 @@ export default function SliderCard({
   linkContent,
 }: SliderCardProps) {
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <div className={styles.titleContainer}>
         <Image
           src={img}
@@ -37,6 +37,6 @@ export default function SliderCard({
           {linkContent}
         </Link>
       </div>
-    </div>
+    </article>
   );
 }

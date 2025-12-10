@@ -207,7 +207,7 @@
         }
       }
     },
-    "AdBloques": {
+    "adBloques": {
       "first": {
         "title": "This is who we are",
         "content": "We are a professional partnership founded and managed by registered dentists. Behind the registered trademark 'blancodent' there is no owner or employee outside the dental or medical profession. This guarantees you a professional level in the quality of our services, in the materials used in the clinic and in compliance with health procedures.",
@@ -219,7 +219,7 @@
         "imageAlt": "Future image description"
       }
     },
-    "Sliders": {
+    "sliders": {
       "sliderClinica": {
         "card1": {
           "title": "The staff",
@@ -314,6 +314,11 @@
           "linkContent": "Read more..."
         }
       }
+    },
+    "offers": {
+      "title": "Bite Splint Offer",
+      "p1": "50% discount on semi-rigid bite splint + check-up + free X-ray.",
+      "p2": "Have you been wanting a healthier smile for a while?"
     }
   },
   "NotFoundPage": {

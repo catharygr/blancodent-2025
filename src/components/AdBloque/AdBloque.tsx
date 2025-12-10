@@ -22,7 +22,7 @@ export default function AdBloque({
     >
       <div className={styles.titleContainer}>
         <h2 className={styles.h2}>{title}</h2>
-        <div className={styles.decorativeLine}></div>
+        <div className={styles.decorativeLine} />
         <Image
           className={styles.titleImg}
           src={image}
