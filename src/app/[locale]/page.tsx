@@ -9,7 +9,7 @@ import { sliderClinica } from "@/assets/data/home-page-slider-clinica";
 import Offers from "@/components/HomePage/Offers";
 import WhyBlancodent from "@/components/WhyBlancodent/WhyBlancodent";
 import WhyBlancodentCard from "@/components/WhyBlancodent/WhyBlancodentCard";
-import { cardImages } from "@/assets/data/home-page-whyBlancondet";
+import { cardImages } from "@/assets/data/home-page-whyBlancodent";
 
 export default async function HomePage({
   params,
@@ -70,12 +70,15 @@ export default async function HomePage({
       </Offers>
 
       <WhyBlancodent title="Por que Blancondent">
-        <WhyBlancodentCard
-          title="Porque Blamvcp\onent"
-          img={cardImages[2]}
-          alt=""
-          content="hyhtsvgtgsvbngsmnbm"
-        />
+        {cardImages.map((img, index) => (
+          <WhyBlancodentCard
+            key={index}
+            img={img}
+            title={t(`whyBlancodent.card${index + 1}.title`)}
+            alt=""
+            content={t(`whyBlancodent.card${index + 1}.content`)}
+          />
+        ))}
       </WhyBlancodent>
 
       <Slider>

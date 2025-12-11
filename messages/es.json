@@ -317,6 +317,33 @@
       "title": "Oferta férula de descarga",
       "p1": " 50% de descuento en férula de descarga semirrígida + revisión + radiografía gratuita",
       "p2": "¿Llevas tiempo queriendo tener una sonrisa más sana?"
+    },
+    "whyBlancodent": {
+      "title": "¿Por qué Blancodent?",
+      "card1": {
+        "title": "Profesionalidad",
+        "content": "Dos décadas de experiencias en España y Alemania. Dedicación máxima a la profesión médica y su Clínica Blancodent."
+      },
+      "card2": {
+        "title": "Higiene",
+        "content": "Cumplimiento irrevocable de la ley. Tanto en la zona médica como en el laboratorio. Respeto medioambiental de residuos."
+      },
+      "card3": {
+        "title": "Atención",
+        "content": "Los detalles que importan para entender las necesidades de cada paciente. Paciencia, sin discriminación económica..."
+      },
+      "card4": {
+        "title": "Materiales",
+        "content": "Desde los mejores materiales hasta los más económicos, siempre fabricados en la Comunidad Europea o Suiza."
+      },
+      "card5": {
+        "title": "Precios",
+        "content": "Información clara, precios competitivos y respetuosos con cada paciente. Sin engañosa publicidad corporativa..."
+      },
+      "card6": {
+        "title": "Personal",
+        "content": "Odontólogos con titulaciones Españolas y Alemanas. Personal auxiliar preparado, amable y atento al paciente. Trato familiar."
+      }
     }
   },
   "NotFoundPage": {

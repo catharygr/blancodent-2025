@@ -319,6 +319,33 @@
       "title": "Bite Splint Offer",
       "p1": "50% discount on semi-rigid bite splint + check-up + free X-ray.",
       "p2": "Have you been wanting a healthier smile for a while?"
+    },
+    "whyBlancodent": {
+      "title": "Why Blancodent?",
+      "card1": {
+        "title": "Professionalism",
+        "content": "Two decades of experience in Spain and Germany. Maximum dedication to the medical profession and its Blancodent Clinic."
+      },
+      "card2": {
+        "title": "Hygiene",
+        "content": "Irrevocable compliance with the law. Both in the medical area and in the laboratory. Environmental respect for waste."
+      },
+      "card3": {
+        "title": "Care",
+        "content": "The details that matter to understand each patient's needs. Patience, without economic discrimination..."
+      },
+      "card4": {
+        "title": "Materials",
+        "content": "From the best materials to the most economical, always manufactured in the European Community or Switzerland."
+      },
+      "card5": {
+        "title": "Prices",
+        "content": "Clear information, competitive and respectful prices for each patient. Without misleading corporate advertising..."
+      },
+      "card6": {
+        "title": "Staff",
+        "content": "Dentists with Spanish and German qualifications. Auxiliary staff prepared, friendly and attentive to the patient. Family treatment."
+      }
     }
   },
   "NotFoundPage": {
