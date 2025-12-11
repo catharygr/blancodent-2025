@@ -4,7 +4,6 @@ import styles from "./WhyBlancodentCard.module.css";
 interface CardProps {
   title: string;
   img: StaticImageData | string;
-  alt: string;
   content: string;
   color: string;
 }
@@ -12,7 +11,6 @@ interface CardProps {
 export default function WhyBlancodentCard({
   title,
   img,
-  alt,
   content,
   color,
 }: CardProps) {
@@ -22,7 +20,8 @@ export default function WhyBlancodentCard({
       <Image
         className={styles.img}
         src={img}
-        alt={alt}
+        alt=""
+        aria-hidden={true}
       />
       <p>{content}</p>
     </div>
