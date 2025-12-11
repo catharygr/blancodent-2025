@@ -1,0 +1,19 @@
+.container {
+  background-color: var(--sexta-80);
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-300);
+  flex: 1 1 250px;
+}
+
+.img {
+  height: 2lh;
+  width: auto;
+  /* display: inline; */
+  float: left;
+  margin-right: 10px;
+}
+
+.h3 {
+  margin-block-end: 15px;
+}

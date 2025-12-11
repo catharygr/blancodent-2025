@@ -1,0 +1,16 @@
+.container {
+  margin-block: var(--space-900);
+}
+
+.decorativeLine {
+  height: 4px;
+  background-color: var(--base-black-20);
+  margin-block: 1rem;
+  border-radius: var(--b-radius-100);
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
