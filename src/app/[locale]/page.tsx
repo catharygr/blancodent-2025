@@ -69,7 +69,7 @@ export default async function HomePage({
         <p>{t("offers.p2")}</p>
       </Offers>
 
-      <WhyBlancodent title="Por que Blancondent">
+      <WhyBlancodent title={t("whyBlancodent.title")}>
         {cardImages.map((img, index) => (
           <WhyBlancodentCard
             key={index}
@@ -77,9 +77,17 @@ export default async function HomePage({
             title={t(`whyBlancodent.card${index + 1}.title`)}
             alt=""
             content={t(`whyBlancodent.card${index + 1}.content`)}
+            color={`color-${index + 1}`}
           />
         ))}
       </WhyBlancodent>
+      <AdBloque
+        title={t("adBloques.second.title")}
+        content={t("adBloques.second.content")}
+        image={firstAdBloqueImage}
+        imageAlt={t("adBloques.second.imageAlt")}
+        direction="left"
+      />
 
       <Slider>
         {sliderServices.map((card, index) => (

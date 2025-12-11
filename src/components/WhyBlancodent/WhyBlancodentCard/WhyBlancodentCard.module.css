@@ -1,5 +1,4 @@
 .container {
-  background-color: var(--sexta-80);
   padding: 10px 15px;
   border-radius: 10px;
   box-shadow: var(--shadow-300);
@@ -9,11 +8,35 @@
 .img {
   height: 2lh;
   width: auto;
-  /* display: inline; */
   float: left;
   margin-right: 10px;
 }
 
 .h3 {
   margin-block-end: 15px;
+}
+
+.color-1 {
+  background-color: var(--primera-80);
+  color: var(--primera-10);
+}
+.color-2 {
+  background-color: var(--segunda-80);
+  color: var(--segunda-10);
+}
+.color-3 {
+  background-color: var(--tercera-80);
+  color: var(--tercera-10);
+}
+.color-4 {
+  background-color: var(--cuarta-80);
+  color: var(--cuarta-10);
+}
+.color-6 {
+  background-color: var(--quinta-80);
+  color: var(--quinta-10);
+}
+.color-5 {
+  background-color: var(--sexta-80);
+  color: var(--sexta-10);
 }

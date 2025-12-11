@@ -6,6 +6,7 @@ interface CardProps {
   img: StaticImageData | string;
   alt: string;
   content: string;
+  color: string;
 }
 
 export default function WhyBlancodentCard({
@@ -13,9 +14,10 @@ export default function WhyBlancodentCard({
   img,
   alt,
   content,
+  color,
 }: CardProps) {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${styles[color]}`}>
       <h3 className={styles.h3}>{title}</h3>
       <Image
         className={styles.img}
