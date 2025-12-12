@@ -10,6 +10,7 @@ import Offers from "@/components/HomePage/Offers";
 import WhyBlancodent from "@/components/WhyBlancodent/WhyBlancodent";
 import WhyBlancodentCard from "@/components/WhyBlancodent/WhyBlancodentCard";
 import { cardImages } from "@/assets/data/home-page-whyBlancodent";
+import Opinions from "@/components/HomePage/Opinions/Opinions";
 
 export default async function HomePage({
   params,
@@ -87,7 +88,7 @@ export default async function HomePage({
         imageAlt={t("adBloques.second.imageAlt")}
         direction="left"
       />
-
+      <Opinions />
       <Slider>
         {sliderServices.map((card, index) => (
           <SliderCard

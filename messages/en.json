@@ -346,6 +346,9 @@
         "title": "Staff",
         "content": "Dentists with Spanish and German qualifications. Auxiliary staff prepared, friendly and attentive to the patient. Family treatment."
       }
+    },
+    "opinions": {
+      "title": "What they say about as..."
     }
   },
   "NotFoundPage": {
