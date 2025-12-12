@@ -11,8 +11,8 @@ export default function WhyBlancodent({
 }) {
   return (
     <section className={`${styles.container} narrow-grid`}>
-      <div className={styles.titleContainer}>
-        <h2 className={styles.h2}>{title}</h2>
+      <div>
+        <h2>{title}</h2>
         <div className={styles.decorativeLine} />
       </div>
       <div className={styles.cardContainer}>{children}</div>

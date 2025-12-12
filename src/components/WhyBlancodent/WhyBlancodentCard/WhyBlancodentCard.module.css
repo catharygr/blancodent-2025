@@ -1,19 +1,19 @@
 .container {
-  padding: 10px 15px;
-  border-radius: 10px;
+  padding: var(--space-300) var(--space-500);
+  border-radius: var(--b-radius-300);
   box-shadow: var(--shadow-300);
-  flex: 1 1 250px;
+  flex: 1 1 15.6rem;
 }
 
 .img {
   height: 2lh;
   width: auto;
   float: left;
-  margin-right: 10px;
+  margin-right: var(--space-100);
 }
 
 .h3 {
-  margin-block-end: 15px;
+  margin-block-end: var(--space-400);
 }
 
 .color-1 {

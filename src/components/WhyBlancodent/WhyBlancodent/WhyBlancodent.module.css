@@ -3,14 +3,14 @@
 }
 
 .decorativeLine {
-  height: 4px;
+  height: var(--space-100);
   background-color: var(--base-black-20);
-  margin-block: 1rem;
+  margin-block: var(--space-300);
   border-radius: var(--b-radius-100);
 }
 
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: clamp(var(--space-300), 2vw, var(--space-400));
 }
