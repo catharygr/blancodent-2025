@@ -1,5 +1,7 @@
 import styles from "./Opinions.module.css";
 import { getTranslations } from "next-intl/server";
+import img from "@/assets/images/home-page/porque-card/cardimg-1.png";
+import Image from "next/image";
 
 export default async function Opinions() {
   const t = await getTranslations("HomePage.opinions");
@@ -25,14 +27,95 @@ export default async function Opinions() {
           </blockquote>
         </article>
         <div className={styles.otherOpinionsContainer}>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+          <article
+            className={`${styles.secondOpinionArticle} ${styles.bgColor1}`}
+          >
+            <Image
+              src={img}
+              alt=""
+            />
+            <header>
+              <h3>Matt</h3>
+              <span>*****</span>
+            </header>
+            <blockquote>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Exercitationem quos odio explicabo quas error eum velit iste quo
+                architecto saepe?
+              </p>
+            </blockquote>
+          </article>{" "}
+          <article
+            className={`${styles.secondOpinionArticle} ${styles.bgColor2}`}
+          >
+            <Image
+              src={img}
+              alt=""
+            />
+            <header>
+              <h3>Brendann</h3>
+              <span>*****</span>
+            </header>
+            <blockquote>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Exercitationem quos odio explicabo quas error eum velit iste quo
+                architecto saepe?
+              </p>
+            </blockquote>
+          </article>{" "}
+          <article
+            className={`${styles.secondOpinionArticle} ${styles.bgColor3}`}
+          >
+            <Image
+              src={img}
+              alt=""
+            />
+            <header>
+              <h3>Marie</h3>
+              <span>*****</span>
+            </header>
+            <blockquote>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Exercitationem quos odio explicabo quas error eum velit iste quo
+                architecto saepe?
+              </p>
+            </blockquote>
+          </article>
+          <div className={styles.threeOponionsContainer}>
+            <article
+              className={`${styles.secondOpinionArticle} ${styles.bgColor4}`}
+            >
+              <header>
+                <h3>Marie</h3>
+                <span>*****</span>
+              </header>
+              <blockquote>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Exercitationem quos odio explicabo quas error eum velit iste
+                  quo architecto saepe?
+                </p>
+              </blockquote>
+            </article>{" "}
+            <article
+              className={`${styles.secondOpinionArticle} ${styles.bgColor5}`}
+            >
+              <header>
+                <h3>Marie</h3>
+                <span>*****</span>
+              </header>
+              <blockquote>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Exercitationem quos odio explicabo quas error eum velit iste
+                  quo architecto saepe?
+                </p>
+              </blockquote>
+            </article>
+          </div>
         </div>
       </div>
     </section>

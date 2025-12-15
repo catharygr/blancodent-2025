@@ -16,9 +16,9 @@
   background: linear-gradient(
     to bottom,
     var(--segunda-80),
-    var(--base-white-20)
+    var(--base-white-20) 90%
   );
-  border-radius: clamp(var(--space-500), 4vw, var(--space-900));
+  border-radius: clamp(var(--space-600), 4vw, var(--space-900));
   overflow: hidden;
 }
 .firstOpinionArticle {
@@ -36,26 +36,85 @@
 }
 
 .firstOpinionHeader h3 {
-  font-size: 2rem;
+  font-size: var(--fs-600);
+  font-weight: var(--f-wei-800);
 }
 
 .firstOpinionArticle blockquote {
   padding: var(--space-600);
   text-align: center;
+  font-weight: var(--f-wei-500);
 }
 
 .otherOpinionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
   background-color: var(--base-white-20);
   margin-inline: clamp(2rem, 10vw, 6rem);
   border-radius: var(--b-radius-400);
-  padding: var(--space-300);
+  padding: clamp(var(--space-300), 3vw, var(--space-700));
   margin-block-start: var(--space-900);
 }
+
+.secondOpinionArticle {
+  background-color: var(--sexta-70);
+  padding: var(--space-200);
+  border-radius: calc(var(--b-radius-400) - var(--space-300));
+  box-shadow: var(--shadow-300);
+}
+
+.secondOpinionArticle img {
+  width: 4rem;
+  float: right;
+  height: auto;
+}
+
+.threeOponionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+}
+
+.bgColor1 {
+  background-color: var(--sexta-70);
+}
+.bgColor2 {
+  background-color: var(--cuarta-70);
+}
+.bgColor3 {
+  background-color: var(--primera-70);
+}
+.bgColor4 {
+  background-color: var(--tercera-90);
+}
+.bgColor5 {
+  background-color: var(--segunda-90);
+}
+
 @media (min-width: 600px) {
   .firstOpinionArticle {
     grid-template-columns: 1fr 2fr;
   }
+  .firstOpinionArticle blockquote {
+    text-align: left;
+  }
   .firstOpinionHeader {
     border-end-end-radius: var(--space-900);
+  }
+  .threeOponionsContainer {
+    flex-direction: row;
+    gap: var(--space-800);
+    margin-block-start: var(--space-400);
+  }
+  .bgColor4 {
+    background-color: var(--segunda-90);
+  }
+  .opinionsContainer {
+    background: linear-gradient(
+      to bottom,
+      var(--segunda-80),
+      var(--base-white-20) 70%
+    );
   }
 }

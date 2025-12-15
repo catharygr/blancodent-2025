@@ -89,6 +89,13 @@ export default async function HomePage({
         direction="left"
       />
       <Opinions />
+      <AdBloque
+        title={t("adBloques.second.title")}
+        content={t("adBloques.second.content")}
+        image={firstAdBloqueImage}
+        imageAlt={t("adBloques.second.imageAlt")}
+        direction="right"
+      />
       <Slider>
         {sliderServices.map((card, index) => (
           <SliderCard
