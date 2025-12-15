@@ -5,7 +5,7 @@
   background-color: var(--primera-100);
   color: var(--primera-10);
   padding: var(--space-300);
-  border-radius: var(--space-700);
+  border-radius: var(--b-radius-500);
   box-shadow: var(--shadow-400);
 
   & > img {
@@ -26,8 +26,8 @@
 }
 
 .ulOuter {
-  border-top-left-radius: calc(var(--space-700) - var(--space-300));
-  border-top-right-radius: calc(var(--space-700) - var(--space-300));
+  border-top-left-radius: calc(var(--b-radius-500) - var(--space-300));
+  border-top-right-radius: calc(var(--b-radius-500) - var(--space-300));
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -91,8 +91,8 @@
   justify-content: center;
   align-items: center;
   background-color: var(--primera-90);
-  border-bottom-left-radius: calc(var(--space-700) - var(--space-300));
-  border-bottom-right-radius: calc(var(--space-700) - var(--space-300));
+  border-bottom-left-radius: calc(var(--b-radius-500) - var(--space-300));
+  border-bottom-right-radius: calc(var(--b-radius-500) - var(--space-300));
 }
 
 .buttonsContainer svg {

@@ -2,9 +2,60 @@
   margin-block: var(--space-900);
 }
 
+.opinionsTitle {
+  line-height: var(--lh-100);
+}
+
 .decorativeLine {
   height: var(--space-100);
   background-color: var(--base-black-20);
   margin-block: var(--space-300);
   border-radius: var(--b-radius-100);
+}
+.opinionsContainer {
+  background: linear-gradient(
+    to bottom,
+    var(--segunda-80),
+    var(--base-white-20)
+  );
+  border-radius: clamp(var(--space-500), 4vw, var(--space-900));
+  overflow: hidden;
+}
+.firstOpinionArticle {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.firstOpinionHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block-start: 20px;
+  background-color: var(--segunda-70);
+}
+
+.firstOpinionHeader h3 {
+  font-size: 2rem;
+}
+
+.firstOpinionArticle blockquote {
+  padding: var(--space-600);
+  text-align: center;
+}
+
+.otherOpinionsContainer {
+  background-color: var(--base-white-20);
+  margin-inline: clamp(2rem, 10vw, 6rem);
+  border-radius: var(--b-radius-400);
+  padding: var(--space-300);
+  margin-block-start: var(--space-900);
+}
+@media (min-width: 600px) {
+  .firstOpinionArticle {
+    grid-template-columns: 1fr 2fr;
+  }
+  .firstOpinionHeader {
+    border-end-end-radius: var(--space-900);
+  }
 }

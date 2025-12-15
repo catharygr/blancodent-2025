@@ -2,6 +2,10 @@
   margin-block: var(--space-900);
 }
 
+.whyTitle {
+  line-height: var(--lh-100);
+}
+
 .decorativeLine {
   height: var(--space-100);
   background-color: var(--base-black-20);

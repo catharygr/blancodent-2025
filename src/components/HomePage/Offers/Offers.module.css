@@ -3,8 +3,7 @@
 }
 
 .h2 {
-  line-height: 1;
-  max-width: 80%;
+  line-height: var(--lh-100);
 }
 .decorativeLine {
   height: var(--space-100);
