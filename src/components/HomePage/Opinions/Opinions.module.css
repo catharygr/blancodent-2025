@@ -12,6 +12,11 @@
   margin-block: var(--space-300);
   border-radius: var(--b-radius-100);
 }
+
+.starIcon {
+  display: flex;
+  font-size: var(--fs-300);
+}
 .opinionsContainer {
   background: linear-gradient(
     to bottom,
@@ -59,7 +64,7 @@
 
 .secondOpinionArticle {
   background-color: var(--sexta-70);
-  padding: var(--space-200);
+  padding: clamp(var(--space-300), 3vw, var(--space-600));
   border-radius: calc(var(--b-radius-400) - var(--space-300));
   box-shadow: var(--shadow-300);
 }
@@ -70,6 +75,9 @@
   height: auto;
 }
 
+.secondOpinionArticle p {
+  margin-block-start: var(--space-300);
+}
 .threeOponionsContainer {
   display: flex;
   flex-direction: column;
