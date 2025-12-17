@@ -13,22 +13,26 @@
   border-radius: var(--b-radius-100);
 }
 
-.starIcon {
+.starIcons {
   display: flex;
-  font-size: var(--fs-300);
+  font-size: var(--fs-200);
+  opacity: 0.8;
 }
+
 .opinionsContainer {
   background: linear-gradient(
     to bottom,
     var(--segunda-80),
-    var(--base-white-20) 90%
+    var(--base-white-20) 95%
   );
-  border-radius: clamp(var(--space-600), 4vw, var(--space-900));
+  border-radius: clamp(var(--space-400), 4vw, var(--space-900));
   overflow: hidden;
 }
+
 .firstOpinionArticle {
   display: grid;
   grid-template-columns: 1fr;
+  color: var(--segunda-10);
 }
 
 .firstOpinionHeader {
@@ -36,7 +40,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-block-start: 20px;
+  padding-block: var(--space-400);
   background-color: var(--segunda-70);
 }
 
@@ -54,75 +58,97 @@
 .otherOpinionsContainer {
   display: flex;
   flex-direction: column;
-  gap: var(--space-300);
+  gap: clamp(var(--space-300), 2vw, var(--space-400));
   background-color: var(--base-white-20);
-  margin-inline: clamp(2rem, 10vw, 6rem);
-  border-radius: var(--b-radius-400);
+  margin-inline: clamp(var(--space-400), 4vw, var(--space-900));
+  border-radius: clamp(var(--b-radius-400), 4vw, var(--space-800));
   padding: clamp(var(--space-300), 3vw, var(--space-700));
-  margin-block-start: var(--space-900);
+  margin-block-start: clamp(var(--space-100), 4vw, 4rem);
 }
 
 .secondOpinionArticle {
-  background-color: var(--sexta-70);
   padding: clamp(var(--space-300), 3vw, var(--space-600));
-  border-radius: calc(var(--b-radius-400) - var(--space-300));
+  border-radius: calc(
+    clamp(var(--b-radius-400), 4vw, var(--space-800)) - var(--space-300)
+  );
   box-shadow: var(--shadow-300);
 }
 
 .secondOpinionArticle img {
   width: 4rem;
-  float: right;
   height: auto;
+  float: right;
 }
 
 .secondOpinionArticle p {
   margin-block-start: var(--space-300);
-}
-.threeOponionsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-300);
+  /* line-height: var(--lh-200); */
 }
 
 .bgColor1 {
   background-color: var(--sexta-70);
-}
-.bgColor2 {
-  background-color: var(--cuarta-70);
-}
-.bgColor3 {
-  background-color: var(--primera-70);
-}
-.bgColor4 {
-  background-color: var(--tercera-90);
-}
-.bgColor5 {
-  background-color: var(--segunda-90);
+  color: var(--sexta-10);
 }
 
-@media (min-width: 600px) {
-  .firstOpinionArticle {
-    grid-template-columns: 1fr 2fr;
-  }
-  .firstOpinionArticle blockquote {
-    text-align: left;
-  }
-  .firstOpinionHeader {
-    border-end-end-radius: var(--space-900);
-  }
-  .threeOponionsContainer {
-    flex-direction: row;
-    gap: var(--space-800);
-    margin-block-start: var(--space-400);
-  }
-  .bgColor4 {
-    background-color: var(--segunda-90);
-  }
+.bgColor2 {
+  background-color: var(--cuarta-70);
+  color: var(--cuarta-10);
+}
+
+.bgColor3 {
+  background-color: var(--primera-70);
+  color: var(--primera-10);
+}
+
+.bgColor4 {
+  background-color: var(--tercera-90);
+  color: var(--tercera-10);
+}
+
+.bgColor5 {
+  background-color: var(--segunda-90);
+  color: var(--segunda-10);
+}
+
+.thirdOpinionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(var(--space-300), 2vw, var(--space-400));
+}
+
+@media (min-width: 37rem) {
   .opinionsContainer {
     background: linear-gradient(
       to bottom,
       var(--segunda-80),
       var(--base-white-20) 70%
     );
+  }
+
+  .otherOpinionsContainer {
+    margin-inline: clamp(var(--space-400), 8vw, 8rem);
+  }
+
+  .firstOpinionArticle {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .firstOpinionArticle blockquote {
+    text-align: left;
+  }
+
+  .firstOpinionHeader {
+    border-end-end-radius: clamp(var(--space-400), 4vw, var(--space-900));
+  }
+
+  .bgColor4 {
+    background-color: var(--segunda-90);
+    color: var(--segunda-10);
+  }
+
+  .thirdOpinionsContainer {
+    flex-direction: row;
+    margin-block-start: var(--space-400);
+    gap: clamp(var(--space-300), 2vw, var(--space-700));
   }
 }

@@ -16,7 +16,7 @@ export default async function Opinions() {
         <article className={styles.firstOpinionArticle}>
           <header className={styles.firstOpinionHeader}>
             <h3>Jordan</h3>
-            <span className={styles.starIcon}>
+            <span className={styles.starIcons}>
               <StarIcon weight="fill" />
               <StarIcon weight="fill" />
               <StarIcon weight="fill" />
@@ -43,7 +43,7 @@ export default async function Opinions() {
             />
             <header>
               <h3>Matt</h3>
-              <span className={styles.starIcon}>
+              <span className={styles.starIcons}>
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
@@ -68,7 +68,7 @@ export default async function Opinions() {
             />
             <header>
               <h3>Brendann</h3>
-              <span className={styles.starIcon}>
+              <span className={styles.starIcons}>
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
@@ -93,7 +93,7 @@ export default async function Opinions() {
             />
             <header>
               <h3>Marie</h3>
-              <span className={styles.starIcon}>
+              <span className={styles.starIcons}>
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
@@ -109,7 +109,7 @@ export default async function Opinions() {
               </p>
             </blockquote>
           </article>
-          <div className={styles.threeOponionsContainer}>
+          <div className={styles.thirdOpinionsContainer}>
             <article
               className={`${styles.secondOpinionArticle} ${styles.bgColor4}`}
             >
@@ -119,7 +119,7 @@ export default async function Opinions() {
                   alt=""
                 />
                 <h3>Marie</h3>
-                <span className={styles.starIcon}>
+                <span className={styles.starIcons}>
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
@@ -144,7 +144,7 @@ export default async function Opinions() {
                   alt=""
                 />
                 <h3>Beatriz</h3>
-                <span className={styles.starIcon}>
+                <span className={styles.starIcons}>
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
