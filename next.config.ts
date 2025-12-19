@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 // i18n plugin
+import createMDX from "@next/mdx";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const cspHeader = `
@@ -17,6 +18,7 @@ const cspHeader = `
 
 const nextConfig: NextConfig = {
   /* config options here */
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   async headers() {
     return [
       {
@@ -56,6 +58,11 @@ const nextConfig: NextConfig = {
 // export by default by next sin intl plugin;
 // export default nextConfig;
 
+// MDX config
+const withMDX = createMDX({
+  // Add markdown plugins here, as desired
+});
+
 // Export with i18n plugin
 const withNextIntl = createNextIntlPlugin();
-export default withNextIntl(nextConfig);
+export default withNextIntl(withMDX(nextConfig));

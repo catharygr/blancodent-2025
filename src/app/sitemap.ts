@@ -54,7 +54,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/varios/cita-previa",
     "/varios/preguntas-frecuentes",
     "/varios/covid-19",
-    "/localizacion",
   ];
 
   return routes.map((route) => ({

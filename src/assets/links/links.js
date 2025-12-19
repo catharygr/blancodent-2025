@@ -33,4 +33,3 @@ export const ofertasContinuas = () => "/varios/ofertas-continuas";
 export const citaPrevia = () => "/varios/cita-previa";
 export const faq = () => "/varios/preguntas-frecuentes";
 export const covid19 = () => "/varios/covid-19";
-export const localizacion = () => "/localizacion";
