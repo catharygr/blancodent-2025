@@ -24,7 +24,6 @@ export default async function BlanqueamientoDental({
   return (
     <section>
       <h1>{metadata.title}</h1>
-      <h3>Layout H3</h3>
       <p>{metadata.subTitle}</p>
       <Content />
     </section>
