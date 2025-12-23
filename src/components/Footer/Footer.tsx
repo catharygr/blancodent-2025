@@ -42,54 +42,56 @@ export default function Footer() {
               </li>
             </ul>
           </nav>
-          <address>
-            <p className={styles.addressTitle}>{t("address.title")}</p>
-            <p>
-              {t("address.street")}
-              <br />
-              {t("address.city")}
-              <br />
-              {t("address.country")}
-            </p>
-            <p>
-              <strong>{t("address.social.title")}</strong>
-            </p>
-            <ul
-              className={styles.socialNetworks}
-              role="list"
-            >
-              <li>
-                <Link
-                  aria-labelledby="facebook-label"
-                  target="_blank"
-                  href="https://www.facebook.com/clinica.dental.blancodent.las.palmas/"
-                >
-                  <span
-                    className="visually-hidden"
-                    id="facebook-label"
+          <div>
+            <h2>{t("address.title")}</h2>
+            <address>
+              <p>
+                {t("address.street")}
+                <br />
+                {t("address.city")}
+                <br />
+                {t("address.country")}
+              </p>
+              <p>
+                <strong>{t("address.social.title")}</strong>
+              </p>
+              <ul
+                className={styles.socialNetworks}
+                role="list"
+              >
+                <li>
+                  <Link
+                    aria-labelledby="facebook-label"
+                    target="_blank"
+                    href="https://www.facebook.com/clinica.dental.blancodent.las.palmas/"
                   >
-                    {t("address.social.facebook")}
-                  </span>
-                  <FacebookLogoIcon weight="duotone" />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  aria-labelledby="instagram-label"
-                  target="_blank"
-                  href="https://www.instagram.com/blancodentclinicadental_gc/"
-                >
-                  <span
-                    className="visually-hidden"
-                    id="instagram-label"
+                    <span
+                      className="visually-hidden"
+                      id="facebook-label"
+                    >
+                      {t("address.social.facebook")}
+                    </span>
+                    <FacebookLogoIcon weight="duotone" />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    aria-labelledby="instagram-label"
+                    target="_blank"
+                    href="https://www.instagram.com/blancodentclinicadental_gc/"
                   >
-                    {t("address.social.instagram")}
-                  </span>
-                  <InstagramLogoIcon weight="duotone" />
-                </Link>
-              </li>
-            </ul>
-          </address>
+                    <span
+                      className="visually-hidden"
+                      id="instagram-label"
+                    >
+                      {t("address.social.instagram")}
+                    </span>
+                    <InstagramLogoIcon weight="duotone" />
+                  </Link>
+                </li>
+              </ul>
+            </address>
+          </div>
         </div>
         <div className={styles.boxTwo}>
           <div>

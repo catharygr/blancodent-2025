@@ -2,6 +2,11 @@ import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import styles from "./page.module.css";
+import recepcion from "@/assets/images/home-page/blanqueamiento.jpg";
+import personal from "@/assets/images/home-page/conservadora.jpg";
+import noSeQue from "@/assets/images/home-page/imagenes.jpg";
+import consulta from "@/assets/images/home-page/ortodoncia.jpg";
+import Image from "next/image";
 
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;
@@ -22,10 +27,34 @@ export default async function BlanqueamientoDental({
   );
 
   return (
-    <section>
-      <h1>{metadata.title}</h1>
-      <p>{metadata.subTitle}</p>
-      <Content />
-    </section>
+    <article className={styles.container}>
+      <header className={styles.header}>
+        <h1 className={styles.h1}>{metadata?.title}</h1>
+        <p className={styles.date}>Última edición: {metadata?.date}</p>
+        <p className={styles.subTitle}>{metadata?.subTitle}</p>
+      </header>
+      <div className={styles.line} />
+      <div className={styles.content}>
+        <Content />
+      </div>
+      <aside className={styles.aside}>
+        <Image
+          src={recepcion}
+          alt=""
+        />
+        <Image
+          src={personal}
+          alt=""
+        />{" "}
+        <Image
+          src={consulta}
+          alt=""
+        />{" "}
+        <Image
+          src={noSeQue}
+          alt=""
+        />
+      </aside>
+    </article>
   );
 }
