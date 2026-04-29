@@ -2,7 +2,7 @@ import img from "@/assets/images/home-page/porque-card/cardimg-1.png";
 import { StarHalfIcon, StarIcon } from "@phosphor-icons/react/dist/ssr";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import styles from "./opinions.module.css";
+import styles from "./Opinions.module.css";
 
 export default async function Opinions() {
   const t = await getTranslations("HomePage.opinions");
