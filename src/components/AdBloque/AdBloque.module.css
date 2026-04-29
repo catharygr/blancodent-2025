@@ -5,6 +5,7 @@
   column-gap: var(--space-600);
   margin-block: var(--space-900);
 }
+
 .titleContainer {
   position: relative;
   grid-column: 1/-1;
@@ -13,16 +14,19 @@
   display: flex;
   flex-direction: column;
 }
+
 .h2 {
   line-height: 1;
   max-width: 80%;
 }
+
 .decorativeLine {
   height: var(--space-100);
   background-color: var(--base-black-20);
   margin-block: var(--space-300);
   border-radius: var(--b-radius-100);
 }
+
 .titleImg {
   position: absolute;
   height: 7rem;
@@ -33,10 +37,14 @@
   grid-column: 1/-1;
   grid-row: 2/3;
 }
+
 .gridImg {
   display: none;
+  /* remove this latter */
+  opacity: 0.8;
 }
-/* Left */
+
+/* left */
 .container[data-direction="left"] .h2 {
   align-self: start;
 }
@@ -44,34 +52,40 @@
 .container[data-direction="left"] .titleImg {
   bottom: 0;
   right: 0;
-  transform: translate(-10%, -15%);
+  transform: translate(-10%, -15%)
 }
 
-/* Right */
+/* right */
 .container[data-direction="right"] {
   grid-template-columns: 15% auto;
 }
+
 .container[data-direction="right"] .titleContainer {
   text-align: right;
 }
+
 .container[data-direction="right"] .h2 {
   align-self: end;
 }
+
 .container[data-direction="right"] .titleImg {
   bottom: 0;
   left: 0;
-  transform: translate(10%, -15%);
+  transform: translate(10%, -15%)
 }
 
 .container[data-direction="right"] .content {
   text-align: right;
 }
 
+
 @media (min-width: 40rem) {
+
   .titleImg {
     display: none;
   }
-  /* Left */
+
+  /* left */
   .container[data-direction="left"] {
     grid-template-columns: auto 30%;
   }
@@ -80,10 +94,12 @@
     grid-column: 1/2;
     grid-row: 1/2;
   }
+
   .container[data-direction="left"] .content {
     grid-column: 1/2;
     grid-row: 2/3;
   }
+
   .container[data-direction="left"] .gridImg {
     display: block;
     grid-column: 2/3;
@@ -91,10 +107,12 @@
     place-self: end end;
   }
 
-  /* Right */
+
+  /* right */
   .container[data-direction="right"] {
     grid-template-columns: 30% auto;
   }
+
   .container[data-direction="right"] .titleContainer {
     grid-column: -1/-2;
     grid-row: 1/2;
@@ -104,6 +122,7 @@
     grid-column: -1/-2;
     grid-row: 2/3;
   }
+
   .container[data-direction="right"] .gridImg {
     display: block;
     grid-column: -2/-3;
@@ -111,10 +130,16 @@
     place-self: end start;
   }
 }
-@media (min-width: 53rem) {
+
+
+
+@media (min-width: 54rem) {
+
+  /* left */
   .container[data-direction="left"] {
     grid-template-columns: auto 20%;
   }
+
   .container[data-direction="right"] {
     grid-template-columns: 20% auto;
   }

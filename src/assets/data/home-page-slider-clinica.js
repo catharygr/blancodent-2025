@@ -1,10 +1,10 @@
 import {
   elPersonal,
+  financiacion,
   lasImagenes,
   losHorarios,
-  ubicacion,
   transporte,
-  financiacion,
+  ubicacion,
 } from "@/assets/links";
 
 import financiacionImg from "@/assets/images/home-page/financiacion.jpg";

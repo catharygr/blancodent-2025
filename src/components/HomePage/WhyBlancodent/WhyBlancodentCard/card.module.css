@@ -1,0 +1,47 @@
+.container {
+  padding: var(--space-300) var(--space-500);
+  border-radius: var(--b-radius-300);
+  box-shadow: var(--shadow-300);
+  flex: 1 1 15.6rem;
+}
+
+.h3 {
+  margin-block-end: var(--space-400);
+}
+
+.img {
+  height: 2lh;
+  width: auto;
+  float: left;
+  margin-right: var(--space-100);
+}
+
+.color-1 {
+  background-color: var(--primera-80);
+  color: var(--primera-10);
+}
+
+.color-2 {
+  background-color: var(--segunda-80);
+  color: var(--segunda-10);
+}
+
+.color-3 {
+  background-color: var(--tercera-80);
+  color: var(--tercera-10);
+}
+
+.color-4 {
+  background-color: var(--cuarta-80);
+  color: var(--cuarta-10);
+}
+
+.color-5 {
+  background-color: var(--sexta-80);
+  color: var(--sexta-10);
+}
+
+.color-6 {
+  background-color: var(--quinta-80);
+  color: var(--quinta-10);
+}

@@ -12,7 +12,8 @@ const cspHeader = `
     object-src 'none';
     base-uri 'self';
     form-action 'self';
-    frame-ancestors 'none';
+    frame-ancestors 'self' https://peertube.alexdebosnia.eu;
+    frame-src 'self' https://peertube.alexdebosnia.eu;
     `;
 // upgrade-insecure-requests;
 

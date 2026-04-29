@@ -20,7 +20,7 @@
       }
     },
     "timetable": {
-      "title": "Opening Hours:",
+      "title": "Opening hours:",
       "dayColumn": "Day",
       "hoursColumn": "Hours",
       "days": {
@@ -127,7 +127,7 @@
       }
     },
     "timetable": {
-      "title": "Opening Hours:",
+      "title": "Opening hours:",
       "dayColumn": "Days",
       "hoursColumn": "Hours",
       "days": {
@@ -142,6 +142,9 @@
     }
   },
   "HomePage": {
+    "meta": {
+      "title": "Home Page"
+    },
     "heroHeader": {
       "titleSmall": "Dental Clinic",
       "titleBig": "Blancodent",
@@ -150,7 +153,6 @@
       "actionBtn": "Call us now",
       "actionLink": "Book appointment online"
     },
-
     "heroCarousel": {
       "navButtonLeftAlt": "Previous slide",
       "navButtonRightAlt": "Next slide",
@@ -170,21 +172,21 @@
       "heroSlides": {
         "skipLink": "Skip carousel",
         "slide1": {
-          "h2": "Teeth whitening",
+          "h2": "Dental whitening",
           "h3": "White teeth, healthy mouth and happy smile.",
-          "p": "This dental care treatment allows to solve the alterations of the color of the teeth. The mouth is one of the parts of the body that reflects the personality and says the most about a person. Having a correct dental care, a healthy smile and white teeth is a wish that we all have.",
+          "p": "This dental treatment allows you to correct alterations in tooth colour. The mouth is one of the parts of the body that most reflects personality and says the most about a person. Having a healthy smile and white teeth is a desire we all share. Therefore, to show your best version, don't hesitate to get the best dental whitening with Blancodent, your dentist in Las Palmas.",
           "link": "More information..."
         },
         "slide2": {
-          "h2": "Orthodontics",
-          "h3": "There ara no excuses for not smiling.",
-          "p": "Orthodontics is a dental care treatment that allows you to correct the bad position of the teeth. It is much more than an aesthetic solution, more than a simple alignment of the teeth. The healthy life of the teeth, gums and the correct bite are achieved, thus providing the well-being of your mouth.",
+          "h2": "Invisible orthodontics",
+          "h3": "There are no more excuses not to smile.",
+          "p": "Orthodontics allows you to correct the bad positioning of teeth. It is much more than an aesthetic solution, more than a simple alignment of teeth. It achieves a healthy life for teeth, gums and correct bite, thus providing wellbeing for your mouth.",
           "link": "More information..."
         },
         "slide3": {
           "h2": "Implantology",
-          "h3": "Permanent solution to your denture.",
-          "p": "Dental care’s latest technology to provide you with the placement of dental implants practically without surgery, discomfort or pain, recovering the function and aesthetics of your mouth. In addition, we have innovative dental technology where we can use the dental biomaterial obtained from the patient's own tooth, in order to provide almost perfect osteointegration.",
+          "h3": "Permanent solution for your denture.",
+          "p": "We use the latest technology to provide you with dental implant placement with virtually no surgery, discomfort or pain, recovering the function and aesthetics of your mouth. In addition, we have innovative technology where we can use the biomaterial obtained from the patient's own extracted tooth, in order to provide almost perfect osseointegration.",
           "link": "More information..."
         },
         "slide4": {
@@ -209,14 +211,24 @@
     },
     "adBloques": {
       "first": {
-        "title": "This is who we are",
-        "content": "We are a professional partnership founded and managed by registered dentists. Behind the registered trademark 'blancodent' there is no owner or employee outside the dental or medical profession. This guarantees you a professional level in the quality of our services, in the materials used in the clinic and in compliance with health procedures.",
-        "imageAlt": "Future image description"
+        "title": "About the clinic",
+        "content": "Blancodent Dental Clinic has been welcoming the citizens of Las Palmas de Gran Canaria for over twenty five years. We are located on the emblematic and pedestrianised Avenida Mesa y López, No. 1, right in the heart of our beautiful city. With easy pedestrian access, bicycles and buses stop right outside our doors, and there are plenty of parking spaces for motorbikes and cars nearby. We are in the centre of the shopping district and just a 5-minute walk from the harbour. Explore the cards below to get to know us in detail.",
+        "imageAlt": ""
       },
       "second": {
+        "title": "Who we are",
+        "content": "Blancodent Dental Clinic is a professional partnership founded and managed by registered dentists. Behind the registered trademark 'Blancodent' there is no owner or employee outside the dental or medical profession. This guarantees you a professional standard in the quality of our services, in the materials used in the clinic, and in compliance with health procedures in European Union and Spain.",
+        "imageAlt": ""
+      },
+      "third": {
         "title": "What makes us different?",
         "content": "Is it because we do not mix economic interests with the medical profession, or is it because we do not join with large ondontological franchises that exist in the market? Our patients tell us that these are two reasons why they like us. But there are so many more. Do you want to discover them?",
-        "imageAlt": "Future image description"
+        "imageAlt": ""
+      },
+      "fourth": {
+        "title": "Dental Specialties",
+        "content": "We care for your health and your smile by improving your appearance. We will analyse your case and apply the specialties that best suit your needs: implants, orthodontics, or a simple fix in just 5 minutes. Explore the cards below to get to know us in detail.",
+        "imageAlt": ""
       }
     },
     "sliders": {
@@ -262,19 +274,19 @@
         "card1": {
           "title": "Implantology",
           "content": "Permanently recover the function and aesthetics of your teeth, implanting small pieces of metal, and you can live without problems as if it were your own teeth. At Blancodent, your dentist clinic we use the latest German technology to provide you with implant placement with virtually no surgery, discomfort or pain.",
-          "alt": "Cross-section model of the jawbone with a tooth replaced by a dental implant.",
+          "alt": "Cross-sectional model of jawbone with a tooth replaced by an implant",
           "linkContent": "Reed more..."
         },
         "card2": {
           "title": "Orthodontics",
           "content": "Orthodontics is the dental treatment aimed at correcting incorrectly positioned teeth. When the teeth are not aligned and as a result, they do not bite correctly between them, they cause difficulty in keeping them clean, there is a risk of early loss, paradontosis problems and can cause headaches. Finally, they cause an unwanted aesthetic appearance.",
-          "alt": "Young woman with a broad smile showing her braces.",
+          "alt": "Young woman with a wide smile showing orthodontic braces",
           "linkContent": "Reed more..."
         },
         "card3": {
           "title": "Periodontology",
           "content": "If you feel inflammation or bleeding gums, this is the rental treatments that interests you. The culprit is always bacteria. There are many solutions, both on our part and yours. For an impeccable dental care of your gums, we recommend you review the way to take care of your dental hygiene. There are additional ways to maintain hygiene, and we will inform you of these if you visit us.",
-          "alt": "Digital drawing of an alleged presentation of some bacteria.",
+          "alt": "Digital illustration depicting bacteria",
           "linkContent": "Reed more..."
         },
         "card4": {
@@ -310,15 +322,28 @@
         "card9": {
           "title": "Dental Hygiene",
           "content": "Your dental hygiene, without doubt, begins with the usual brush and toothpaste, although it should not end here. Each person has a particular shape of denture and although for a few brushing is usually sufficient, most should use additional methods: dental floss, interdental brush, oral irrigator, mouthwashes... At Blancodent Dental Clinic we advise you to maintain adequate dental hygiene to prevent the appearance of tartar and bacterial plaque.",
-          "alt": "Drawing of a boy holding an enormous toothbrush about two metres long with a lot of toothpaste on top",
+          "alt": "Drawing of a boy holding an enormous toothbrush about two metres long.",
           "linkContent": "Read more..."
         }
       }
     },
     "offers": {
-      "title": "Bite Splint Offer",
-      "p1": "50% discount on semi-rigid bite splint + check-up + free X-ray.",
-      "p2": "Have you been wanting a healthier smile for a while?"
+      "title": "Latest offers",
+      "one": {
+        "title": "Bite Splint Offer",
+        "p1": "50% discount on semi-rigid bite splint + check-up + free X-ray.",
+        "p2": "Have you been wanting a healthier smile for a while?"
+      },
+      "two": {
+        "title": "10% discount for students and unemployed.",
+        "p1": "Also includes free check-up, estimate and X-rays. Take advantage!",
+        "p2": "(Not combinable with other offers)"
+      },
+      "three": {
+        "title": "",
+        "p1": "",
+        "p2": ""
+      }
     },
     "whyBlancodent": {
       "title": "Why Blancodent?",
@@ -348,7 +373,31 @@
       }
     },
     "opinions": {
-      "title": "What they say about as..."
+      "title": "What they say about us...",
+      "first": {
+        "name": "Matt",
+        "opinion": "To any english-speaking person with poor Spanish who needs dental treatment whilst in Las Palmas De G.C., I wholeheartedly recommend Clinica Dental Blancodent. I can't even begin to describe how much better this experience was than any dental issues I've had to address in the UK. It was so much cheaper, so much more efficient, and everyone there was just lovely."
+      },
+      "second": {
+        "name": "Jordan M.",
+        "opinion": "Blancodent has been my trusted dentist for the past 8 years and I’ve never felt in better hands! Many necessary treatments later I can only say over and over that they are the best at what they do, honest and caring with every little detail!"
+      },
+      "third": {
+        "name": "Rhiannon W.",
+        "opinion": "Fantastic - squeezed me in last minute after a dental issue while travelling. Really pleasant team - thanks so much for helping me out."
+      },
+      "fourth": {
+        "name": "Beatriz S.C.",
+        "opinion": "Excellent professionals. Always taking care of my oral health. Excellent and friendly service. They make you feel at home. Micki and Tania have been treating me since 2010, so I know what I'm talking about. Since I started, my husband and children have been joining in. I have complete confidence in them."
+      },
+      "fifth": {
+        "name": "Paolo M.",
+        "opinion": "I had an excellent experience at Blancodent Dental Clinic. I received a complete dental cleaning and a filling, and the entire process was very professional and thorough. The staff was very friendly and attentive, and they made me feel comfortable throughout. The cleaning was very thorough, and the filling was perfect, with no discomfort. The clinic is modern, clean, and well-organized."
+      },
+      "sixt": {
+        "name": "Marta O.",
+        "opinion": "They've been my trusted dentists for years. I've had various treatments with them and have always been happy and satisfied with the results. The service is outstanding; all the staff are very friendly and professional, they explain everything in detail, and they do meticulous work. Highly recommended."
+      }
     }
   },
   "NotFoundPage": {
@@ -362,5 +411,25 @@
   "SkipLinkMain": {
     "content": "Skip to main content",
     "href": "main"
+  },
+  "ContactForm": {
+    "handleSubmit": {
+      "sending": "Sending your message to our team...",
+      "success": "Message sent successfully! Thank you.",
+      "error": "Error sending message, please try again later or call: +34 928 292 455."
+    },
+    "name": "Your name",
+    "namePh": "How would you like us to address you?",
+    "nameDesc": "For your privacy, you do not need to provide your real name; if you prefer, you can use a nickname and we will be happy to address you that way.",
+    "email": "Email address",
+    "emailPh": "What is your email address?",
+    "emailDesc": "This is required so we can respond to your enquiry; if you do not provide it, we will not be able to contact you.",
+    "phone": "Contact telephone",
+    "phonePh": "Don't forget your country code.",
+    "phoneDesc": "Not required, but we recommend you provide it as it makes communication easier. If you do, we will assume it is your preferred method of contact.",
+    "message": "Your message or appointment request",
+    "messagePh": "Write your message to us...",
+    "messageDesc": "If you are requesting an appointment, please indicate your preferred dates and time slots (morning or afternoon). And thank you for contacting us.",
+    "btn": "Send message..."
   }
 }

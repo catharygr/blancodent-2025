@@ -1,10 +1,10 @@
 "use client";
-import styles from "./Header.module.css";
-import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { home, losHorarios, ofertasContinuas, ubicacion } from "@/assets/links";
 import LangSwitcher from "@/components/Header/LangSwitcher";
 import Menu from "@/components/Header/Menu";
-import { home, losHorarios, ofertasContinuas, ubicacion } from "@/assets/links";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
+import styles from "./Header.module.css";
 import { useHandleHeaderScroll } from "./utilities";
 
 export default function Header() {

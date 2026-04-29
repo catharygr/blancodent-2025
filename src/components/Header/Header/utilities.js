@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function useHandleHeaderScroll() {
   const [scrollDirection, setScrollDirection] = useState(null);

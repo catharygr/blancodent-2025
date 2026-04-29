@@ -1,0 +1,44 @@
+.container {
+  /* border: 1px solid red; */
+  margin-block-end: var(--space-800);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+  margin-block-end: var(--space-900);
+
+  & .label {
+    font-size: var(--fs-500);
+    font-weight: var(--f-wei-600);
+  }
+
+  & .input {
+    padding-inline: var(--space-400);
+    border: 1px solid var(--primera-30);
+    border-radius: var(--b-radius-100);
+  }
+
+  & .input:not(textarea) {
+    height: var(--space-900);
+  }
+
+  .input::placeholder {
+    font-size: var(--fs-300);
+  }
+
+  & .description {
+    font-size: var(--fs-300);
+    font-weight: var(--f-wei-500);
+    margin-block-end: var(--space-400);
+    line-height: var(--lh-100);
+  }
+
+}
+
+.button {
+  background-color: var(--tercera-30);
+  color: var(--tercera-100);
+  align-self: center;
+}

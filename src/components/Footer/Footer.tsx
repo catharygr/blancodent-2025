@@ -5,13 +5,13 @@ import {
   notaLegal,
   ofertasContinuas,
 } from "@/assets/links";
-import styles from "./Footer.module.css";
 import { Link } from "@/i18n/navigation";
 import {
-  InstagramLogoIcon,
   FacebookLogoIcon,
+  InstagramLogoIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -99,27 +99,32 @@ export default function Footer() {
             <p>
               <strong>{t("timetable.days.monday")}</strong>
               <br />
-              09:30 - 16:00.
+              <time dateTime="09:30">09:30</time> -{" "}
+              <time dateTime="16:00">16:00</time>.
             </p>
             <p>
               <strong>{t("timetable.days.tuesday")}</strong>
               <br />
-              14:00 - 20:00.
+              <time dateTime="14:00">14:00</time> -{" "}
+              <time dateTime="20:00">20:00</time>.
             </p>
             <p>
               <strong>{t("timetable.days.wednesday")}</strong>
               <br />
-              09:30 - 16:00.
+              <time dateTime="09:30">09:30</time> -{" "}
+              <time dateTime="16:00">16:00</time>.
             </p>
             <p>
               <strong>{t("timetable.days.thursday")}</strong>
               <br />
-              14:00 - 20:00.
+              <time dateTime="14:00">14:00</time> -{" "}
+              <time dateTime="20:00">20:00</time>.
             </p>
             <p>
               <strong>{t("timetable.days.friday")}</strong>
               <br />
-              09:30 - 16:00.
+              <time dateTime="09:30">09:30</time> -{" "}
+              <time dateTime="16:00">16:00</time>.
             </p>
           </div>
           <div>

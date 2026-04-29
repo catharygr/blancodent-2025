@@ -3,7 +3,8 @@
   overflow-x: scroll;
   display: flex;
   gap: clamp(0.6rem, 4vw, 2rem);
-  margin-block: var(--space-600);
   padding: var(--space-500);
   padding-block-end: var(--space-500);
+  margin-block: var(--space-600);
+  /* border: 1px solid black; */
 }

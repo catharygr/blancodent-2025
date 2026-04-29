@@ -8,6 +8,7 @@ interface ChildComponentProps {
   imageAlt: string;
   direction: "left" | "right";
 }
+
 export default function AdBloque({
   title,
   content,

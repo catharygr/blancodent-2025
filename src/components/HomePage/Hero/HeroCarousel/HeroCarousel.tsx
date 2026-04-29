@@ -1,7 +1,17 @@
 "use client";
-import { useState, useRef, useMemo } from "react";
+import PalmTrees from "@/assets/images/palm-trees.svg";
+import {
+  blanqueamiento,
+  contacto,
+  higiene,
+  implantologia,
+  odontologiaConservadora,
+  ortodoncia,
+  periodoncia,
+} from "@/assets/links";
+import SkipLink from "@/components/SkipLink/SkipLink";
 import { Link } from "@/i18n/navigation";
-import styles from "./heroCarousel.module.css";
+import type { Icon } from "@phosphor-icons/react";
 import {
   AlignCenterHorizontalIcon,
   ArrowFatLinesLeftIcon,
@@ -14,19 +24,9 @@ import {
   ToothIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
-import {
-  blanqueamiento,
-  contacto,
-  higiene,
-  implantologia,
-  odontologiaConservadora,
-  ortodoncia,
-  periodoncia,
-} from "@/assets/links";
-import SkipLink from "@/components/SkipLink/SkipLink";
-import type { Icon } from "@phosphor-icons/react";
 import Image from "next/image";
-import PalmTrees from "@/assets/images/palm-trees.svg";
+import { useMemo, useRef, useState } from "react";
+import styles from "./heroCarousel.module.css";
 
 type SlideData = {
   slideBtnLinks: Array<() => string>;
@@ -50,7 +50,7 @@ export default function HeroCarousel() {
   };
 
   const handleLeftAndRightSlide = (direction: "prev" | "next") => {
-    let newSlide =
+    const newSlide =
       direction === "next"
         ? (currentSlide + 1) % totalSlides
         : (currentSlide - 1 + totalSlides) % totalSlides;

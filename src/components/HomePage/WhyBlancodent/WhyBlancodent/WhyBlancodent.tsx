@@ -1,0 +1,21 @@
+import styles from "./why.module.css";
+
+import { ReactNode } from "react";
+
+export default function WhyBlancodent({
+  children,
+  title,
+}: {
+  children: ReactNode;
+  title: string;
+}) {
+  return (
+    <section className={`${styles.container} narrow-grid`}>
+      <div>
+        <h2 className={styles.whyTitle}>{title}</h2>
+        <div className={styles.decorativeLine} />
+      </div>
+      <div className={styles.cardContainer}>{children}</div>
+    </section>
+  );
+}

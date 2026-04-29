@@ -1,21 +1,22 @@
-import styles from "./Opinions.module.css";
-import { getTranslations } from "next-intl/server";
 import img from "@/assets/images/home-page/porque-card/cardimg-1.png";
-import Image from "next/image";
 import { StarHalfIcon, StarIcon } from "@phosphor-icons/react/dist/ssr";
+import { getTranslations } from "next-intl/server";
+import Image from "next/image";
+import styles from "./opinions.module.css";
 
 export default async function Opinions() {
   const t = await getTranslations("HomePage.opinions");
+
   return (
     <section className={styles.container}>
       <div>
-        <h2 className={styles.opinionsTitle}> {t("title")} </h2>
+        <h2 className={styles.opinionsTitle}>{t("title")}</h2>
         <div className={styles.decorativeLine} />
       </div>
       <div className={styles.opinionsContainer}>
         <article className={styles.firstOpinionArticle}>
           <header className={styles.firstOpinionHeader}>
-            <h3>Jordan</h3>
+            <h3>{t("first.name")}</h3>
             <span className={styles.starIcons}>
               <StarIcon weight="fill" />
               <StarIcon weight="fill" />
@@ -25,12 +26,7 @@ export default async function Opinions() {
             </span>
           </header>
           <blockquote>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
-              nesciunt animi nihil sunt ad mollitia quasi unde omnis et error
-              voluptatum quas eveniet quibusdam laudantium explicabo debitis
-              velit, quia quos.
-            </p>
+            <p>{t("first.opinion")}</p>
           </blockquote>
         </article>
         <div className={styles.otherOpinionsContainer}>
@@ -42,7 +38,7 @@ export default async function Opinions() {
               alt=""
             />
             <header>
-              <h3>Matt</h3>
+              <h3>{t("second.name")}</h3>
               <span className={styles.starIcons}>
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
@@ -52,13 +48,9 @@ export default async function Opinions() {
               </span>
             </header>
             <blockquote>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Exercitationem quos odio explicabo quas error eum velit iste quo
-                architecto saepe?
-              </p>
+              <p>{t("second.opinion")}</p>
             </blockquote>
-          </article>{" "}
+          </article>
           <article
             className={`${styles.secondOpinionArticle} ${styles.bgColor2}`}
           >
@@ -67,7 +59,7 @@ export default async function Opinions() {
               alt=""
             />
             <header>
-              <h3>Brendann</h3>
+              <h3>{t("third.name")}</h3>
               <span className={styles.starIcons}>
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
@@ -77,13 +69,9 @@ export default async function Opinions() {
               </span>
             </header>
             <blockquote>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Exercitationem quos odio explicabo quas error eum velit iste quo
-                architecto saepe?
-              </p>
+              <p>{t("third.opinion")}</p>
             </blockquote>
-          </article>{" "}
+          </article>
           <article
             className={`${styles.secondOpinionArticle} ${styles.bgColor3}`}
           >
@@ -92,7 +80,7 @@ export default async function Opinions() {
               alt=""
             />
             <header>
-              <h3>Marie</h3>
+              <h3>{t("fourth.name")}</h3>
               <span className={styles.starIcons}>
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
@@ -102,11 +90,7 @@ export default async function Opinions() {
               </span>
             </header>
             <blockquote>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Exercitationem quos odio explicabo quas error eum velit iste quo
-                architecto saepe?
-              </p>
+              <p>{t("fourth.opinion")}</p>
             </blockquote>
           </article>
           <div className={styles.thirdOpinionsContainer}>
@@ -118,7 +102,7 @@ export default async function Opinions() {
                   src={img}
                   alt=""
                 />
-                <h3>Marie</h3>
+                <h3>{t("fifth.name")}</h3>
                 <span className={styles.starIcons}>
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
@@ -128,13 +112,9 @@ export default async function Opinions() {
                 </span>
               </header>
               <blockquote>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Exercitationem quos odio explicabo quas error eum velit iste
-                  quo architecto saepe?
-                </p>
+                <p>{t("fifth.opinion")}</p>
               </blockquote>
-            </article>{" "}
+            </article>
             <article
               className={`${styles.secondOpinionArticle} ${styles.bgColor5}`}
             >
@@ -143,7 +123,7 @@ export default async function Opinions() {
                   src={img}
                   alt=""
                 />
-                <h3>Beatriz</h3>
+                <h3>{t("sixt.name")}</h3>
                 <span className={styles.starIcons}>
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
@@ -153,11 +133,7 @@ export default async function Opinions() {
                 </span>
               </header>
               <blockquote>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Exercitationem quos odio explicabo quas error eum velit iste
-                  quo architecto saepe?
-                </p>
+                <p>{t("sixt.opinion")}</p>
               </blockquote>
             </article>
           </div>

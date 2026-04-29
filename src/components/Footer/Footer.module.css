@@ -1,9 +1,9 @@
 .footer {
   background-color: var(--primera-100);
   padding-block: var(--space-900);
-  margin-block-start: var(--space-900);
   text-align: center;
   color: var(--primera-10);
+  margin-block-start: var(--space-900);
 }
 
 .cardsContainer {
@@ -25,8 +25,8 @@
   gap: var(--space-800);
 }
 
-.boxOne > *,
-.boxTwo > * {
+.boxOne>*,
+.boxTwo>* {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 16rem;

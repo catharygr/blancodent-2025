@@ -1,14 +1,3 @@
-import styles from "./MenuDrawer.module.css";
-import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
-import { XIcon } from "@phosphor-icons/react/dist/ssr";
-import { useTranslations } from "next-intl";
-import FocusLock from "react-focus-lock";
-import { RemoveScroll } from "react-remove-scroll";
-import { Link } from "@/i18n/navigation";
-import Image from "next/image";
-import smallMap from "./assets/menu-map.png";
-import { motion } from "motion/react";
 import {
   anestesia,
   blanqueamiento,
@@ -38,20 +27,24 @@ import {
   transporte,
   ubicacion,
 } from "@/assets/links";
+import { Link } from "@/i18n/navigation";
+import { XIcon } from "@phosphor-icons/react/dist/ssr";
+import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { useEffect } from "react";
+import { createPortal } from "react-dom";
+import FocusLock from "react-focus-lock";
+import { RemoveScroll } from "react-remove-scroll";
+import smallMap from "./assets/menu-map.webp";
+import styles from "./MenuDrawer.module.css";
 
 interface MenuDrawerProps {
   handleCloseDrawer: () => void;
 }
 
 export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
-  // next is for portal rendering on client
-  const [portalRoot, setPortalRoot] = useState<HTMLElement | null>(null);
   const t = useTranslations("MainMenu");
-
-  useEffect(() => {
-    // next is for portal
-    setPortalRoot(document.getElementById("nav-menu-root"));
-  }, []);
 
   useEffect(() => {
     function handleEscapeKey(event: KeyboardEvent): void {
@@ -66,6 +59,10 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
     };
   }, [handleCloseDrawer]);
 
+  // Portal rendering on client only
+  if (typeof window === "undefined") return null;
+
+  const portalRoot = document.getElementById("nav-menu-root");
   if (!portalRoot) return null;
 
   return createPortal(
@@ -135,7 +132,8 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               >
                 <span
                   id="nav-links-group-label"
-                  className="visually-hidden"
+                  // className="visually-hidden"
+                  hidden
                 >
                   {t("disclosureGroupLabel")}
                 </span>
@@ -495,6 +493,6 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
         </RemoveScroll>
       </FocusLock>
     </div>,
-    portalRoot
+    portalRoot,
   );
 }

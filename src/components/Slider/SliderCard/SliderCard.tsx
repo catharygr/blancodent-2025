@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
-import styles from "./SliderCard.module.css";
 import Link from "next/link";
+import styles from "./SliderCard.module.css";
 
 interface SliderCardProps {
   img: StaticImageData | string;
@@ -34,7 +34,7 @@ export default function SliderCard({
           className={styles.link}
           href={link}
         >
-          {linkContent}
+          {linkContent + title}
         </Link>
       </div>
     </article>

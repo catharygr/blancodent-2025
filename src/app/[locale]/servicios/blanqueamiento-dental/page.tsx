@@ -1,15 +1,30 @@
+import secondImg from "@/assets/images/clinica/clinica-5.jpg";
+import thirdImg from "@/assets/images/clinica/detalle-5.jpg";
+import AsideImageBlock from "@/components/AsideImageBlock/AsideImageBlock";
 import { routing } from "@/i18n/routing";
+import { Metadata } from "next";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import styles from "./page.module.css";
-import recepcion from "@/assets/images/home-page/blanqueamiento.jpg";
-import personal from "@/assets/images/home-page/conservadora.jpg";
-import noSeQue from "@/assets/images/home-page/imagenes.jpg";
-import consulta from "@/assets/images/home-page/ortodoncia.jpg";
-import Image from "next/image";
+import styles from "../servicios.module.css";
+import firstImg from "./images/001.jpg";
+import fourthImg from "./images/004.jpg";
 
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;
+}
+// Generate metadata for a title and content...
+export async function generateMetadata({
+  params,
+}: ServiciosLayoutProps): Promise<Metadata> {
+  const { locale } = await params;
+  const { metadata } = await import(
+    locale && `./markdown/content-${locale}.mdx`
+  );
+
+  return {
+    title: metadata?.title,
+    description: metadata?.subTitle,
+  };
 }
 
 export default async function BlanqueamientoDental({
@@ -37,24 +52,14 @@ export default async function BlanqueamientoDental({
       <div className={styles.content}>
         <Content />
       </div>
-      <aside className={styles.aside}>
-        <Image
-          src={recepcion}
-          alt=""
+      <div className={styles.asideContainer}>
+        <AsideImageBlock
+          url1={firstImg}
+          url2={secondImg}
+          url3={thirdImg}
+          url4={fourthImg}
         />
-        <Image
-          src={personal}
-          alt=""
-        />{" "}
-        <Image
-          src={consulta}
-          alt=""
-        />{" "}
-        <Image
-          src={noSeQue}
-          alt=""
-        />
-      </aside>
+      </div>
     </article>
   );
 }
