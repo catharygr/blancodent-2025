@@ -8,7 +8,7 @@ import img5 from "@/assets/images/home-page/opinions/g3.svg";
 import { StarHalfIcon, StarIcon } from "@phosphor-icons/react/dist/ssr";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import styles from "./opinions.module.css";
+import styles from "./opiniones.module.css";
 
 export default async function Opinions() {
   const t = await getTranslations("HomePage.opinions");
