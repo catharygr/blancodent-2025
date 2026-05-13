@@ -22,14 +22,14 @@
 
 .decorativeLine {
   height: var(--space-100);
-  background-color: var(--base-black-20);
+  background-color: var(--primera-10);
   margin-block: var(--space-300);
   border-radius: var(--b-radius-100);
 }
 
 .titleImg {
   position: absolute;
-  height: 7rem;
+  height: 6rem;
   width: auto;
 }
 

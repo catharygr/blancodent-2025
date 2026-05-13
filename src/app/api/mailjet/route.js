@@ -3,13 +3,17 @@ import Mailjet from "node-mailjet";
 
 export async function POST(req) {
   // Must be POST for post and GET for get...
-  const { name, email, phone, message } = await req.json();
+  const { name, email, phone, message, pusiKaru } = await req.json();
 
   if (!name || !email) {
     return NextResponse.json(
       { error: "Missing required fields" },
       { status: 400 },
     );
+  }
+
+  if (pusiKaru) {
+    return NextResponse.json({ error: "Pusi Karu" }, { status: 200 });
   }
 
   const mailjet = Mailjet.apiConnect(

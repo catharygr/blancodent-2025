@@ -2,8 +2,8 @@
   --fs-100: clamp(0.51rem, 0.03vi + 0.51rem, 0.53rem);
   --fs-200: clamp(0.64rem, 0.11vi + 0.61rem, 0.7rem);
   --fs-300: clamp(0.8rem, 0.24vi + 0.74rem, 0.94rem);
-  --fs-400: clamp(1rem, 0.44vi + 0.9rem, 1.25rem);
-  --fs-500: clamp(1.25rem, 0.74vi + 1.08rem, 1.67rem);
+  --fs-400: clamp(1.1rem, 0.44vi + 0.9rem, 1.25rem);
+  --fs-500: clamp(1.28rem, 0.74vi + 1.08rem, 1.67rem);
   --fs-600: clamp(1.56rem, 1.16vi + 1.29rem, 2.22rem);
   --fs-700: clamp(1.95rem, 1.78vi + 1.54rem, 2.96rem);
   --fs-800: clamp(2.44rem, 2.66vi + 1.82rem, 3.95rem);
@@ -48,6 +48,7 @@ h2 {
   font-weight: var(--f-wei-800);
   font-stretch: var(--f-str-90);
   line-height: var(--lh-100);
+  color: var(--primera-20);
   hyphens: auto;
   hyphenate-limit-chars: 4 2;
 }

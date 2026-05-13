@@ -25,6 +25,7 @@ export default function AdBloque({
         <h2 className={styles.h2}>{title}</h2>
         <div className={styles.decorativeLine} />
         <Image
+          aria-hidden={true}
           className={styles.titleImg}
           src={image}
           alt={imageAlt}
@@ -32,6 +33,7 @@ export default function AdBloque({
       </div>
       <p className={styles.content}>{content}</p>
       <Image
+        aria-hidden={true}
         className={styles.gridImg}
         src={image}
         alt={imageAlt}

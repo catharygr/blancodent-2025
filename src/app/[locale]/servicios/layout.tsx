@@ -5,5 +5,13 @@ export default async function ServiciosLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <main className={`${styles.container} wide-grid`}>{children}</main>;
+  return (
+    <main
+      id="main"
+      tabIndex={-1}
+      className={`${styles.container} wide-grid`}
+    >
+      {children}
+    </main>
+  );
 }

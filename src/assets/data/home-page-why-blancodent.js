@@ -5,4 +5,4 @@ import img4 from "@/assets/images/home-page/porque-card/cardimg-4.png";
 import img5 from "@/assets/images/home-page/porque-card/cardimg-5.png";
 import img6 from "@/assets/images/home-page/porque-card/cardimg-6.png";
 
-export const cardImages = [img1, img2, img3, img4, img5, img6];
+export const cardImages = [img1, img2, img3, img6, img5, img4];

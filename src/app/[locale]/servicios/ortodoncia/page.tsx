@@ -1,5 +1,6 @@
 import secondImg from "@/assets/images/clinica/clinica-2.jpg";
 import thirdImg from "@/assets/images/clinica/detalle-2.jpg";
+import fourthImg from "@/assets/images/clinica/istock-2.jpg";
 import AsideImageBlock from "@/components/AsideImageBlock/AsideImageBlock";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
@@ -7,7 +8,6 @@ import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import styles from "../servicios.module.css";
 import firstImg from "./images/001.jpg";
-import fourthImg from "./images/004.jpg";
 
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;
@@ -45,7 +45,7 @@ export default async function BlanqueamientoDental({
     <article className={styles.container}>
       <header className={styles.header}>
         <h1 className={styles.h1}>{metadata?.title}</h1>
-        <p className={styles.date}>Última edición: {metadata?.date}</p>
+        <p className={styles.date}>{metadata?.date}</p>
         <p className={styles.subTitle}>{metadata?.subTitle}</p>
       </header>
       <div className={styles.line} />

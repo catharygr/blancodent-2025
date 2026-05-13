@@ -11,6 +11,7 @@ export default function Formulario() {
     email: "",
     message: "",
     phone: "",
+    pusiKaru: "",
   });
   const t = useTranslations("ContactForm");
 
@@ -27,8 +28,11 @@ export default function Formulario() {
 
     if (res.ok) {
       setStatus(t("handleSubmit.success"));
-      setForm({ name: "", email: "", phone: "", message: "" });
+      setForm({ name: "", email: "", phone: "", message: "", pusiKaru: "" });
     } else {
+      // To handle error from MailjetAPI, if not only HTML required is used
+      // const data = await res.json();
+      // setStatus(data.error || t("handleSubmit.error"));
       setStatus(t("handleSubmit.error"));
     }
   };
@@ -46,7 +50,7 @@ export default function Formulario() {
           className={styles.label}
           htmlFor="name"
         >
-          {t("name")}: *
+          {t("name")}:
         </label>
         <input
           required
@@ -57,13 +61,22 @@ export default function Formulario() {
           name="Nombre"
           id="name"
           placeholder={t("namePh")}
+          inputMode="text"
+          autoComplete="name"
+          aria-describedby="describedby-name"
         />
-        <span className={styles.description}>{t("nameDesc")}</span>
+        <span
+          id="describedby-name"
+          className={styles.description}
+          aria-hidden="true"
+        >
+          {t("nameDesc")}
+        </span>
         <label
           className={styles.label}
           htmlFor="email"
         >
-          {t("email")}: *
+          {t("email")}:
         </label>
         <input
           required
@@ -74,8 +87,17 @@ export default function Formulario() {
           id="email"
           name="Email"
           placeholder={t("emailPh")}
+          inputMode="email"
+          autoComplete="email"
+          aria-describedby="describedby-email"
         />
-        <span className={styles.description}>{t("emailDesc")}</span>
+        <span
+          id="describedby-email"
+          className={styles.description}
+          aria-hidden="true"
+        >
+          {t("emailDesc")}
+        </span>
         <label
           className={styles.label}
           htmlFor="phone"
@@ -83,7 +105,6 @@ export default function Formulario() {
           {t("phone")}:
         </label>
         <input
-          // required
           value={form.phone}
           onChange={(e) => setForm({ ...form, phone: e.target.value })}
           className={styles.input}
@@ -91,21 +112,43 @@ export default function Formulario() {
           id="phone"
           name="Phone"
           placeholder={t("phonePh")}
+          inputMode="tel"
+          autoComplete="tel"
+          aria-describedby="describedby-phone"
         />
-        <span className={styles.description}>{t("phoneDesc")}</span>
+        <span
+          id="describedby-phone"
+          className={styles.description}
+          aria-hidden="true"
+        >
+          {t("phoneDesc")}
+        </span>
+        {/* kontrola govana koje stizu i salju */}
+        <label
+          aria-hidden="true"
+          style={{ display: "none" }}
+          htmlFor="website"
+        >
+          Website
+        </label>
+        <input
+          value={form.pusiKaru}
+          onChange={(e) => setForm({ ...form, pusiKaru: e.target.value })}
+          id="website"
+          type="text"
+          name="Website"
+          style={{ display: "none" }}
+          aria-hidden="true"
+          tabIndex={-1}
+        />
+        {/* Kraj govana */}
         <label
           className={styles.label}
           htmlFor="message"
         >
           {t("message")}:
         </label>
-        <input
-          type="text"
-          name="_honey"
-          style={{ display: "none" }}
-        ></input>
         <textarea
-          // required
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
           className={styles.input}
@@ -114,9 +157,22 @@ export default function Formulario() {
           cols={30}
           rows={6}
           placeholder={t("messagePh")}
+          inputMode="text"
+          aria-describedby="describedby-textarea"
         />
-        <span className={styles.description}>{t("messageDesc")}</span>
-        <p className={styles.formMessage}>{status}</p>
+        <span
+          id="describedby-textarea"
+          className={styles.description}
+          aria-hidden="true"
+        >
+          {t("messageDesc")}
+        </span>
+        <p
+          className={styles.formMessage}
+          role="status"
+        >
+          {status}
+        </p>
         <button className={`btn ${styles.button}`}>{t("btn")}</button>
       </form>
     </section>

@@ -8,7 +8,6 @@ interface SliderCardProps {
   title: string;
   content: string;
   alt: string;
-  linkContent: string;
 }
 
 export default function SliderCard({
@@ -17,26 +16,34 @@ export default function SliderCard({
   title,
   content,
   alt,
-  linkContent,
 }: SliderCardProps) {
+  const UUID = crypto.randomUUID();
+
   return (
-    <article className={styles.container}>
-      <div className={styles.titleContainer}>
-        <Image
-          src={img}
-          alt={alt}
-        />
-        <h3 className={styles.h3}>{title}</h3>
-      </div>
-      <div className={styles.contentContainer}>
-        <p className={styles.p}>{content}</p>
-        <Link
-          className={styles.link}
-          href={link}
-        >
-          {linkContent + title}
-        </Link>
-      </div>
-    </article>
+    <div className={styles.container}>
+      <Link
+        className={styles.link}
+        href={link}
+        aria-label={title}
+        aria-describedby={UUID}
+      >
+        <div className={styles.titleContainer}>
+          <Image
+            aria-hidden={true}
+            src={img}
+            alt={alt}
+          />
+          <h3 className={styles.h3}>{title}</h3>
+        </div>
+        <div className={styles.contentContainer}>
+          <p
+            id={UUID}
+            className={styles.p}
+          >
+            {content}
+          </p>
+        </div>
+      </Link>
+    </div>
   );
 }

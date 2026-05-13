@@ -83,12 +83,13 @@ export default function HeroCarousel() {
         SprayBottleIcon,
       ],
     }),
-    []
+    [],
   );
 
   return (
     <div className={styles.carouselContainer}>
       <Image
+        aria-hidden={true}
         src={PalmTrees}
         alt="test"
       />
@@ -105,10 +106,14 @@ export default function HeroCarousel() {
           {slideData.slideBtnLinks.map((link, index) => (
             <li key={index}>
               <div className={styles.slideContainer}>
-                <h2>{t(`heroCarousel.heroSlides.slide${index + 1}.h2`)}</h2>
+                <h2 id={`slide-title-${index + 1}`}>
+                  {t(`heroCarousel.heroSlides.slide${index + 1}.h2`)}
+                </h2>
                 <h3>{t(`heroCarousel.heroSlides.slide${index + 1}.h3`)}</h3>
                 <p>{t(`heroCarousel.heroSlides.slide${index + 1}.p`)}</p>
                 <Link
+                  id={`self-${index + 1}`}
+                  aria-labelledby={`slide-title-${index + 1} self-${index + 1}`}
                   className={`btn ${styles.slideBtnLink}`}
                   href={link()}
                 >
@@ -120,28 +125,35 @@ export default function HeroCarousel() {
         </ul>
       </div>
 
-      <div className={styles.buttonsContainer}>
+      <div
+        // aria-hidden={true}
+        className={styles.buttonsContainer}
+      >
         <button
           className={styles.navButton}
           onClick={() => handleLeftAndRightSlide("prev")}
           aria-label={t("heroCarousel.navButtonLeftAlt")}
         >
-          <ArrowFatLinesLeftIcon />
+          <ArrowFatLinesLeftIcon aria-hidden={true} />
         </button>
         {/* • */}
-        <DotsSixIcon weight="bold" />
+        <DotsSixIcon
+          aria-hidden={true}
+          weight="bold"
+        />
         <button
           className={styles.navButton}
           onClick={() => handleLeftAndRightSlide("next")}
           aria-label={t("heroCarousel.navButtonRightAlt")}
         >
-          <ArrowFatLinesRightIcon />
+          <ArrowFatLinesRightIcon aria-hidden={true} />
         </button>
       </div>
 
       <div className={styles.tagLineContainer}>
         {/* Remowe this test image */}
         <Image
+          aria-hidden={true}
           src={PalmTrees}
           alt="test"
         />
@@ -152,6 +164,7 @@ export default function HeroCarousel() {
       </div>
       <div className={styles.menuCarouselContainerQuery}>
         <div
+          aria-hidden={true}
           className={styles.menuCarousel}
           role="group"
           aria-label={t("heroCarousel.carouselControls")}
@@ -159,6 +172,8 @@ export default function HeroCarousel() {
           <div className={styles.leftColumn}>
             {slideData.slideBtnIcons.slice(0, 3).map((Icon, index) => (
               <button
+                tabIndex={-1}
+                aria-hidden={true}
                 key={index}
                 className={styles.menuCarouselBtn}
                 onClick={() => handleDirectButtonSlide(index)}
@@ -172,6 +187,8 @@ export default function HeroCarousel() {
           <div className={styles.rightColumn}>
             {slideData.slideBtnIcons.slice(3).map((Icon, index) => (
               <button
+                tabIndex={-1}
+                aria-hidden={true}
                 key={index}
                 className={styles.menuCarouselBtn}
                 onClick={() => handleDirectButtonSlide(index + 3)}

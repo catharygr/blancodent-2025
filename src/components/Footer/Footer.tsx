@@ -47,9 +47,9 @@ export default function Footer() {
             <address>
               <p>
                 {t("address.street")}
-                <br />
+                <br aria-hidden="true" />
                 {t("address.city")}
-                <br />
+                <br aria-hidden="true" />
                 {t("address.country")}
               </p>
               <p>
@@ -98,31 +98,31 @@ export default function Footer() {
             <h2>{t("timetable.title")}</h2>
             <p>
               <strong>{t("timetable.days.monday")}</strong>
-              <br />
+              <br aria-hidden="true" />
               <time dateTime="09:30">09:30</time> -{" "}
               <time dateTime="16:00">16:00</time>.
             </p>
             <p>
               <strong>{t("timetable.days.tuesday")}</strong>
-              <br />
+              <br aria-hidden="true" />
               <time dateTime="14:00">14:00</time> -{" "}
               <time dateTime="20:00">20:00</time>.
             </p>
             <p>
               <strong>{t("timetable.days.wednesday")}</strong>
-              <br />
+              <br aria-hidden="true" />
               <time dateTime="09:30">09:30</time> -{" "}
               <time dateTime="16:00">16:00</time>.
             </p>
             <p>
               <strong>{t("timetable.days.thursday")}</strong>
-              <br />
+              <br aria-hidden="true" />
               <time dateTime="14:00">14:00</time> -{" "}
               <time dateTime="20:00">20:00</time>.
             </p>
             <p>
               <strong>{t("timetable.days.friday")}</strong>
-              <br />
+              <br aria-hidden="true" />
               <time dateTime="09:30">09:30</time> -{" "}
               <time dateTime="16:00">16:00</time>.
             </p>

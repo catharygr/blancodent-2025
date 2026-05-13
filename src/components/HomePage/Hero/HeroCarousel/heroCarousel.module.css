@@ -116,7 +116,7 @@
 
 .tagLineContainer {
   position: relative;
-  font-size: var(--fs-200);
+  font-size: var(--fs-300);
   text-align: center;
   margin-block-start: var(--space-100);
 
@@ -124,7 +124,7 @@
     position: absolute;
     bottom: 22;
     left: 2rem;
-    height: 8rem;
+    height: 6rem;
     width: auto;
     opacity: 80%;
   }
@@ -179,6 +179,13 @@
   box-shadow: var(--shadow-400);
   border: 1px solid transparent;
 }
+
+.menuCarouselBtn[aria-current="true"] {
+  background-color: var(--primera-90);
+  box-shadow: var(--shadow-400);
+  /* border: 1px solid transparent; */
+}
+
 
 .menuCarouselBtn svg {
   width: 32px;

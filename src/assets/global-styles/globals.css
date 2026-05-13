@@ -67,7 +67,8 @@ button {
 }
 
 a {
-  text-underline-offset: 0.13em;
+  text-underline-offset: 0.14em;
+  text-decoration-thickness: 0.10rem;
 }
 
 a:hover,
@@ -94,7 +95,7 @@ p:not(:last-child):not([class]) {
 }
 
 :focus-visible {
-  outline: .375rem double var(--base-gray-6);
-  box-shadow: 0 0 0 0.15rem var(--base-gray-4);
+  outline: .375rem double var(--base-gray-3);
+  box-shadow: 0 0 0 0.15rem var(--base-gray-10);
   border-radius: 0.125rem;
 }

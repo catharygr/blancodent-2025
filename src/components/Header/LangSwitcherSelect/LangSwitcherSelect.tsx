@@ -1,9 +1,8 @@
 "use client";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { useParams } from "next/navigation";
-import React, { ChangeEvent, ReactNode, useTransition } from "react";
+import { ChangeEvent, ReactNode, useTransition } from "react";
 import styles from "./LangSwitcherSelect.module.css";
-// import { CaretDownIcon } from "@phosphor-icons/react/dist/ssr";
 
 export default function LangSwitcherSelect({
   children,
@@ -23,21 +22,12 @@ export default function LangSwitcherSelect({
     const nextLanguage = event.target.value as string;
     startTransition(() =>
       // @ts-expect-error -- Expected error...
-      router.replace({ pathname, params }, { locale: nextLanguage })
+      router.replace({ pathname, params }, { locale: nextLanguage }),
     );
   }
 
   return (
-    <section
-      aria-labelledby="lang-switcher-label"
-      className={styles.container}
-    >
-      <span
-        className="visually-hidden"
-        id="lang-switcher-label"
-      >
-        {label}
-      </span>
+    <section className={styles.container}>
       <label
         htmlFor="lang-switcher"
         className="visually-hidden"

@@ -34,7 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/varios/nota-legal",
     "/varios/la-salud-esta-navidad",
     "/varios/ofertas-continuas",
-    "/varios/cita-previa",
     "/varios/preguntas-frecuentes",
     "/varios/covid-19",
   ];

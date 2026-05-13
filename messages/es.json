@@ -42,7 +42,7 @@
   },
   "Header": {
     "logoLabel": "Ir a la página de inicio",
-    "quickLinksLabel": "Enlaces rápidos a la ubicación, formulario de contacto y llamada telefónica",
+    "quickLinksLabel": "Enlaces rápidos a la ubicación, ofertas y horarios",
     "quickLinksOne": "Ubicación",
     "quickLinksTwo": "Ofertas",
     "quickLinksThree": "Horarios"
@@ -52,7 +52,7 @@
     "locale": "{locale, select, es {🇪🇸 Español} en {🇬🇧 English} other {Unknown}}"
   },
   "MainMenu": {
-    "navLabel": "Principal",
+    "navLabel": "Navegación Principal",
     "openMenuBtn": "Abrir menú",
     "disclosureGroupLabel": "Colección de categorías de navegación expandibles que contienen enlaces de navegación",
     "closeMenuBtn": "Cerrar menú",
@@ -168,7 +168,7 @@
         "6": "Higiene"
       },
       "heroSlides": {
-        "skipLink": "Saltar carousel",
+        "skipLink": "Saltar carrusel promocional, información repetida",
         "slide1": {
           "h2": "Blanqueamiento dental",
           "h3": "Dientes blancos, boca sana y sonrisa feliz.",
@@ -407,7 +407,7 @@
     "description": "Clínica dental en Las Palmas, BLANCODENT. Dentistas en Las Palmas. Dentistas en Mesa y López. Expertos en ortodoncia, endodoncia, tratamiento del bruxismo, periodoncia e implantología dental. Puedes encontrar todas las especialidades odontológicas en BLANCODENT."
   },
   "SkipLinkMain": {
-    "content": "Saltar al contenido principal"
+    "content": "Saltar el encabezado para ir al contenido principal"
   },
   "ContactForm": {
     "handleSubmit": {
@@ -415,16 +415,16 @@
       "success": "¡Mensaje enviado con éxito! Gracias.",
       "error": "Error al enviar el mensaje, por favor inténtelo de nuevo más tarde o llame al: +34 928 292 455."
     },
-    "name": "Su nombre",
+    "name": "Su nombre (Requerido)",
     "namePh": "¿Cómo quiere que le llamemos?",
     "nameDesc": "Por su privacidad, no es necesario que ponga su nombre verdadero. Si lo prefiere, puede usar un apodo y estaremos encantados de dirigirnos a usted así.",
-    "email": "Correo electrónico",
+    "email": "Correo electrónico (Requerido)",
     "emailPh": "¿Cuál es su correo electrónico?",
     "emailDesc": "Es obligatorio y necesario para poder responder a su solicitud. Si no lo indica, no podremos contactarle.",
-    "phone": "Teléfono de contacto",
+    "phone": "Teléfono de contacto (Opcional)",
     "phonePh": "No olvide el prefijo de su país.",
     "phoneDesc": "No es obligatorio, pero le recomendamos que lo rellene porque facilita la comunicación. Si lo proporciona, asumimos que es su forma preferida de contacto.",
-    "message": "Su mensaje o solicitud de cita previa",
+    "message": "Su mensaje o solicitud de cita previa (Opcional)",
     "messagePh": "Escríbanos su mensaje...",
     "messageDesc": "Si se trata de una solicitud de cita previa, indíquenos la franja de fechas deseadas y los turnos (mañana o tarde). Y gracias por contactarnos.",
     "btn": "Enviar mensaje..."

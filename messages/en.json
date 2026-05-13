@@ -44,7 +44,7 @@
   },
   "Header": {
     "logoLabel": "Go to the home page",
-    "quickLinksLabel": "Quick links to location, contact form, and phone call",
+    "quickLinksLabel": "Quick links to location, offers, and opening hours",
     "quickLinksOne": "Location",
     "quickLinksTwo": "Offers",
     "quickLinksThree": "Opening hours"
@@ -54,7 +54,7 @@
     "locale": "{locale, select, es {🇪🇸 Español} en {🇬🇧 English} other {Unknown}}"
   },
   "MainMenu": {
-    "navLabel": "Main",
+    "navLabel": "Main Navigation",
     "openMenuBtn": "Open menu",
     "disclosureGroupLabel": "Collection of expandable navigation categories that contain navigation links",
     "closeMenuBtn": "Close menu",
@@ -170,7 +170,7 @@
         "6": "Hygiene"
       },
       "heroSlides": {
-        "skipLink": "Skip carousel",
+        "skipLink": "Skip promotional carousel, repeated information",
         "slide1": {
           "h2": "Dental whitening",
           "h3": "White teeth, healthy mouth and happy smile.",
@@ -409,7 +409,7 @@
     "description": "Dental clinic in Las Palmas, BLANCODENT. Dentists in Las Palmas. Dentists in Mesa y López. Experts in orthodontics, endodontics, bruxism treatment, periodontics, and dental implantology. You can find all dental specialties at BLANCODENT."
   },
   "SkipLinkMain": {
-    "content": "Skip to main content",
+    "content": "Skip the header to go to the main content",
     "href": "main"
   },
   "ContactForm": {
@@ -418,16 +418,16 @@
       "success": "Message sent successfully! Thank you.",
       "error": "Error sending message, please try again later or call: +34 928 292 455."
     },
-    "name": "Your name",
+    "name": "Your name (Required)",
     "namePh": "How would you like us to address you?",
     "nameDesc": "For your privacy, you do not need to provide your real name; if you prefer, you can use a nickname and we will be happy to address you that way.",
-    "email": "Email address",
+    "email": "Email address (Required)",
     "emailPh": "What is your email address?",
     "emailDesc": "This is required so we can respond to your enquiry; if you do not provide it, we will not be able to contact you.",
-    "phone": "Contact telephone",
+    "phone": "Contact telephone (Optional)",
     "phonePh": "Don't forget your country code.",
     "phoneDesc": "Not required, but we recommend you provide it as it makes communication easier. If you do, we will assume it is your preferred method of contact.",
-    "message": "Your message or appointment request",
+    "message": "Your message or appointment request (Optional)",
     "messagePh": "Write your message to us...",
     "messageDesc": "If you are requesting an appointment, please indicate your preferred dates and time slots (morning or afternoon). And thank you for contacting us.",
     "btn": "Send message..."

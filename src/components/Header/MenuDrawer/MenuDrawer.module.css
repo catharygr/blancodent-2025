@@ -110,12 +110,12 @@
   padding: var(--space-100) var(--space-300);
   background-color: var(--primera-30);
   border-radius: var(--b-radius-100);
-  color: var(--primera-100);
+  color: var(--primera-90);
 }
 
 .summary::marker,
 .summary::-webkit-details-marker {
-  color: var(--sexta-50);
+  color: var(--sexta-70);
 
 }
 

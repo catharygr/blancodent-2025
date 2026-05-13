@@ -7,6 +7,12 @@
   border-radius: var(--b-radius-400);
   overflow: hidden;
   box-shadow: var(--shadow-400);
+  transition: all ease-in 300ms;
+}
+
+.container:hover {
+  box-shadow: var(--shadow-500);
+  scale: 1.01;
 }
 
 .titleContainer {
@@ -54,9 +60,10 @@
 }
 
 .link {
-  align-self: end;
+  text-decoration: none;
+  /* align-self: end; */
   color: inherit;
-  padding: var(--space-200);
-  font-size: var(--fs-300);
+  /* padding: var(--space-200); */
+  /* font-size: var(--fs-300); */
   /* border: 1px solid black; */
 }

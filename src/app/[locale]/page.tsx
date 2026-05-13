@@ -17,6 +17,7 @@ import PeerTube from "@/components/PeerTube";
 import Slider from "@/components/Slider/Slider";
 import SliderCard from "@/components/Slider/SliderCard";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import stylesPeerTube from "./page.module.css";
 
 export default async function HomePage({
   params,
@@ -36,6 +37,7 @@ export default async function HomePage({
     >
       <Hero />
       <div
+        className="visually-hidden"
         id="skip-after-carousel"
         tabIndex={-1}
       ></div>
@@ -55,9 +57,6 @@ export default async function HomePage({
             title={t(`sliders.sliderClinica.card${index + 1}.title`)}
             content={t(`sliders.sliderClinica.card${index + 1}.content`)}
             alt={t(`sliders.sliderClinica.card${index + 1}.alt`)}
-            linkContent={t(
-              `sliders.sliderClinica.card${index + 1}.linkContent`,
-            )}
           />
         ))}
       </Slider>
@@ -72,6 +71,7 @@ export default async function HomePage({
         <h3>{t("offers.one.title")}</h3>
         <p>{t("offers.one.p1")}</p>
         <p>{t("offers.one.p2")}</p>
+
         <h3>{t("offers.two.title")}</h3>
         <p>{t("offers.two.p1")}</p>
         <p>{t("offers.two.p2")}</p>
@@ -97,13 +97,13 @@ export default async function HomePage({
       <Opinions />
       <PeerTube
         url={
-          "https://peertube.alexdebosnia.eu/videos/embed/ka86UPsbcHnHUetT1zFdX7"
+          "https://peertube.alexdebosnia.eu/videos/embed/kG1ruLnH8Byk4xFABTrWNw"
         }
         aspRatio={16 / 9}
-        title={"Interior de la clínica"}
+        title="20 años con ustedes / 20 years with you"
+        classForMargin={stylesPeerTube.margin}
       />
       <AdBloque
-        // title={t("adBloques.second.title")}
         title={t("adBloques.fourth.title")}
         content={t("adBloques.fourth.content")}
         image={fourthAdBloqueImage}
@@ -119,9 +119,6 @@ export default async function HomePage({
             title={t(`sliders.sliderServices.card${index + 1}.title`)}
             content={t(`sliders.sliderServices.card${index + 1}.content`)}
             alt={t(`sliders.sliderServices.card${index + 1}.alt`)}
-            linkContent={t(
-              `sliders.sliderServices.card${index + 1}.linkContent`,
-            )}
           />
         ))}
       </Slider>

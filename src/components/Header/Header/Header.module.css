@@ -51,9 +51,7 @@
   font-size: min(5vw, var(--fs-700));
   font-weight: var(--f-wei-700);
   font-stretch: var(--f-str-90);
-  /* color: var(--primera-20); */
   margin-left: var(--space-300);
-  /* text-shadow: var(--shadow-300); */
 }
 
 .quickLinks {
@@ -66,12 +64,6 @@
   font-weight: var(--f-wei-500);
   padding-inline-end: var(--space-400)
 }
-
-/* @media (min-width: 55rem) {
-  .logo .p {
-    display: block;
-  }
-} */
 
 @media (min-width: 41rem) {
   .quickLinks {

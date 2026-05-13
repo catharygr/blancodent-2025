@@ -132,7 +132,6 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               >
                 <span
                   id="nav-links-group-label"
-                  // className="visually-hidden"
                   hidden
                 >
                   {t("disclosureGroupLabel")}
@@ -221,13 +220,9 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                 </details>
                 <details
                   name="menu-accordion"
-                  // open={openedDetails === 1}
                   className={styles.details}
                 >
-                  <summary
-                    // onClick={(e) => handleOpenDetails(e, 1)}
-                    className={styles.summary}
-                  >
+                  <summary className={styles.summary}>
                     {t("aboutClinic.summary")}
                   </summary>
                   <ul role="list">
@@ -403,11 +398,11 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                 <address>
                   <p>
                     <strong>{t("location.address.title")}</strong>
-                    <br />
+                    <br aria-hidden="true" />
                     {t("location.address.street")}
-                    <br />
+                    <br aria-hidden="true" />
                     {t("location.address.city")}
-                    <br />
+                    <br aria-hidden="true" />
                     {t("location.address.country")}
                   </p>
                 </address>
@@ -421,7 +416,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                 >
                   {t("location.map.link1")}
                 </Link>{" "}
-                <br />
+                <br aria-hidden="true" />
                 <Link
                   target="_blank"
                   href="https://maps.apple.com/maps?address=Av%20Mesa%20y%20L%C3%B3pez,%201%20-%201%C2%AA%20izquierda,%2035006%20Las%20Palmas%20de%20Gran%20Canaria,%20Las%20Palmas,%20Las%20Palmas,%20Spain&auid=4569860911891010439&ll=28.134679,-15.429491&lsp=9902&q=Cl%C3%ADnica%20Dental%20Blancodent&t=m"

@@ -1,10 +1,10 @@
 "use client";
-import styles from "./Menu.module.css";
-import { ListIcon } from "@phosphor-icons/react/dist/ssr";
 import MenuDrawer from "@/components/Header/MenuDrawer";
-import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { ListIcon } from "@phosphor-icons/react/dist/ssr";
 import { AnimatePresence } from "motion/react";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
+import styles from "./Menu.module.css";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);

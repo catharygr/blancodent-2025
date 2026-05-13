@@ -4,7 +4,10 @@
   display: flex;
   gap: clamp(0.6rem, 4vw, 2rem);
   padding: var(--space-500);
-  padding-block-end: var(--space-500);
-  margin-block: var(--space-600);
-  /* border: 1px solid black; */
+  padding-block-end: var(--space-800);
+  margin-block: var(--space-700);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 2%, black 98%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 2%, black 98%, transparent 100%);
+  scrollbar-width: auto;
+  scrollbar-color: var(--primera-30) var(--primera-80);
 }

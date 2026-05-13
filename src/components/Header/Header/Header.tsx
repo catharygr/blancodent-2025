@@ -70,12 +70,6 @@ export default function Header() {
               />
             </svg>
           </Link>
-          {/* <span
-            className={styles.p}
-            aria-hidden={true}
-          >
-            Blancodent
-          </span> */}
         </div>
         <nav
           aria-label={t("quickLinksLabel")}

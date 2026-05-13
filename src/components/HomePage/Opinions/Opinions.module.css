@@ -51,6 +51,12 @@
   font-weight: var(--f-wei-500);
 }
 
+.firstOpinionArticle img {
+  width: 4rem;
+  height: auto;
+  float: right;
+}
+
 .otherOpinionsContainer {
   display: flex;
   flex-direction: column;
@@ -69,7 +75,7 @@
 }
 
 .secondOpinionArticle img {
-  width: 4rem;
+  width: 3rem;
   height: auto;
   float: right;
 }

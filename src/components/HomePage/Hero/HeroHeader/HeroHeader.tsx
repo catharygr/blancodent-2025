@@ -1,8 +1,8 @@
-import { ArrowFatRightIcon } from "@phosphor-icons/react/dist/ssr";
-import styles from "./heroHeader.module.css";
-import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
 import { contacto } from "@/assets/links";
+import { Link } from "@/i18n/navigation";
+import { ArrowFatRightIcon } from "@phosphor-icons/react/dist/ssr";
+import { useTranslations } from "next-intl";
+import styles from "./heroHeader.module.css";
 
 export default function Hero() {
   const t = useTranslations("HomePage");
@@ -14,7 +14,7 @@ export default function Hero() {
           <span className={styles.dentalClinic}>
             {t("heroHeader.titleSmall")}
           </span>
-          <br />
+          <br aria-hidden="true" />
           {t("heroHeader.titleBig")}
         </h1>
         <p className={styles.tagline}>{t("heroHeader.tagLine")}</p>
@@ -27,7 +27,10 @@ export default function Hero() {
         >
           {t("heroHeader.actionBtn")}
         </a>
-        <Link href={contacto()}>
+        <Link
+          href={contacto()}
+          className={styles.contactLink}
+        >
           {t("heroHeader.actionLink")}
           <ArrowFatRightIcon
             weight="duotone"
