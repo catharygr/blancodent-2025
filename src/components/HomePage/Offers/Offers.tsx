@@ -1,6 +1,6 @@
 import backgroundImg from "@/assets/images/home-page/offer-background.jpg";
 import Image from "next/image";
-import styles from "./offers.module.css";
+import styles from "./ofertas.module.css";
 
 import { ReactNode } from "react";
 
